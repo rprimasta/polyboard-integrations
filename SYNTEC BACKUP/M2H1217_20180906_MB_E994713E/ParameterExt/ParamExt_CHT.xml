@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResMap>
+	<Message ID="Param3401" Content="Z轴最低点保护(R81)" />
+	<Message ID="Param3402" Content="扩充参数(R82)" />
+	<Message ID="Param3403" Content="扩充参数(R83)" />
+	<Message ID="Param3404" Content="扩充参数(R84)" />
+	<Message ID="Param3405" Content="扩充参数(R85)" />
+	<Message ID="Param3406" Content="扩充参数(R86)" />
+	<Message ID="Param3407" Content="扩充参数(R87)" />
+	<Message ID="Param3408" Content="扩充参数(R88)" />
+	<Message ID="Param3409" Content="刀库总刀数(R89)" />
+	<Message ID="Param3410" Content="主轴启动延时 单位：0.1秒(R90)" />
+	<Message ID="Param3411" Content="主轴停止延时 单位：0.1秒(R91)" />
+	<Message ID="Param3412" Content="扩充参数(R92)" />
+	<Message ID="Param3413" Content="扩充参数(R93)" />
+	<Message ID="Param3414" Content="扩充参数(R94)" />
+	<Message ID="Param3415" Content="扩充参数(R95)" />
+	<Message ID="Param3416" Content="扩充参数(R96)" />
+	<Message ID="Param3417" Content="扩充参数(R96)" />
+	<Message ID="Param3418" Content="扩充参数(R98)" />
+	<Message ID="Param3419" Content="扩充参数(R99)" />
+	<Message ID="Param3420" Content="扩充参数(R100)" />
+	<Message ID="Param3421" Content="扩充参数(R801)" />
+	<Message ID="Param3422" Content="扩充参数(R802)" />
+	<Message ID="Param3423" Content="扩充参数(R803)" />
+	<Message ID="Param3424" Content="扩充参数(R804)" />
+	<Message ID="Param3425" Content="扩充参数(R805)" />
+	<Message ID="Param3426" Content="扩充参数(R806)" />
+	<Message ID="Param3427" Content="扩充参数(R807)" />
+	<Message ID="Param3428" Content="扩充参数(R808)" />
+	<Message ID="Param3429" Content="扩充参数(R809)" />
+	<Message ID="Param3430" Content="扩充参数(R810)" />
+	<Message ID="Param3431" Content="扩充参数(R811)" />
+	<Message ID="Param3432" Content="扩充参数(R812)" />
+	<Message ID="Param3433" Content="扩充参数(R813)" />
+	<Message ID="Param3434" Content="扩充参数(R814)" />
+	<Message ID="Param3435" Content="扩充参数(R815)" />
+	<Message ID="Param3436" Content="扩充参数(R816)" />
+	<Message ID="Param3437" Content="扩充参数(R817)" />
+	<Message ID="Param3438" Content="扩充参数(R818)" />
+	<Message ID="Param3439" Content="扩充参数(R819)" />
+	<Message ID="Param3440" Content="扩充参数(R820)" />
+	<Message ID="Param3441" Content="扩充参数(R821)" />
+	<Message ID="Param3442" Content="扩充参数(R822)" />
+	<Message ID="Param3443" Content="扩充参数(R823)" />
+	<Message ID="Param3444" Content="扩充参数(R824)" />
+	<Message ID="Param3445" Content="扩充参数(R825)" />
+	<Message ID="Param3446" Content="扩充参数(R826)" />
+	<Message ID="Param3447" Content="扩充参数(R827)" />
+	<Message ID="Param3448" Content="扩充参数(R828)" />
+	<Message ID="Param3449" Content="扩充参数(R829)" />
+	<Message ID="Param3450" Content="扩充参数(R830)" />
+	<Message ID="Param3451" Content="扩充参数(R831)" />
+	<Message ID="Param3452" Content="扩充参数(R832)" />
+	<Message ID="Param3453" Content="扩充参数(R833)" />
+	<Message ID="Param3454" Content="扩充参数(R834)" />
+	<Message ID="Param3455" Content="扩充参数(R835)" />
+	<Message ID="Param3456" Content="扩充参数(R836)" />
+	<Message ID="Param3457" Content="扩充参数(R837)" />
+	<Message ID="Param3458" Content="扩充参数(R838)" />
+	<Message ID="Param3459" Content="扩充参数(R839)" />
+	<Message ID="Param3460" Content="扩充参数(R840)" />
+</ResMap>

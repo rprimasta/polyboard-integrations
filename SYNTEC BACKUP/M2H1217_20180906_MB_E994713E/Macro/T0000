@@ -1,0 +1,241 @@
+% @MACRO
+IF #1820=1 THEN // IF MUTE MODE IS ON
+M99;    // 
+END_IF;  
+@104:=#1036;            //BACKUP TCODE TO VARIABLE
+@103:=#1004;            //BACKUP Absolute/Incremental command mode
+
+//NOTE: @489 = PR 3409 = TOTAL NUMBER OF TOOL = 6
+//NOTE: @501 = MAG NUMBER
+//NOTE: @502 = SPINDLE TOOL NUMBER
+
+IF (@104>0 AND @104<=@489 AND @502>0 AND @502<=@489) THEN 
+M07; //ALL BOOR UP
+IF (@502=@104) THEN // IF SPINDLE NUMBER = TCODE
+G90 G53 Z0;
+M81; //SPINDLE UPDOWN
+M99;
+END_IF;
+M12; //STROKE LIMIT TWO SWITCH
+M05; //SPINDLE STOP
+WAIT(); //UNTIL SPEED=0
+M86; // SPINDLE UP
+   G90G53Z0.;
+M81; // SPINDLE DOWN
+G90G53X@[800+@502] Y#26022;      //The position where the tool number is moved to the current spindle and the Y axis is the distance from the magazine port
+      G90G53Z@[820+@502] ;      //Z axis moves to tool change point (second reference point)
+      WAIT();
+      G91 G01 Y(@[810+@502]-#26022)F4000;       //Cut the tool into the magazine
+      M82;                 // Spindle loose knife
+      G90G53Z#26043;          //  Z axis back to the mechanical origin, while the spindle rises；
+      WAIT();
+      G90G53 X@[800+@104] Y@[810+@104];          //Move the X axis to the target tool position
+      
+      WAIT();
+      G90 G01 G53Z@[820+@104] F4000;         //Z轴下降并且主轴下降
+      M83;                   //主轴夹刀
+      @502:=@104;             //改写主轴刀号
+      G90G53Y(#26022);        //Y轴从刀库中移出      
+      G90G53Z0.;          //Z轴回到零位并且直线刀库下降
+      M87;                   //吸尘罩下降；
+WAIT();
+G@103;                  //回复进入换刀MACRO前的G91/G90状态
+G54;
+M13;
+M99;
+END_IF;
+
+IF (@104>10 AND @104<=26 AND @502>10 AND @502<=26) THEN 
+M70;      
+CASE @104 OF               
+11:   
+ WAIT();
+M421;
+G54 P11;
+12:
+ WAIT();
+M422; 
+G54 P12;     
+ 13:
+ WAIT();
+M423;
+G54 P13;        
+ 14:
+ WAIT();
+M424;
+G54 P14;        
+ 15:
+ WAIT();
+M425;
+G54 P15;        
+ 16:
+ WAIT();
+M426;
+G54 P16;      
+ 17:
+ WAIT();
+M427;
+G54 P17;      
+ 18:
+ WAIT();
+M428;
+G54 P18;
+ 19:
+ WAIT();
+M429;
+G54 P19;
+ 20:
+ WAIT();
+M430;
+G54 P20;
+ 21:
+ WAIT();
+M430;
+G54 P21;
+ 22:
+ WAIT();
+M431;
+G54 P22;
+ 23:
+ WAIT();
+M431;
+G54 P23;
+ 24:
+ WAIT();
+M432;
+G54 P24;
+ 25:
+ WAIT();
+M432;
+G54 P25;
+ 26:
+ WAIT();
+M433;
+G54 P26;
+END_CASE;
+WAIT();
+@502:=@104;
+G@103;    
+M99;
+END_IF;
+
+
+IF (@104>10 AND @104<=26 AND @502>0 AND @502<=@489) THEN 
+@508:=@502;
+M71;
+G90 G53 Z0;    
+CASE @104 OF               
+11:   
+ WAIT();
+M421;
+G54 P11;
+12:
+ WAIT();
+M422; 
+G54 P12;     
+ 13:
+ WAIT();
+M423;
+G54 P13;        
+ 14:
+ WAIT();
+M424;
+G54 P14;        
+ 15:
+ WAIT();
+M425;
+G54 P15;        
+ 16:
+ WAIT();
+M426;
+G54 P16;      
+ 17:
+ WAIT();
+M427;
+G54 P17;      
+ 18:
+ WAIT();
+M428;
+G54 P18;
+ 19:
+ WAIT();
+M429;
+G54 P19;
+ 20:
+ WAIT();
+M430;
+G54 P20;
+ 21:
+ WAIT();
+M430;
+G54 P21;
+ 22:
+ WAIT();
+M431;
+G54 P22;
+ 23:
+ WAIT();
+M431;
+G54 P23;
+ 24:
+ WAIT();
+M432;
+G54 P24;
+ 25:
+ WAIT();
+M432;
+G54 P25;
+ 26:
+ WAIT();
+M433;
+G54 P26;
+
+
+END_CASE;
+WAIT();
+@502:=@104;
+G@103;    
+M99;
+END_IF;
+
+
+
+
+
+
+IF (@104>0 AND @104<=@489 AND @502>10 AND @502<=26) THEN 
+@502:=@508;
+M07;
+IF (@502=@104) THEN
+G90 G53 Z0;
+M81;
+M99;
+END_IF;
+M12;
+M05;
+WAIT();
+M86;
+   G90G53Z0.;
+M81;
+ G90G53X@[800+@502] Y#26022;      //The position where the tool number is moved to the current spindle and the Y axis is the distance from the magazine port
+      G90G53Z@[820+@502] ;      //Z axis moves to tool change point (second reference point)
+      WAIT();
+      G91 G01 Y(@[810+@502]-#26022)F4000;       //Cut the tool into the magazine
+      M82;                 // Spindle loose knife
+      G90G53Z#26043;          //  Z axis back to the mechanical origin, while the spindle up;
+      WAIT();
+      G90G53 X@[800+@104] Y@[810+@104];          //Move the X axis to the target tool position
+      
+      WAIT();
+      G90 G01 G53Z@[820+@104] F4000;         //The Z axis drops and the spindle descends
+      M83;                   //Spindle cutter
+      @502:=@104;             //Rewrite the spindle number
+      G90G53Y(#26022);        //The Y axis is removed from the magazine      
+      G90G53Z0.;          //The Z axis returns to zero and the line magazine goes down
+      M87;    
+WAIT();
+G@103;                  //Reply to the G91 / G90 status before entering the tool changer MACRO
+M13;
+M99;
+END_IF;
+M99;

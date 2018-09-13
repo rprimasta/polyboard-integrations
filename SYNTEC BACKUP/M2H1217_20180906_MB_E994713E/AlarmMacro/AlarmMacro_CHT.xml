@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResMap>
+	<!-- ==========================Macro========================== -->
+	<Message ID="AlarmMsg::Macro::ID=10001" Content="(10001) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10002" Content="(10002) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10003" Content="(10003) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10004" Content="(10004) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10005" Content="(10005) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10006" Content="(10006) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10007" Content="(10007) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10008" Content="(10008) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10009" Content="(10009) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10010" Content="(10010) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10011" Content="(10011) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10012" Content="(10012) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10013" Content="(10013) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10014" Content="(10014) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10015" Content="(10015) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10016" Content="(10016) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10017" Content="(10017) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10018" Content="(10018) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10019" Content="(10019) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10020" Content="(10020) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10021" Content="(10021) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10022" Content="(10022) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10023" Content="(10023) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10024" Content="(10024) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10025" Content="(10025) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10026" Content="(10026) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10027" Content="(10027) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10028" Content="(10028) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10029" Content="(10029) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10030" Content="(10030) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10031" Content="(10031) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10032" Content="(10032) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10033" Content="(10033) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10034" Content="(10034) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10035" Content="(10035) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10036" Content="(10036) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10037" Content="(10037) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10038" Content="(10038) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10039" Content="(10039) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10040" Content="(10040) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10041" Content="(10041) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10042" Content="(10042) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10043" Content="(10043) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10044" Content="(10044) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10045" Content="(10045) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10046" Content="(10046) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10047" Content="(10047) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10048" Content="(10048) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10049" Content="(10049) 巨集警報" />
+	<Message ID="AlarmMsg::Macro::ID=10050" Content="(10050) 巨集警報" />
+</ResMap>

@@ -1,0 +1,363 @@
+[3401]
+title = 刀庫換刀最低點安全高度保護
+value = 0
+min = -999999999
+max = 999999999
+
+[3402]
+title = 原點下自動校正最大誤差修正R82
+value = 0
+min = -999999999
+max = 999999999
+
+[3403]
+title = MLC暫存器83
+value = 0
+min = -999999999
+max = 999999999
+
+[3404]
+title = MLC暫存器84
+value = 0
+min = -999999999
+max = 999999999
+
+[3405]
+title = MLC暫存器85
+value = 0
+min = -999999999
+max = 999999999
+
+[3406]
+title = 雙驅動緊停下，最大誤差修正 R86
+value = 0
+min = -999999999
+max = 999999999
+
+[3407]
+title =暫存器R87
+value = 0
+min = -999999999
+max = 999999999
+
+[3408]
+title = 暫存器R88
+value = 0
+min = -999999999
+max = 999999999
+
+[3409]
+title = 刀庫的刀具數量 R89
+value = 0
+min = -999999999
+max = 999999999
+
+[3410]
+title = MLC暫存器90
+value = 0
+min = -999999999
+max = 999999999
+
+[3411]
+title = MLC暫存器91
+value = 0
+min = -999999999
+max = 999999999
+
+[3412]
+title = MLC暫存器92
+value = 10
+min = -999999999
+max = 999999999
+
+[3413]
+title = 多功能,詳見定義
+value = 3600
+min = -999999999
+max = 999999999
+
+[3414]
+title = 多功能3，詳見定義
+value = 0
+min = -999999999
+max = 999999999
+
+[3415]
+title = 多功能2，詳見定義
+value = 0
+min = -999999999
+max = 999999999
+
+[3416]
+title = MLC暫存器96
+value = 0
+min = -999999999
+max = 999999999
+
+[3417]
+title = MLC暫存器97
+value = 0
+min = -999999999
+max = 999999999
+
+[3418]
+title = MLC暫存器98
+value = 0
+min = -999999999
+max = 999999999
+
+[3419]
+title = 各功能模組的選用，具體看此說明
+value = 0
+min = -999999999
+max = 999999999
+
+[3420]
+title = 工程調試模式
+value = 0
+min = -999999999
+max = 999999999
+
+
+[3421]
+title = MLC暫存器 R801
+value = 0
+min = -999999999
+max = 999999999
+
+
+
+[3422]
+title = MLC暫存器 R802
+value = 0
+min = -999999999
+max = 999999999
+
+
+[3423]
+title = MLC暫存器 R803
+value = 0
+min = -999999999
+max = 999999999
+
+
+
+[3424]
+title = MLC暫存器 R804
+value = 0
+min = -999999999
+max = 999999999
+
+
+[3425]
+title = MLC暫存器 R805
+value = 0
+min = -999999999
+max = 999999999
+
+
+[3426]
+title = MLC暫存器 R806
+value = 0
+min = -999999999
+max = 999999999
+
+[3427]
+title = MLC暫存器 R807
+value = 0
+min = -999999999
+max = 999999999
+
+[3428]
+title = MLC暫存器 R808
+value = 0
+min = -999999999
+max = 999999999
+
+[3429]
+title = MLC暫存器 R809
+value = 0
+min = -999999999
+max = 999999999
+
+[3430]
+title = MLC暫存器 R810
+value = 0
+min = -999999999
+max = 999999999
+
+[3431]
+title = MLC暫存器 R811
+value = 0
+min = -999999999
+max = 999999999
+
+[3432]
+title = MLC暫存器 R812
+value = 0
+min = -999999999
+max = 999999999
+
+[3433]
+title = MLC暫存器 R813
+value = 0
+min = -999999999
+max = 999999999
+
+[3434]
+title = MLC暫存器 R814
+value = 0
+min = -999999999
+max = 999999999
+
+[3435]
+title = MLC暫存器 R815
+value = 0
+min = -999999999
+max = 999999999
+
+[3436]
+title = MLC暫存器 R816
+value = 0
+min = -999999999
+max = 999999999
+
+[3437]
+title = MLC暫存器 R817
+value = 0
+min = -999999999
+max = 999999999
+
+[3438]
+title = MLC暫存器 R818
+value = 0
+min = -999999999
+max = 999999999
+
+[3439]
+title = MLC暫存器 R819
+value = 0
+min = -999999999
+max = 999999999
+
+[3440]
+title = MLC暫存器 R820
+value = 0
+min = -999999999
+max = 999999999
+
+[3441]
+title = MLC暫存器 R821
+value = 0
+min = -999999999
+max = 999999999
+
+[3442]
+title = MLC暫存器 R822
+value = 0
+min = -999999999
+max = 999999999
+
+[3443]
+title = MLC暫存器 R823
+value = 0
+min = -999999999
+max = 999999999
+
+[3444]
+title = MLC暫存器 R824
+value = 0
+min = -999999999
+max = 999999999
+
+[3445]
+title = MLC暫存器 R825
+value = 0
+min = -999999999
+max = 999999999
+
+[3446]
+title = MLC暫存器 R826
+value = 0
+min = -999999999
+max = 999999999
+
+[3447]
+title = MLC暫存器 R827
+value = 0
+min = -999999999
+max = 999999999
+
+[3448]
+title = MLC暫存器 R828
+value = 0
+min = -999999999
+max = 999999999
+
+[3449]
+title = MLC暫存器 R829
+value = 0
+min = -999999999
+max = 999999999
+
+[3450]
+title = MLC暫存器 R830
+value = 0
+min = -999999999
+max = 999999999
+
+[3451]
+title = MLC暫存器 R831
+value = 0
+min = -999999999
+max = 999999999
+
+[3452]
+title = MLC暫存器 R832
+value = 0
+min = -999999999
+max = 999999999
+
+[3453]
+title = MLC暫存器 R833
+value = 0
+min = -999999999
+max = 999999999
+
+[3454]
+title = MLC暫存器 R834
+value = 0
+min = -999999999
+max = 999999999
+
+[3455]
+title = MLC暫存器 R835
+value = 0
+min = -999999999
+max = 999999999
+
+
+
+
+
+//5000號參數，新追加的使用者參數
+
+[5001]
+title = 自定義參數1
+value = 0
+min = -999999999
+max = 999999999
+
+
+
+
+
+[5002]
+title = 自定義參數2
+value = 10
+min = -999999999
+max = 999999999
+
+
+
+

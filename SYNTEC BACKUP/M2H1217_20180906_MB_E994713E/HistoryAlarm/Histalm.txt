@@ -1,0 +1,201 @@
+MLC   79   7/31/2018 1:04:46 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   80   7/31/2018 1:04:46 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   79   7/31/2018 4:16:28 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   79   7/31/2018 4:16:29 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   79   7/31/2018 4:16:44 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   8/1/2018 8:03:05 AM    X not yet back home
+MLC   11   8/1/2018 8:03:05 AM    Y not yet back home
+MLC   19   8/1/2018 8:03:05 AM    Z not yet back home
+MLC   79   8/1/2018 8:03:05 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   80   8/1/2018 8:03:06 AM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   79   8/1/2018 11:25:38 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   8/1/2018 1:04:25 PM    X not yet back home
+MLC   11   8/1/2018 1:04:25 PM    Y not yet back home
+MLC   19   8/1/2018 1:04:25 PM    Z not yet back home
+MLC   79   8/1/2018 1:04:25 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   80   8/1/2018 1:04:26 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   79   8/1/2018 5:54:18 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   79   8/1/2018 6:25:11 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   8/7/2018 10:31:05 PM    X not yet back home
+MLC   11   8/7/2018 10:31:05 PM    Y not yet back home
+MLC   19   8/7/2018 10:31:05 PM    Z not yet back home
+MLC   79   8/7/2018 10:31:05 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   80   8/7/2018 10:31:05 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+Motion   17   8/7/2018 10:49:28 PM   ZAxis First Positive softawre limit exceed
+Motion   17   8/7/2018 10:49:31 PM   ZAxis First Positive softawre limit exceed
+Motion   17   8/7/2018 10:56:57 PM   ZAxis First Positive softawre limit exceed
+Motion   17   8/7/2018 10:57:39 PM   ZAxis First Positive softawre limit exceed
+Motion   17   8/7/2018 11:15:51 PM   ZAxis First Positive softawre limit exceed
+MLC   80   8/8/2018 12:49:44 AM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   3   8/8/2018 11:23:20 AM    X not yet back home
+MLC   11   8/8/2018 11:23:20 AM    Y not yet back home
+MLC   19   8/8/2018 11:23:20 AM    Z not yet back home
+MLC   79   8/8/2018 11:23:20 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   80   8/8/2018 11:23:21 AM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   80   8/8/2018 11:33:04 AM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+Motion   18   8/8/2018 11:36:58 AM   XAxis First Negative softawre limit exceed
+Motion   18   8/8/2018 11:36:58 AM   YAxis First Negative softawre limit exceed
+Motion   17   8/8/2018 11:49:17 AM   ZAxis First Positive softawre limit exceed
+Motion   17   8/8/2018 11:49:49 AM   ZAxis First Positive softawre limit exceed
+MLC   80   8/8/2018 12:09:43 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   3   8/8/2018 2:10:51 PM    X not yet back home
+MLC   11   8/8/2018 2:10:51 PM    Y not yet back home
+MLC   19   8/8/2018 2:10:51 PM    Z not yet back home
+MLC   79   8/8/2018 2:10:51 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   80   8/8/2018 2:10:51 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+Motion   25   8/8/2018 2:13:19 PM   ZAxis Positive hardware limit exceed
+Motion   18   8/8/2018 2:20:40 PM   YAxis First Negative softawre limit exceed
+Motion   17   8/8/2018 2:43:52 PM   ZAxis First Positive softawre limit exceed
+MLC   80   8/8/2018 2:52:04 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   3   8/8/2018 6:50:43 PM    X not yet back home
+MLC   11   8/8/2018 6:50:43 PM    Y not yet back home
+MLC   19   8/8/2018 6:50:43 PM    Z not yet back home
+MLC   79   8/8/2018 6:50:43 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   80   8/8/2018 6:50:43 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+Motion   17   8/8/2018 6:58:34 PM   ZAxis First Positive softawre limit exceed
+MLC   80   8/8/2018 7:13:33 PM    ALARM R44.15 EMERGENCY STOP(R44.15)PLC Alarm
+MLC   3   9/3/2018 9:36:57 AM    X not yet back home
+MLC   11   9/3/2018 9:36:57 AM    Y not yet back home
+MLC   19   9/3/2018 9:36:57 AM    Z not yet back home
+MLC   79   9/3/2018 9:36:57 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   17   9/3/2018 10:18:54 AM   ZAxis First Positive softawre limit exceed
+MLC   3   9/3/2018 1:30:02 PM    X not yet back home
+MLC   11   9/3/2018 1:30:02 PM    Y not yet back home
+MLC   19   9/3/2018 1:30:02 PM    Z not yet back home
+MLC   79   9/3/2018 1:30:02 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   9/3/2018 2:55:36 PM    X not yet back home
+MLC   11   9/3/2018 2:55:36 PM    Y not yet back home
+MLC   19   9/3/2018 2:55:36 PM    Z not yet back home
+MLC   79   9/3/2018 2:55:36 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   75   9/3/2018 3:06:14 PM    ALARM R44.10 FAILED TO FIX TOOL(R44.10)PLC Alarm
+Motion   17   9/3/2018 3:26:49 PM   ZAxis First Positive softawre limit exceed
+Motion   18   9/3/2018 3:41:25 PM   YAxis First Negative softawre limit exceed
+MLC   79   9/3/2018 3:57:57 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   79   9/3/2018 4:03:10 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   79   9/3/2018 4:04:59 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   9/4/2018 8:28:09 AM    X not yet back home
+MLC   11   9/4/2018 8:28:09 AM    Y not yet back home
+MLC   19   9/4/2018 8:28:09 AM    Z not yet back home
+MLC   79   9/4/2018 8:28:09 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   9/4/2018 8:36:30 AM    X not yet back home
+MLC   11   9/4/2018 8:36:30 AM    Y not yet back home
+MLC   19   9/4/2018 8:36:30 AM    Z not yet back home
+MLC   79   9/4/2018 8:36:30 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   79   9/4/2018 9:18:53 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   9/4/2018 5:03:16 PM    X not yet back home
+MLC   11   9/4/2018 5:03:16 PM    Y not yet back home
+MLC   19   9/4/2018 5:03:16 PM    Z not yet back home
+MLC   79   9/4/2018 5:03:16 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   23   9/4/2018 5:05:53 PM   ZAxis Fatal following error exceed
+MLC   3   9/4/2018 5:08:10 PM    X not yet back home
+MLC   11   9/4/2018 5:08:10 PM    Y not yet back home
+MLC   19   9/4/2018 5:08:10 PM    Z not yet back home
+MLC   79   9/4/2018 5:08:10 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   17   9/4/2018 5:09:41 PM   ZAxis First Positive softawre limit exceed
+Motion   17   9/4/2018 5:12:13 PM   ZAxis First Positive softawre limit exceed
+MLC   78   9/4/2018 5:12:28 PM    ALARM R44.13 M CODE EXECUTION TIMEOUT, CHECK R1(R44.13)PLC Alarm
+Motion   17   9/4/2018 5:14:27 PM   ZAxis First Positive softawre limit exceed
+MLC   3   9/5/2018 8:13:01 AM    X not yet back home
+MLC   11   9/5/2018 8:13:01 AM    Y not yet back home
+MLC   19   9/5/2018 8:13:01 AM    Z not yet back home
+MLC   79   9/5/2018 8:13:01 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   18   9/5/2018 8:15:19 AM   XAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 8:17:21 AM   XAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 8:18:27 AM   XAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 8:18:58 AM   XAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 8:27:56 AM   ZAxis First Negative softawre limit exceed
+MLC   78   9/5/2018 8:31:26 AM    ALARM R44.13 M CODE EXECUTION TIMEOUT, CHECK R1(R44.13)PLC Alarm
+Motion   18   9/5/2018 8:41:18 AM   XAxis First Negative softawre limit exceed
+Motion   17   9/5/2018 9:24:30 AM   ZAxis First Positive softawre limit exceed
+Motion   17   9/5/2018 9:38:18 AM   ZAxis First Positive softawre limit exceed
+Motion   17   9/5/2018 9:52:02 AM   ZAxis First Positive softawre limit exceed
+MLC   3   9/5/2018 10:38:47 AM    X not yet back home
+MLC   11   9/5/2018 10:38:47 AM    Y not yet back home
+MLC   19   9/5/2018 10:38:47 AM    Z not yet back home
+MLC   79   9/5/2018 10:38:47 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   9/5/2018 1:08:57 PM    X not yet back home
+MLC   11   9/5/2018 1:08:57 PM    Y not yet back home
+MLC   19   9/5/2018 1:08:57 PM    Z not yet back home
+MLC   79   9/5/2018 1:08:57 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   17   9/5/2018 2:47:11 PM   ZAxis First Positive softawre limit exceed
+Motion   17   9/5/2018 2:47:21 PM   ZAxis First Positive softawre limit exceed
+Motion   18   9/5/2018 3:32:57 PM   XAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 3:33:05 PM   YAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 3:34:00 PM   XAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 3:34:00 PM   YAxis First Negative softawre limit exceed
+Motion   18   9/5/2018 3:44:10 PM   XAxis First Negative softawre limit exceed
+MLC   3   9/6/2018 8:32:34 AM    X not yet back home
+MLC   11   9/6/2018 8:32:34 AM    Y not yet back home
+MLC   19   9/6/2018 8:32:34 AM    Z not yet back home
+MLC   79   9/6/2018 8:32:34 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   17   9/6/2018 8:38:50 AM   ZAxis First Positive softawre limit exceed
+Motion   17   9/6/2018 9:05:22 AM   ZAxis First Positive softawre limit exceed
+MLC   79   9/6/2018 11:54:00 AM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+MLC   3   9/6/2018 2:22:41 PM    X not yet back home
+MLC   11   9/6/2018 2:22:41 PM    Y not yet back home
+MLC   19   9/6/2018 2:22:41 PM    Z not yet back home
+MLC   79   9/6/2018 2:22:41 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   17   9/6/2018 2:45:52 PM   ZAxis First Positive softawre limit exceed
+Motion   18   9/6/2018 2:53:51 PM   XAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:51 PM   YAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:54 PM   XAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:54 PM   YAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:56 PM   XAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:56 PM   YAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:57 PM   XAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:57 PM   YAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:58 PM   XAxis First Negative softawre limit exceed
+Motion   18   9/6/2018 2:53:58 PM   YAxis First Negative softawre limit exceed
+Motion   17   9/6/2018 3:02:29 PM   ZAxis First Positive softawre limit exceed
+Motion   9   9/6/2018 4:21:40 PM   XAxis Servo Driver Alarm
+Motion   19   9/6/2018 4:21:41 PM   XAxis Following error exceed
+Motion   9   9/6/2018 4:21:53 PM   XAxis Servo Driver Alarm
+MLC   3   9/6/2018 4:23:02 PM    X not yet back home
+MLC   11   9/6/2018 4:23:02 PM    Y not yet back home
+MLC   19   9/6/2018 4:23:02 PM    Z not yet back home
+MLC   79   9/6/2018 4:23:02 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   9   9/6/2018 4:23:02 PM   XAxis Servo Driver Alarm
+MLC   3   9/6/2018 4:27:05 PM    X not yet back home
+MLC   11   9/6/2018 4:27:05 PM    Y not yet back home
+MLC   19   9/6/2018 4:27:05 PM    Z not yet back home
+MLC   79   9/6/2018 4:27:05 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   9   9/6/2018 4:27:05 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:08 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:09 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:09 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:10 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:10 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:11 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:11 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:12 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:13 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:13 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:13 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:14 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:15 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:16 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:16 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:17 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:17 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:19 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:19 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:20 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:21 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:39 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:46 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:46 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:47 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:47 PM   XAxis Servo Driver Alarm
+Motion   9   9/6/2018 4:29:48 PM   XAxis Servo Driver Alarm
+MLC   3   9/6/2018 4:32:37 PM    X not yet back home
+MLC   11   9/6/2018 4:32:37 PM    Y not yet back home
+MLC   19   9/6/2018 4:32:37 PM    Z not yet back home
+MLC   79   9/6/2018 4:32:37 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   9   9/6/2018 4:32:37 PM   XAxis Servo Driver Alarm
+MLC   3   9/6/2018 4:46:00 PM    X not yet back home
+MLC   11   9/6/2018 4:46:00 PM    Y not yet back home
+MLC   19   9/6/2018 4:46:00 PM    Z not yet back home
+MLC   79   9/6/2018 4:46:00 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm
+Motion   9   9/6/2018 4:46:00 PM   XAxis Servo Driver Alarm
+MLC   71   9/6/2018 4:54:20 PM    ALARM R44.6 LOOSEN & FIX TOOL SIGNAL UNUSUAL(R44.6)PLC Alarm
+MLC   79   9/6/2018 4:54:20 PM    ALARM R44.14 AIR PRESSURE NOT ENOUGH(R44.14)PLC Alarm

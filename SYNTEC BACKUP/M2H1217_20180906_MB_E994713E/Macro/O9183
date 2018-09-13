@@ -1,0 +1,20 @@
+ %@MACRO
+//双驱动为Y轴对应@432; X轴则换为@431，否则出大事故，横梁拉坏！
+
+  #2:=PARAM(3821);
+  #3:=PARAM(3822);
+  #1:=PARAM(3241);
+IF (#2=1) AND (#3=6) THEN
+  IF #1 = 0 THEN
+    G90 G53 X@431;
+  ELSEIF #1=1 THEN
+    G90 G53 X(@431/1000);
+  END_IF;
+ELSEIF (#2=2) AND (#3=6) THEN
+  IF #1 = 0 THEN
+    G90 G53 X@432;
+  ELSEIF #1=1 THEN
+    G90 G53 X(@432/1000);
+  END_IF;
+END_IF;
+M99;

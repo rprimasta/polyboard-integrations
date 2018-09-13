@@ -1,0 +1,4 @@
+MLC   3   9/6/2018 4:46:00 PM    X not yet back home
+MLC   11   9/6/2018 4:46:00 PM    Y not yet back home
+MLC   19   9/6/2018 4:46:00 PM    Z not yet back home
+Motion   9   9/6/2018 4:46:00 PM   XAxis Servo Driver Alarm

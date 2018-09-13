@@ -1,0 +1,801 @@
+Database Name: 3AXIS SYNTEC CONTROLLER
+Control      : Based on SYNTEC 6MB
+Machine      : 
+Units        : MM
+Axes Used    : XYZ
+Coord System : Absolute
+X Axis       : Normal
+Y Axis       : Normal
+Z-Axis       : Normal
+Customer     : PT. ZENITH
+Contact      : 
+Tel          : 
+Fax          : 
+Dealer Name  : 
+Post Author  : SM Livingstone
+Ver 1 Date   : 4 Mar 95
+Notes        : Example Post only, for use in training sessions.
+Edit History : 13 Mar 98 - $147 added to allow G41/42 on Rapid Approach.
+                           See remarks at $20, $25 and $147
+                5 Mar 97 - Work Plane test added. See WP_COUNT and $88
+                8 Jul 98 - Max spindle speed increased
+                4 Oct 99 - Modified to suit Nesting - uses SHN and NSH. Has different
+                            program numbers and subroutine numbers for each sheet.
+
+
+$----------------------------------------------------------------------------
+
+ Notes and remarks that are to appear in the NC code (but NOT be sent to the machine)
+ should be preceded by ' (a single apostrophe)
+ Notes and remarks that are local to the Post for your information only should be
+ preceded by ''  (TWO single apostrophes)
+
+$------------------------- PROGRAM LEADING/TRAILING LINES -------------------
+$5  $STORE, $RUN and $RECALL  - See manual Appendix A for details
+$10 File LEADING lines
+$let COORDINATE_SYSTEM = "?"
+%
+$LET DATE = DAT           ''NOTE: In $1000, DATE is set to first 9 chars only
+$IF VMR > 0
+$LET VOL_R = VMR          ''VOL_R, VOL_O and VOL_L are formatted in $1000 as Decimal numbers
+$LET VOL_O = VOM          ''with 0 figs after point for mm Posts (use 2 figs for Inch Posts)
+$LET VOL_L = VOM - VMR
+$LET VOL_REM = VOL_R      ''VOL_REM etc are formatted as Text with leading spaces to make
+$LET VOL_ORIG = VOL_O     ''field length of 10 in order to right justify the numbers.
+$LET VOL_LEFT = VOL_L
+' Volume of Original Material =[VOL_ORIG] mm3
+' Volume of Material Removed  =[VOL_REM] mm3
+' Volume of Part              =[VOL_LEFT] mm3
+$ENDIF
+
+$12 Main Program LEADING lines
+(PROGRAM NUMBER :[PROGNUM -1 + SHN])
+
+N[N] (PROGRAM PRODUCED  - [DATE]) 
+$IF NWP > 0
+(------------------------ WORK PLANES -----------------------)
+$LET WP_COUNT = 1
+$LL1
+$IF WP_COUNT > NWP GOTO LL2    '' THERE MIGHT BE NO WORK PLANES SO DO TEST HERE
+N[N] G10 L2 P[WPO(WP_COUNT)] X[GLX(WP_COUNT)], Y[GLY(WP_COUNT)], Z[GLZ(WP_COUNT)] ([WPN(WP_COUNT)])
+$LET WP_COUNT = WP_COUNT + 1
+$GOTO LL1
+$LL2
+(------------------------ END OF WORK PLANES -----------------------)
+$ENDIF
+N[N] G90 G71
+N[N] G40 G80
+N[N] G52 X0. Y0. Z0.
+
+(COORDINATE SYSTEM)
+$IF COORDINATE_SYSTEM = 0
+N[N] G54
+$ELSE
+N[N] G[COORDINATE_SYSTEM]
+$ENDIF
+$15 Main Program TRAILING lines
+$if SHN = NSH
+
+(END PROGRAM)
+N[N] G53 Z0.
+N[N] G53 X700.Y2200.
+N[N] M30
+$else
+
+(PROGRAM PAUSED)
+N[N] M0
+$endif
+$17 File TRAILING Lines
+%
+$----------------------- RAPID MOVE in XY -----------------------------------
+$20 Rapid Move in XY (MILL/ROUTER/FLAME/LASER) or XZ (LATHE) only
+$IF MC = 1     ''This will be true here only if Comp on Rapid has been selected.
+$LET COMP = TC
+''TC = Tool Comp. See $140-142. Correct one (G41 or 42) will be automatically applied.
+''COMP must be declared as a user variable in $1000
+$ELSE
+$LET COMP = ""
+$ENDIF 
+'--------------------------------------------AREA EDIT---------------------
+$IF WVF <> 0 $GOTO 102
+$ELSE $GOTO 101 
+$ENDIF 
+$LL 101
+$IF FIRST_RAPID = 1
+$LET FIRST_RAPID = 0
+N[N] G0 [COMP] X[AX] Y[AY]
+N[N] G0 G43 Z[AZ] H[T] '' G43 = Tool Length Comp, CLT = Coolant code.
+$ELSE
+N[N] G0 [COMP] X[AX] Y[AY]
+$ENDIF
+$GOTO 100
+$LL 102 
+$IF WVF = 1
+N[N] G0 [COMP] X[GAX] Y[GAY - TL]
+N[N] G0 G43 Z[AZ] H[T]
+$ELSEIF WVF = 2
+N[N] G0 [COMP] X[GAX+TL] Y[GAY]
+N[N] G0 G43 Z[AZ] H[T]
+$ELSEIF WVF = 3
+N[N] G0 [COMP] X[GAX] Y[GAY+TL]
+N[N] G0 G43 Z[AZ] H[T]
+$ELSEIF WVF = 4
+N[N] G0 [COMP] X[GAX-TL] Y[GAY]
+N[N] G0 G43 Z[AZ] H[T]
+$ENDIF
+$LL 100
+$----------------------- RAPID MOVE in XYZ ----------------------------------
+$21 3D Rapid Move in XYZ (MILL/ROUTER ONLY)
+N[N] G0 X[AX] Y[AY] Z[AZ]
+$----------------------- RAPID MOVE in Z ------------------------------------
+$25 Rapid Move in Z only (MILL etc)
+$IF FRA + MC = 2   ''FRA = First Rapid After cut. This is the Rapid UP move.
+''                   MC = 1 here only if Comp on Rapid has been selected.
+$LET COMP = TC     ''TC here will be Cancel Comp code (eg G40).
+$ELSE
+$LET COMP = ""
+$ENDIF 
+$IF FIRST_RAPID = 1 ''No NC code if this is the first move in Z after tool change.
+$ELSE
+N[N] G0 [COMP] Z[AZ]
+$ENDIF
+$----------------------------------------------------------------------------
+$30 Lines BEFORE a rapid move if Z levels are not used eg Laser or Geometry
+UP
+$----------------------------------------------------------------------------
+$35 Lines AFTER a rapid move if Z levels are not used eg Laser or Geometry
+DN
+$----------------------- MACHINING FEED MOVES -------------------------------
+$40  Machining FEED lines
+$IF MC + IN = 2  ''Comp applies to FEED MOVE, and this is LEAD-IN Line.
+''                 MC will NOT be 1 here if Comp on Rapid has been selected.
+N[N] G1 [TC] D[T+10] X[AX] Y[AY] Z[AZ] F[F]
+$ELSEIF MC + OUT = 2   '' M/C comp applies, and this is LEAD-OUT Line
+''                 MC will NOT be 1 here if Comp on Rapid has been selected.
+N[N] G1 [TC] X[AX] Y[AY] Z[AZ] F[F]
+$ELSE                 '' Applies to all other lines (with or without M/C comp).
+N[N] G1 X[AX] Y[AY] Z[AZ] F[F]
+$ENDIF
+$----------------------------------------------------------------------------
+$50 Feed CW arc (APS will automatically limit arcs to 180 degrees maximum)
+N[N] G2 X[AX] Y[AY] Z[AZ] R[R] F[F]
+$----------------------------------------------------------------------------
+$60 Feed CCW arc
+N[N] G3 X[AX] Y[AY] Z[AZ] R[R] F[F]
+$------------------------ TOOL CHANGES --------------------------------------
+$70 Cancel current tool.  Use [T] for current tool number if required.
+N[N] G0 Z[ZS]
+N[N] G53 Z0.
+N[N] G49
+N[N] G52 X0. Y0. Z0.
+$IF T > 10
+N[N] M07
+$ENDIF
+N[N] M05
+$75 Code for CLOCKWISE spindle rotation - entered into variable ROT (or RT)
+M03
+$76 Code for COUNTER-CLOCKWISE spindle rotation - entered into variable ROT
+M04
+$80 Select new tool.  Use [T] for new tool number, [S] for spindle speed.
+([OPN]. OPERATION : [OPD])
+(TOOL : [TNM] NO [T] OFS [OFS]) 
+N[N] T[T] M06         'Select tool and offset
+$IF T > 10 
+N[N] M33
+$ELSE 
+N[N] S[S] [ROT]
+$ENDIF
+$IF T > 10
+$IF T=11
+N[N] G52 X[96.+211.46] Y[-56.66] Z[0]
+$ELSEIF T=12
+N[N] G52 X[64.+211.46] Y[-56.66] Z[0]
+$ELSEIF T=13
+N[N] G52 X[32.+211.46] Y[-56.66] Z[0]
+$ELSEIF T=14
+N[N] G52 X[211.46] Y[-56.66] Z[0]'PIVOT
+$ELSEIF T=15
+N[N] G52 X[211.46] Y[32.-56.66] Z[0]
+$ELSEIF T=16
+N[N] G52 X[211.46] Y[64.-56.66] Z[0]
+$ELSEIF T=17
+N[N] G52 X[211.46] Y[96.-56.66] Z[0]
+$ELSEIF T=18
+N[N] G52 X[211.46] Y[128.-56.66] Z[0]
+$ELSEIF T=19
+N[N] G52 X[211.46] Y[192.-56.66] Z[0]
+$ELSEIF T=24
+N[N] G52 X[55+64+211.46] Y[-89.2] Z[-15.7]
+$ELSEIF T=25
+N[N] G52 X[9+211.46] Y[-89.2] Z[-15.7]
+$ELSEIF T=20
+N[N] G52 X[364.045] Y[81.7+55.] Z[-15.7]
+$ELSEIF T=21
+N[N] G52 X[364.045] Y[81.7-55.] Z[-15.7]
+$ELSEIF T=22
+N[N] G52 X[364.045-32.] Y[81.7+55.] Z[-15.7]
+$ELSEIF T=23
+N[N] G52 X[364.045-32.] Y[81.7-55.] Z[-15.7]
+$ELSEIF T=26
+N[N] G52 X[25+211.46] Y[138.78-56.66] Z[0]
+$ENDIF
+''N[N] G43 H[OFS]        'Next tool is [NT], Next XY is [NX], [NY]
+$LET FIRST_RAPID = 1
+$----------------------------------------------------------------------------
+$88 Set Current Work Plane WVF = 0 to 4 for faces of Work Volume (see Introduction)
+N[N] (WORK PLANE NAME = [WPN], OFFSET CODE = [WPO], FACE = [WVF])
+$----------------------------------------------------------------------------
+$89 Used when Tool and Work Plane are changed at the same time (and $582=2)
+' Change Tool and Work Plane at same time
+$-------------------------- SUBROUTINES ------------------------------------
+$90 CALL subroutine.  Use [SN] for subroutine number.
+N[N] M98 P[PROGNUM + SHN + SN]                  'CALL SUB [PROGNUM + SHN + SN]
+$----------------------------------------------------------------------------
+$100 BEGIN subroutine. Use [SN] for subroutine number.
+:[PROGNUM + SHN + SN]                           'BEGIN SUB [PROGNUM + SHN + SN]
+$----------------------------------------------------------------------------
+$110 END subroutine
+N[N] M99                        'END SUB [SN]
+$------------------- REFERENCE ZERO or ORIGIN SHIFT -------------------------
+$120 Origin shift. Use [OX] and [OY] for values to shift by)
+N[N] G52 X[OX] Y[OY]            'ORIGIN SHIFT
+$----------------------------------------------------------------------------
+$130 Cancel Origin shift.  [OX] and [OY] are values by which origin was shifted)
+N[N] G52 X0.0 Y0.0 Z0.0             'CANCEL ORIGIN SHIFT
+$135 Cancel Origin shift.  [OX] and [OY] are values by which origin was shifted)
+N[N] M0              'PAUSE
+$----------------------- MACHINE TOOL COMPENSATION --------------------------
+NOTE: Codes given in $140 to $142 are assigned to TC as required for each path
+$140 Code to CANCEL Machine Tool Compensation
+G40
+$141 Code for LEFT Machine Tool Compensation
+G41
+$142 Code for RIGHT Machine Tool Compensation
+G42
+$145 Percentage increase in blend radius for sharp internal corners
+0
+' Codes above will be assigned to TC for each path.
+$146 Adjust G41/42 code at internal corners for tool radius (1 = Yes 0 = No)
+1
+$147 Comp can be applied on Rapid Approach (1 = Yes  0 = No)
+1
+ ' $147=1 is only a flag to indicate that the code in $20 and $25 is correct if comp
+ ' is asked for on the rapid approach. It does NOT force this to happen. For
+ ' comp to be applied on rapid approach, the Apply Comp on Rapid Approach check
+ ' box must be set to YES for each operation. If set, MC=1 in $20 & $25 and
+ ' MC = 0 in $40, 50 and 60, so code for $40, 50 and 60 does not have to be changed
+$----------------------- COOLANT OFF/MIST/FLOOD/TOOL CODES ------------------
+ Codes in $150 to $153 are assigned to CLT as required for each path
+$150 Code to Turn Coolant OFF
+''M09
+$151 Code to apply MIST Coolant
+M07
+$152 Code to apply FLOOD Coolant
+M08
+$153 Code to apply THROUGH TOOL Coolant
+M10
+$------------------------ DRILLING/TAPPING CYCLES ---------------------------
+[ZR] = Retract level, the Z level to rapid down to before feed down begins.
+[ZB] = Z value of the bottom of the hole,   [ZP] = peck DISTANCE.
+[ZS] = Safe Rapid level,   [ZM] = Material top.     All values are ABSOLUTE.
+
+For LINEAR code use $210/211, $214/215 etc. For SUBROUTINES use $205/206 for
+X/Y values and $212/216 etc to set Z levels etc before calling the subroutine.
+
+$200 CANCEL drill/tapping cycle
+''N[N] M09    ''Turn coolant OFF
+N[N] G80
+$----------------------------------------------------------------------------
+$205 First Hole in SUBROUTINE. NOTE $205/206 apply to ALL drill/peck etc cycles
+N[N] X[AX] Y[AY]
+$206 Next holes in Subroutine
+N[N] X[AX] Y[AY]
+$----------------------------------------------------------------------------
+DRILL cycle - traverse to next hole at SAFE RAPID level [ZS]
+$210 First Hole
+$IF WVF = 1
+N[N] G0 [COMP] Z[GAZ]
+N[N] G0 [COMP] Y[GAY - TL + (ZS-ZR)] 
+N[N] G1 [COMP] Y[GAY - TL + (ZS-ZB)] F[F] 
+N[N] G0 [COMP] Y[GAY - TL]
+$ELSEIF WVF = 2
+N[N] G0 [COMP] Z[GAZ]
+N[N] G0 [COMP] X[GAX + TL - (ZS-ZR)] 
+N[N] G1 [COMP] X[GAX + TL - (ZS-ZB)] F[F]
+N[N] G0 [COMP] X[GAX + TL] 
+$ELSEIF WVF = 3
+N[N] G0 [COMP] Z[GAZ]
+N[N] G0 [COMP] Y[GAY + TL - (ZS-ZR)] 
+N[N] G1 [COMP] Y[GAY + TL - (ZS-ZB)] F[F] 
+N[N] G0 [COMP] Y[GAY + TL]
+$ELSEIF WVF = 4
+N[N] G0 [COMP] Z[GAZ]
+N[N] G0 [COMP] X[GAX - TL + (ZS-ZR)] 
+N[N] G1 [COMP] X[GAX - TL + (ZS-ZB)] F[F]
+N[N] G0 [COMP] X[GAX - TL] 
+$ELSE
+N[N] G98 G81 X[AX] Y[AY] Z[ZB] R[ZR] F[F]  ''CLT = Coolant Code
+$ENDIF
+$211 Next holes
+$IF WVF = 1
+N[N] G0 [COMP] X[GAX] Z[GAZ]
+N[N] G0 [COMP] Y[GAY - TL + (ZS-ZR)] 
+N[N] G1 [COMP] Y[GAY - TL + (ZS-ZB)] F[F] 
+N[N] G0 [COMP] Y[GAY - TL]
+$ELSEIF WVF = 2
+N[N] G0 [COMP] Y[GAY] Z[GAZ]
+N[N] G0 [COMP] X[GAX + TL - (ZS-ZR)] 
+N[N] G1 [COMP] X[GAX + TL - (ZS-ZB)] F[F]
+N[N] G0 [COMP] X[GAX + TL] 
+$ELSEIF WVF = 3
+N[N] G0 [COMP] X[GAX] Z[GAZ]
+N[N] G0 [COMP] Y[GAY + TL - (ZS-ZR)] 
+N[N] G1 [COMP] Y[GAY + TL - (ZS-ZB)] F[F] 
+N[N] G0 [COMP] Y[GAY + TL]
+$ELSEIF WVF = 4
+N[N] G0 [COMP] Y[GAY] Z[GAZ]
+N[N] G0 [COMP] X[GAX - TL + (ZS-ZR)] 
+N[N] G1 [COMP] X[GAX - TL + (ZS-ZB)] F[F]
+N[N] G0 [COMP] X[GAX - TL] 
+$ELSE
+N[N] G98 G81 X[AX] Y[AY] Z[ZB] R[ZR] F[F]
+$ENDIF
+$212 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G98 G81 Z[ZB] R[ZR] F[F]
+$----------------------------------------------------------------------------
+DRILL cycle - traverse to next hole at RETRACT level [ZR]
+$214 First Hole
+N[N] G99 G81 X[AX] Y[AY] Z[ZB] R[ZR] F[F] [CLT]  ''CLT = Coolant Code
+$215 Next holes
+N[N] X[AX] Y[AY]
+$216 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G99 G81 Z[ZB] R[ZR] F[F] [CLT]
+$----------------------------------------------------------------------------
+PECKING cycle - traverse to next hole at SAFE RAPID level [ZS]
+$220 First hole
+N[N] G98 G83 X[AX] Y[AY] Z[ZB] R[ZR] Q[ZP] F[F] [CLT]  ''CLT = Coolant Code
+$221 Next holes
+N[N] X[AX] Y[AY]
+$222 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G98 G83 Z[ZB] R[ZR] Q[ZP] F[F] [CLT]
+$----------------------------------------------------------------------------
+PECKING cycle - traverse to next hole at RETRACT level [ZR]
+$224 First hole
+N[N] G99 G83 X[AX] Y[AY] Z[ZB] R[ZR] Q[ZP] F[F] [CLT]  ''CLT = Coolant Code
+$225 Next holes
+N[N] X[AX] Y[AY]
+$226 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G99 G83 Z[ZB] R[ZR] Q[ZP] F[F] [CLT]
+$----------------------------------------------------------------------------
+TAPPING cycle - traverse to next hole at SAFE RAPID level [ZS]
+$230 First hole
+N[N] G98 G84 X[AX] Y[AY] Z[ZB] R[ZR] F[F] [CLT] ''CLT = Coolant Code
+$231 Next holes
+N[N] X[AX] Y[AY]
+$232 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G98 G84 Z[ZB] R[ZR] F[F] [CLT]
+$----------------------------------------------------------------------------
+TAPPING cycle -  traverse to next hole at RETRACT level [ZR]
+$234 First hole
+N[N] G99 G84 X[AX] Y[AY] Z[ZB] R[ZR] F[F] [CLT]   ''CLT = Coolant Code
+$235 Next holes
+N[N] X[AX] Y[AY]
+$236 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G99 G84 Z[ZB] R[ZR] F[F] [CLT]
+$----------------------------------------------------------------------------
+BORING/REAMING/SPOT FACE etc - traverse to next hole at SAFE RAPID level [ZS]
+$240 First Hole
+N[N] G98 G82 X[AX] Y[AY] Z[ZB] R[ZR] P[DW] F[F] [CLT]  ''CLT = Coolant Code
+$241 Next holes
+N[N] X[AX] Y[AY]
+$242 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G98 G82 Z[ZB] R[ZR] P[DW] F[F] [CLT]
+$----------------------------------------------------------------------------
+BORING/REAMING/SPOT FACE etc - traverse to next hole at RETRACT level [ZS]
+$244 First Hole
+N[N] G99 G82 X[AX] Y[AY] Z[ZB] R[ZR] P[DW] F[F] [CLT]  ''CLT = Coolant Code
+$245 Next holes
+N[N] X[AX] Y[AY]
+$246 Set PARAMETERS before Subroutine call (APS will insert Subroutine call)
+N[N] G99 G82 Z[ZB] R[ZR] P[DW] F[F] [CLT]
+$-------------------------- GENERAL FORMATS ---------------------------------
+Separate modal values with spaces.  More than one letter is OK eg X VX VY
+$500 Modal Text  (Will not be repeated in following lines)
+G0 G1 G2 G3
+$502 Modal ABSOLUTE Values (Will not be repeated if the VALUE is the same)
+X Y Z F
+$504 Modal INCREMENTAL Values (Will not be put into NC code if VALUE is ZERO)
+I J
+$510 X Y Z I J K values must have + as well as - signs (1 = Yes, 0 = no)
+0
+$515 Use point <.> as decimal separator (1 = Yes, 0 = use comma <,>)
+1
+$520 Put sub-routines at end of main program (1 = Yes, 0 = put at start)
+1
+$525 Quadrant Limit arcs (1 = Yes, 0 = Standard APS 180 degree limit)
+0
+$526 Output arcs as one move (1 = Yes, 0 = No - split arcs >= 180)
+0
+$527 Output HELICAL (XYZ) arcs as straight line segments (1 = Yes, 0 = No)
+0
+' 530 Determines which PLANAR arcs are output as straight line segments. 
+$530 0=None, 1=All, 2=All Except Horizontal (XY), 3=Except Horizontal and Vertical (YZ or XZ)
+0
+$531 Maximum Arc Radius - arcs will be output as straight lines if radius >
+0
+$532 If arcs are straight line segments, give chord error (mm or inches)
+.1
+$540 Suppress Operations List, START and Comments in NC code (1 = Yes, 0 = No)
+1
+'Set $560 - $580 all to 0 if machine is 3-axis.
+$560 4/5 axis Programming point: (1 = pivot, 0 = tool tip)
+0
+$562 4/5 axis Tool C/L offset from pivot point in X
+0
+$563 4/5 axis Tool C/L offset from pivot point in Y
+0
+$565 4/5 axis Tool holder length
+0
+$570 4/5 axis Max angle (degrees). Set to 0 to indicate 3 - axis machine.
+0
+$580 Use Multi-Planes or Multi-Datums (1 = Yes, 0 = No)
+1
+$582 Multi-Plane or Datums: Select Work Plane BEFORE/AFTER Tool Change
+0
+'582 is for when Work Plane and Tool are changed AT SAME TIME
+'    0 = Select Tool before Work Plane        (Use $80 then $88)
+'    1 = Select Work Plane before Tool Change (Use $88 then $80)
+'    2 = Change both at same time             (Use $89 only)
+$584 Orientation of Local X or Y axis. 0=Don't care, 1=X Horizontal, 2=Y Horizontal
+0
+$-------------------------- NUMBER FORMATS ----------------------------------
+$700 SUBROUTINE Number format
+6
+$701 Leading figures
+0
+$702 Figures after point
+0
+$705 Subroutine start number
+1
+$----------------------------------------------------------------------------
+$710 LINE NUMBER format
+6
+$711 Leading figures
+0
+$712 Figures after point
+0
+$715 Line start number
+10
+$716 Line number increment
+10
+$----------------------------------------------------------------------------
+$720 X Y Z values format
+2
+$721 Leading figures
+0
+$722 Figures after point
+3
+$----------------------------------------------------------------------------
+$730 ARC centre/radius format
+2
+$731 Leading figures
+0
+$732 Figures after point
+3
+$----------------------------------------------------------------------------
+$740 SPINDLE SPEED format
+6
+$741 Leading figures
+0
+$742 Figures after point
+0
+$743 Maximum Spindle Speed
+24000
+$744 Fixed Speeds (eg 100, 200, 1000, 2000 ...      0 = speed is variable)
+0
+$NOTE: Fixed speeds can use more than one line. 80 chars per line maximum
+       APS will select the nearest lower value to the calculated value.
+       $745 below only applies if $744 is 0 - ie variable speed range.
+$745 Round Speed Up/Down to Nearest: (.1 or 1 or 10 ...  0 = don't round)
+100
+$----------------------------------------------------------------------------
+$750 MACHINING FEED format
+6
+$751 Leading figures
+0
+$752 Figures after point
+0
+$753 Maximum Feed Rate (Use mm/min or in/min. APS will convert)
+10000  mm/min
+$755 Round Feed Up/Down to Nearest: (.1 or 1 or 10 ...  0 = don't round)
+100
+$----------------------------------------------------------------------------
+$760 TOOL NUMBER format
+7
+$761 Leading figures
+2
+$762 Figures after point
+0
+$------------------------ RAPIDS and TOOL CHANGE TIMES ----------------------
+Put mm/min or in/min. AlphaCAM will convert
+$900 XY Rapid Speed
+1500 mm/min
+$901 Z Rapid Speed
+1500 mm/min
+$902 Time to change tool (seconds)
+10
+$--------------------------- USER VARIABLES ---------------------------------
+ALL user variables must be declared. Variable names can be up to 20 chars.
+Prompts can be up to 50 chars max and can include a default inside < >.
+Put (" ") as format for a text variable. Put ( ) as the format of any numeric
+variable which is to have the same format as X Y (Z) moves. If a different
+format is required, put (Format, Lead figs, Trail figs) eg (6,0,0) = Integer.
+
+$1000  VARIABLE  (format)  "Prompt  <default>"  '' Remark for your info.
+PROGNUM (7,4,0) "Program Number"       ''Integer with up to 4 lead zeros
+COORDINATE_SYSTEM (7,2,0) "SET PROGRAM COORDINATE SYSTEM G5X (EX. 54/55/56) ?"
+MY_NAME (" ") "Programmer <J Smith>"   ''Text - free format
+DATE ("9")                             ''DATE only (not Time) required
+SAFE_Z  ( ) "Safe Z Level <5>"         ''Output with same format as X Y moves
+HEAD (6,0,0) "New Head Number"         ''Normal Integer
+WEIGHT ( )                             ''No prompt - only used in calculations
+DENSITY ( ) "Density Kg/cu M <7800>"
+THICKNESS ( ) "Material Thickness"
+OPMSG (" ") "Operator Message <this is a msg>"
+INDEX (" ") = "M57  'Index Pallet"     '' = means initial value (not prompt)
+HOLE_DEPTH ( ) "Hole DEPTH"
+DWELL (6,0,0) "DWELL Time (sec) <1>"   ''Default value 1 will be in dialog box
+DRILL_FEED (6,0,0) "Drill FEED"        ''Normal Integer
+DRILL_DIAM ( ) "Drill Diameter"        ''Free format - any number accepted
+DRILL_SPEED (6,0,0)                    ''Normal Integer
+TOOL_NUM (7,2,0) "Tool Number T"       ''Integer with up to 2 leading zeros
+TOOL_DIAM ( )  "Tool DIAM"             ''Free format - any number accepted
+END_DEPTH ( )  "End Depth for Ramp"
+SAFE_Z_RAPID ( ) "Safe Z Rapid Height <50>"
+RAP_DOWN ( ) "Rapid Down To <5>"
+FEED_DOWN ( ) "Feed Down To <-10>"
+PITCH ( ) "Pitch <2>"
+CUT_FEED (6,0,0) "Cut FEED"            ''Normal Integer
+XSTART ()
+YSTART ()
+ARC_XCEN ()
+ARC_YCEN ()
+XDIFF ()
+YDIFF ()
+COSINE ()
+SINE ()
+FRACTION ()
+ANGLE ()
+TOOL (8,4,0)
+WP_COUNT (6,0,0)
+COMP ("")                             ''Used for setting Comp ON/OFF
+FIRST_RAPID ( )
+VOL_R (3,0,0)        ''Temporary variables to get formatting correct -
+VOL_O (3,0,0)        ''Decimal, with no point or zero if integer.
+VOL_L (3,0,0)        ''(3,0,0) for Metric Posts, (3,0,2) for Inch posts
+VOL_REM ("_10")      ''Number Format is 0 Trailing Figures with Leading SPACES
+VOL_ORIG ("_10")     ''to make up the Leading Figures to a field size of 10.
+VOL_LEFT ("_10")
+$-------------------------- USER PRE-DEFINED CODE -------------------------------
+This section applies only to TOOLPATHS (not geometries). Any $number in the
+range $1100 - $1149 can be used for each definition. First line after $number
+appears in the first dialog box. Next lines up to $ line are variables with
+prompts (which must be declared in $1000) which are to appear in second dialog
+box. Lines up to next $ line will be added or inserted on any toolpath.
+
+$1100
+Operator Message
+OPMSG
+$ -------------------------     NC lines to be entered into program follow
+N[N] ([OPMSG])
+$ -------------------------     ends $1100 user defined code
+$1101
+Index Pallet
+$ -------------------------     NC lines to be entered into program follow
+N[N] M05
+N[N] [INDEX]
+$ -------------------------     ends $1101 user defined code
+$1102 Calculate Parts Weight
+Weight of Parts
+DENSITY
+THICKNESS
+$ -------------------------   NC lines to be entered into program follow
+$LET WEIGHT = THICKNESS * AR * DENSITY / 1e9
+N[N] (               Parts Weight is [WEIGHT] kg)
+$ -------------------------     ends $1102 user defined code
+
+$-------------------------- USER DEFINED CYCLES -------------------------------
+This section applies only to GEOMETRIES (not toolpaths). Use for machine or
+work specific NC code (eg canned cycles) which require geometry coordinates.
+Any $number in the range $1200 - $1249 can be used for each definition. First
+line after $number appears in the first dialog box. Next lines up to first $
+are variables with prompts (which must be declared in $1000) which are to
+appear in second dialog box. Lines up to next $ line will be added at the end
+of NC program so far created.
+
+$1200  This asks for one hole only    ''This is a Post remark only
+Single Hole Drill + Dwell
+SAFE_Z                              '') These variables will be asked
+HOLE_DEPTH                          '') for in the second dialog box.
+DWELL                               '') All must be declared in $1000.
+$ -------------------------     NC lines to be entered into program follow
+$SELECT_TOOL
+'' Tool dialog box provides Tool Number T, Tool Diam TD, Tool Length TL,
+'' Offset OFS, Feed Down FD, Feed Cut FC and Spindle Speed S
+T=[T]  TD=[TD]  TL=[TL]  OFS=[OFS]  FD=[FD]  FC=[FC]  S=[S]
+$PICK_CIRCLE   Pick One Circle   '' Pick One Circle  will appear on bottom line
+N[N] (DRILL WITH DWELL: DRILL DIAM = [TD] ''[TD] is extracted from tool dialog box
+N[N] S[S]                         ''[S] is extracted from tool dialog box
+N[N] G0 Z[SAFE_Z]
+N[N] X[XC] Y[YC]
+N[N] G1 Z[HOLE_DEPTH] F[FD]      ''[FD] is extracted from tool dialog box
+N[N] G4 X[DWELL]
+N[N] G0 Z[SAFE_Z]
+$ -------------------------     ends $1200 user defined cycle
+
+
+$1201  This uses $GOTO and LABELS
+Multiple Drill + Dwell
+SAFE_Z
+HOLE_DEPTH
+DWELL
+$ -------------------------     NC lines to be entered into program follow
+$SELECT_TOOL
+N[N] (MULTI DRILL WITH DWELL: DRILL DIAM = [TD]  DWELL = [dwell])
+''                     Any lines which are above the $PICK line will be added
+''                     to the NC code one time only for the complete section
+$PICK_CIRCLES  Drill + Dwell        ''Drill + Dwell appears on bottom line
+$IF RAD >= TD/2 GOTO 1   ''13 Mar 94: Cannot use $IF or $LET with APS variables yet
+$MSG Drill is too big for hole
+$GOTO 99
+$LL 1
+N[N] G0 Z[SAFE_Z]
+N[N] X[XC] Y[YC]
+N[N] G1 Z[HOLE_DEPTH] F[FD]
+N[N] G4 X[DWELL]
+$LL 99
+$END_PICK
+N[N] G0 Z[SAFE_Z]
+$ -------------------------     ends $1201 user defined cycle
+
+$1205  This uses $IF / $ELSE / $ENDIF
+Ramp Down Along Lines
+$MSG
+This ramps tool down from zero to
+given depth along selected lines.
+$
+SAFE_Z
+END_DEPTH
+$ -------------------------     NC lines to be entered into program follow
+$SELECT_TOOL
+$PICK_LINES            ''No prompt, so $PICK_LINES appears on bottom line
+$IF LEN < TD
+$MSG Line is too short for this tool
+$ELSE
+N[N] G0 Z[SAFE_Z]
+N[N] X[X1] Y[Y1]
+N[N] Z[TD/10]
+N[N] G1 Z0. F[FD]
+N[N] G1 X[X2] Y[Y2] Z[END_DEPTH] F[FC]
+$ENDIF
+$END_PICK
+N[N] G0 Z[SAFE_Z]
+$ -------------------------     ends $1205 user defined cycle
+
+$1206
+Helical Milling 1 Pitch
+SAFE_Z_RAPID 
+RAP_DOWN 
+FEED_DOWN
+PITCH
+$ ------------------- NC CODE STARTS HERE
+$SELECT_TOOL
+N[N] G00 Z[SAFE_Z_RAPID]
+$PICK_CIRCLES SELECT CIRCLES FOR THREADING
+$IF I_O = 1 GOTO 10           ''GHOST TOOL INSIDE
+$IF I_O = -1 GOTO 20          ''GHOST TOOL OUTSIDE
+$GOTO 99
+$LL10                         ''INTERNAL THREAD
+$IF CW = 1                 ''RIGHT HAND THREAD
+N[N] G00 X[XC] Y[YC]
+N[N] G00 Z[RAP_DOWN]
+N[N] G01 Z[FEED_DOWN] F[FC]
+N[N] G01 X[XC+(RAD-TD/2)*0.9] Y[YC+(RAD-TD/2)*0.1] F[FC]
+N[N] G03 X[XC] Y[YC+RAD-TD/2] Z[FEED_DOWN+PITCH/4] R[(RAD-TD/2)*0.9]
+N[N] G03 X[XC] Y[YC-RAD+TD/2] Z[FEED_DOWN+PITCH*0.75] R[RAD-TD/2]
+N[N] G03 X[XC] Y[YC+RAD-TD/2] Z[FEED_DOWN+PITCH*1.25] R[RAD-TD/2]
+N[N] G03 X[XC-(RAD-TD/2)*0.9] Y[YC+(RAD-TD/2)*0.1] Z[FEED_DOWN+PITCH*1.5] R[(RAD-TD/2)*0.9]
+N[N] G00 X[XC] Y[YC]
+N[N] G00 Z[SAFE_Z_RAPID]
+$ELSEIF CW=0            ''LEFT HAND THREAD
+N[N] G00 X[XC] Y[YC]
+N[N] G00 Z[RAP_DOWN]
+N[N] G01 Z[FEED_DOWN] F[FC]
+N[N] G01 X[XC-(RAD-TD/2)*0.9] Y[YC+(RAD-TD/2)*0.1] F[FC]
+N[N] G02 X[XC] Y[YC+RAD-TD/2] Z[FEED_DOWN+PITCH/4] R[(RAD-TD/2)*0.9]
+N[N] G02 X[XC] Y[YC-RAD+TD/2] Z[FEED_DOWN+PITCH*0.75] R[RAD-TD/2]
+N[N] G02 X[XC] Y[YC+RAD-TD/2] Z[FEED_DOWN+PITCH*1.25] R[RAD-TD/2]
+N[N] G02 X[XC+(RAD-TD/2)*0.9] Y[YC+(RAD-TD/2)*0.1] Z[FEED_DOWN+PITCH*1.5] R[(RAD-TD/2)*0.9]
+N[N] G00 X[XC] Y[YC]
+N[N] G00 Z[SAFE_Z_RAPID]
+$ENDIF
+$GOTO 100
+$LL20                           ''EXTERNAL THREADS
+$IF CW=1                 ''RIGHT HAND THREAD
+N[N] G00 X[XC+(RAD+TD/2)*0.1] Y[YC+(RAD+TD/2)*1.1]
+N[N] G00 Z[RAP_DOWN]
+N[N] G01 Z[FEED_DOWN] F[FC]
+N[N] G02 X[XC] Y[YC+RAD+TD/2] R[(RAD+TD/2)*0.1]
+N[N] G02 X[XC] Y[YC-RAD-TD/2] Z[FEED_DOWN+PITCH*0.5] R[RAD+TD/2]
+N[N] G02 X[XC] Y[YC+RAD+TD/2] Z[FEED_DOWN+PITCH] R[RAD+TD/2]
+N[N] G02 X[XC-(RAD+TD/2)*0.1] Y[YC+(RAD+TD/2)*1.1] R[(RAD+TD/2)*0.1]
+N[N] G00 Z[SAFE_Z_RAPID]
+$ELSEIF CW=0            ''LEFT HAND THREAD
+N[N] G00 X[XC-(RAD+TD/2)*0.1] Y[YC+(RAD+TD/2)*1.1]
+N[N] G00 Z[RAP_DOWN]
+N[N] G01 Z[FEED_DOWN] F[FC]
+N[N] G03 X[XC] Y[YC+RAD+TD/2] R[(RAD+TD/2)*0.1]
+N[N] G03 X[XC] Y[YC-RAD-TD/2] Z[FEED_DOWN+PITCH*0.5] R[RAD+TD/2]
+N[N] G03 X[XC] Y[YC+RAD+TD/2] Z[FEED_DOWN+PITCH] R[RAD+TD/2]
+N[N] G03 X[XC+(RAD+TD/2)*0.1] Y[YC+(RAD+TD/2)*1.1] R[(RAD+TD/2)*0.1]
+N[N] G00 Z[SAFE_Z_RAPID]
+$ENDIF
+$GOTO 100
+$LL99
+$MSG TOOL DIRECTION MUST BE INSIDE OR OUTSIDE
+$LL100
+$END_PICK
+$ -------------------------     ends $1206 user defined cycle
+
+$1208
+Circle with MAHO G43 Lead-In
+SAFE_Z_RAPID
+RAP_DOWN
+HOLE_DEPTH
+$ -------------------------     NC lines to be entered into program follow
+N[N] (MAHO CIRCLE)
+$SELECT_TOOL
+'' Tool dialog box provides Tool Number T, Tool Diam TD, Tool Length TL,
+'' Offset OFS, Feed Down FD, Feed Cut FC and Spindle Speed S
+T=[T]  TD=[TD]  TL=[TL]  OFS=[OFS]  FD=[FD]  FC=[FC]  S=[S]
+$PICK_CIRCLES "Pick Circles for MAHO G43"
+N[N] (CENTRE = [XC], [YC])
+N[N] (CW = [CW], RAD = [RAD])
+$LET FRACTION = .8
+$IF CW = 1
+$LET ANGLE = 30.
+$ELSE
+$LET ANGLE = -30.
+$ENDIF
+$LET COSINE = COS(ANGLE)
+$LET SINE = SIN(ANGLE)
+$LET ARC_XCEN = XC + (X1 - XC) * (1. - FRACTION)
+$LET ARC_YCEN = YC + (Y1 - YC) * (1. - FRACTION)
+$LET XDIFF = X1 - ARC_XCEN
+$LET YDIFF = Y1 - ARC_YCEN
+$LET XSTART = ARC_XCEN + XDIFF * COSINE - YDIFF * SINE
+$LET YSTART = ARC_YCEN + XDIFF * SINE + YDIFF * COSINE
+N[N] G00 Z[SAFE_Z_RAPID]
+N[N] X[ARC_XCEN] Y[ARC_YCEN]
+N[N] Z[RAP_DOWN]
+N[N] G01 Z[HOLE_DEPTH] F[FD]
+N[N] G01 G43 X[XSTART] Y[YSTART] F[FC] S[S]
+$IF CW = 1
+N[N] G02 G42 X[X1] Y[Y1] R[RAD * FRACTION]
+N[N] G02 X[XC + XC - X1] Y[YC + YC - Y1] R[RAD]
+N[N] G02 X[X1] Y[Y1] R[RAD]
+$ELSE
+N[N] G03 G41 X[X1] Y[Y1] R[RAD * FRACTION]
+N[N] G03 X[XC + XC - X1] Y[YC + YC - Y1] R[RAD]
+N[N] G03 X[X1] Y[Y1] R[RAD]
+$ENDIF
+N[N] G40
+N[N] G02 X[ARC_XCEN] Y[ARC_YCEN] R[(RAD * FRACTION)/2]
+N[N] G00 Z[SAFE_Z_RAPID]
+$END_PICK
+$CANCEL_TOOL
+'' $CANCEL_TOOL forces APS to display tool and Feeds/Speeds dialog box
+'' even the tool is the same as the previous tool used.
+$ -------------------------     ends $1208 user defined cycle
+
+$ ---------------------- End of Post

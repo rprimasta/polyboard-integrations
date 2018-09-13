@@ -1,0 +1,20 @@
+<XMLRegistry>
+  <ComputerInfo>
+    <MachineID>
+    </MachineID>
+    <Location>
+    </Location>
+    <RemoteUrl>
+    </RemoteUrl>
+    <NetWorkPlaceList>
+      <NetWorkPlace>
+        <LocalName>CNC</LocalName>
+        <RemoteName>\\GIGABYTE-PC\PUBLIC</RemoteName>
+        <UserName>
+        </UserName>
+        <Password>
+        </Password>
+      </NetWorkPlace>
+    </NetWorkPlaceList>
+  </ComputerInfo>
+</XMLRegistry>

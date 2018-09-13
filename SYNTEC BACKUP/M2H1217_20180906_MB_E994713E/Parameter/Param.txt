@@ -1,0 +1,2843 @@
+System Version: 1011601622
+No	Value		Title
+1	512		*Motion board base address
+3	512		*I/O board base address
+5	12		*I/O type(0:EIO;1:H+3R1;2:H+R2+2R1;3:2R2+4R1)
+9	7		*Servo type(1:S4;2:S4+A;3:S4+B;5:S6;6:60IA;101:DELTA;102:M2)
+10	1		*Servo alarm contact type(0:A;1:B;2:Disable)
+11	0		*Servo board clock source(0:Board;1:Bus;2:VIA)
+12	500		*Servo6 max. pulse rate(Kpps)
+13	1		*The number of servo board
+14	0		*Abs encoder type(0:Mitsubishi;1:SANYO)
+15	1		the I/O board digital filter method
+17	2		*Control precision,BLU(1:10;2:1;3:0.1 micro)
+21	1		*Port no. for X axis
+22	2		*Port no. for Y axis
+23	3		*Port no. for Z axis
+24	0		*Port no. for 4th axis
+25	0		*Port no. for 5th axis
+26	0		*Port no. for 6th axis
+27	0		*Port no. for 7th axis
+28	0		*Port no. for 8th axis
+29	0		*Port no. for 9th axis
+30	0		*Port no. for 10th axis
+31	0		*Port no. for 11th axis
+32	0		*Port no. for 12th axis
+33	0		*Port no. for 13th axis
+34	0		*Port no. for 14th axis
+35	0		*Port no. for 15th axis
+36	0		*Port no. for 16th axis
+41	0		X axis motor polarity
+42	0		Y axis motor polarity
+43	0		Z axis motor polarity
+44	0		4th axis motor polarity
+45	0		5th axis motor polarity
+46	0		6th axis motor polarity
+47	0		7th axis motor polarity
+48	0		8th axis motor polarity
+49	0		9th axis motor polarity
+50	0		10th axis motor polarity
+51	0		11th axis motor polarity
+52	0		12th axis motor polarity
+53	0		13th axis motor polarity
+54	0		14th axis motor polarity
+55	0		15th axis motor polarity
+56	0		16th axis motor polarity
+61	2500		X axis encoder resolution(En:p/rev;Sc:p/mm)
+62	2500		Y axis encoder resolution(En:p/rev;Rl:p/mm)
+63	2500		Z axis encoder resolution(En:p/rev;Rl:p/mm)
+64	2500		4th axis encoder resolution(En:p/rev;Rl:p/mm)
+65	1000		5th axis encoder resolution(En:p/rev;Rl:p/mm)
+66	1000		6th axis encoder resolution(En:p/rev;Rl:p/mm)
+67	1000		7th axis encoder resolution(En:p/rev;Rl:p/mm)
+68	1000		8th axis encoder resolution(En:p/rev;Rl:p/mm)
+69	1000		9th axis encoder resolution(En:p/rev;Rl:p/mm)
+70	1000		10th axis encoder resolution(En:p/rev;Rl:p/mm)
+71	1000		11th axis encoder resolution(En:p/rev;Rl:p/mm)
+72	1000		12th axis encoder resolution(En:p/rev;Rl:p/mm)
+73	1000		13th axis encoder resolution(En:p/rev;Rl:p/mm)
+74	1000		14th axis encoder resolution(En:p/rev;Rl:p/mm)
+75	1000		15th axis encoder resolution(En:p/rev;Rl:p/mm)
+76	1000		16th axis encoder resolution(En:p/rev;Rl:p/mm)
+81	4		X axis encoder scaling factor
+82	4		Y axis encoder scaling factor
+83	4		Z axis encoder scaling factor
+84	4		4th axis encoder scaling factor
+85	4		5th axis encoder scaling factor
+86	4		6th axis encoder scaling factor
+87	4		7th axis encoder scaling factor
+88	4		8th axis encoder scaling factor
+89	4		9th axis encoder scaling factor
+90	4		10th axis encoder scaling factor
+91	4		11th axis encoder scaling factor
+92	4		12th axis encoder scaling factor
+93	4		13th axis encoder scaling factor
+94	4		14th axis encoder scaling factor
+95	4		15th axis encoder scaling factor
+96	4		16th axis encoder scaling factor
+101	200		X axis motor gain(RPM/V)
+102	200		Y axis motor gain(RPM/V)
+103	200		Z axis motor gain(RPM/V)
+104	200		4th axis motor gain(RPM/V)
+105	200		5th axis motor gain(RPM/V)
+106	200		6th axis motor gain(RPM/V)
+107	200		7th axis motor gain(RPM/V)
+108	200		8th axis motor gain(RPM/V)
+109	200		9th axis motor gain(RPM/V)
+110	200		10th axis motor gain(RPM/V)
+111	200		11th axis motor gain(RPM/V)
+112	200		12th axis motor gain(RPM/V)
+113	200		13th axis motor gain(RPM/V)
+114	200		14th axis motor gain(RPM/V)
+115	200		15th axis motor gain(RPM/V)
+116	200		16th axis motor gain(RPM/V)
+121	10		X axis gear number at screw side
+122	1		X axis gear number at motor side
+123	10		Y axis gear number at screw side
+124	1		Y axis gear number at motor side
+125	1		Z axis gear number at screw side
+126	1		Z axis gear number at motor side
+127	1		4th axis gear number at screw side
+128	1		4th axis gear number at motor side
+129	1		5th axis gear number at screw side
+130	1		5th axis gear number at motor side
+131	1		6th axis gear number at screw side
+132	1		6th axis gear number at motor side
+133	1		7th axis gear number at screw side
+134	1		7th axis gear number at motor side
+135	1		8th axis gear number at screw side
+136	1		8th axis gear number at motor side
+137	1		9th axis gear number at screw side
+138	1		9th axis gear number at motor side
+139	1		10th axis gear number at screw side
+140	1		10th axis gear number at motor side
+141	1		11th axis gear number at screw side
+142	1		11th axis gear number at motor side
+143	1		12th axis gear number at screw side
+144	1		12th axis gear number at motor side
+145	1		13th axis gear number at screw side
+146	1		13th axis gear number at motor side
+147	1		14th axis gear number at screw side
+148	1		14th axis gear number at motor side
+149	1		15th axis gear number at screw side
+150	1		15th axis gear number at motor side
+151	1		16th axis gear number at screw side
+152	1		16th axis gear number at motor side
+161	116678		X axis pitch amount(BLU)
+162	116678		Y axis pitch amount(BLU)
+163	10000		Z axis pitch amount(BLU)
+164	360000		4th axis pitch amount(BLU)
+165	5000		5th axis pitch amount(BLU)
+166	5000		6th axis pitch amount(BLU)
+167	5000		7th axis pitch amount(BLU)
+168	5000		8th axis pitch amount(BLU)
+169	5000		9th axis pitch amount(BLU)
+170	5000		10th axis pitch amount(BLU)
+171	5000		11th axis pitch amount(BLU)
+172	5000		12th axis pitch amount(BLU)
+173	5000		13th axis pitch amount(BLU)
+174	5000		14th axis pitch amount(BLU)
+175	5000		15th axis pitch amount(BLU)
+176	5000		16th axis pitch amount(BLU)
+181	60		X axis servo loop gain(1/sec)
+182	60		Y axis servo loop gain(1/sec)
+183	60		Z axis servo loop gain(1/sec)
+184	60		4th axis servo loop gain(1/sec)
+185	30		5th axis servo loop gain(1/sec)
+186	30		6th axis servo loop gain(1/sec)
+187	30		7th axis servo loop gain(1/sec)
+188	30		8th axis servo loop gain(1/sec)
+189	30		9th axis servo loop gain(1/sec)
+190	30		10th axis servo loop gain(1/sec)
+191	30		11th axis servo loop gain(1/sec)
+192	30		12th axis servo loop gain(1/sec)
+193	30		13th axis servo loop gain(1/sec)
+194	30		14th axis servo loop gain(1/sec)
+195	30		15th axis servo loop gain(1/sec)
+196	30		16th axis servo loop gain(1/sec)
+201	0		*X axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+202	0		*Y axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+203	0		*Z axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+204	0		*4th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+205	0		*5th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+206	0		*6th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+207	0		*7th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+208	0		*8th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+209	0		*9th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+210	0		*10th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+211	0		*11th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+212	0		*12th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+213	0		*13th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+214	0		*14th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+215	0		*15th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+216	0		*16th axis sensor type(0:Enc;1:Ruler;2:No;3:Abs)
+221	0		X axis type(0:Linear;1-5:Rotation Type A-E)
+222	0		Y axis type(0:Linear;1-5:Rotation Type A-E)
+223	0		Z axis type(0:Linear;1-5:Rotation Type A-E)
+224	1		4th axis type(0:Linear;1-5:Rotation Type A-E)
+225	0		5th axis type(0:Linear;1-5:Rotation Type A-E)
+226	0		6th axis type(0:Linear;1-5:Rotation Type A-E)
+227	0		7th axis type(0:Linear;1-5:Rotation Type A-E)
+228	0		8th axis type(0:Linear;1-5:Rotation Type A-E)
+229	0		9th axis type(0:Linear;1-5:Rotation Type A-E)
+230	0		10th axis type(0:Linear;1-5:Rotation Type A-E)
+231	0		11th axis type(0:Linear;1-5:Rotation Type A-E)
+232	0		12th axis type(0:Linear;1-5:Rotation Type A-E)
+233	0		13th axis type(0:Linear;1-5:Rotation Type A-E)
+234	0		14th axis type(0:Linear;1-5:Rotation Type A-E)
+235	0		15th axis type(0:Linear;1-5:Rotation Type A-E)
+236	0		16th axis type(0:Linear;1-5:Rotation Type A-E)
+241	0		*X axis dual feedback related to port no.
+242	0		*Y axis dual feedback related to port no.
+243	0		*Z axis dual feedback related to port no.
+244	0		*4th axis dual feedback related to port no.
+245	0		*5th axis dual feedback related to port no.
+246	0		*6th axis dual feedback related to port no.
+247	0		*7th axis dual feedback related to port no.
+248	0		*8th axis dual feedback related to port no.
+249	0		*9th axis dual feedback related to port no.
+250	0		*10th axis dual feedback related to port no.
+251	0		*11th axis dual feedback related to port no.
+252	0		*12th axis dual feedback related to port no.
+253	0		*13th axis dual feedback related to port no.
+254	0		*14th axis dual feedback related to port no.
+255	0		*15th axis dual feedback related to port no.
+256	0		*16th axis dual feedback related to port no.
+261	250		X axis dual feedback res.(En:p/rev;Sc:p/mm)
+262	250		Y axis dual feedback res.(En:p/rev;Sc:p/mm)
+263	250		Z axis dual feedback res.(En:p/rev;Sc:p/mm)
+264	250		4th axis dual feedback res.(En:p/rev;Sc:p/mm)
+265	250		5th axis dual feedback res.(En:p/rev;Sc:p/mm)
+266	250		6th axis dual feedback res.(En:p/rev;Sc:p/mm)
+267	250		7th axis dual feedback res.(En:p/rev;Sc:p/mm)
+268	250		8th axis dual feedback res.(En:p/rev;Sc:p/mm)
+269	250		9th axis dual feedback res.(En:p/rev;Sc:p/mm)
+270	250		10th axis dual feedback res.(En:p/rev;Sc:p/mm)
+271	250		11th axis dual feedback res.(En:p/rev;Sc:p/mm)
+272	250		12th axis dual feedback res.(En:p/rev;Sc:p/mm)
+273	250		13th axis dual feedback res.(En:p/rev;Sc:p/mm)
+274	250		14th axis dual feedback res.(En:p/rev;Sc:p/mm)
+275	250		15th axis dual feedback res.(En:p/rev;Sc:p/mm)
+276	250		16th axis dual feedback res.(En:p/rev;Sc:p/mm)
+281	0		X axis dimension type(0:radius;1:diameter)
+282	0		Y axis dimension type(0:radius;1:diameter)
+283	0		Z axis dimension type(0:radius;1:diameter)
+284	0		4th axis dimension type(0:radius;1:diameter)
+285	0		5th axis dimension type(0:radius;1:diameter)
+286	0		6th axis dimension type(0:radius;1:diameter)
+287	0		7th axis dimension type(0:radius;1:diameter)
+288	0		8th axis dimension type(0:radius;1:diameter)
+289	0		9th axis dimension type(0:radius;1:diameter)
+290	0		10th axis dimension type(0:radius;1:diameter)
+291	0		11th axis dimension type(0:radius;1:diameter)
+292	0		12th axis dimension type(0:radius;1:diameter)
+293	0		13th axis dimension type(0:radius;1:diameter)
+294	0		14th axis dimension type(0:radius;1:diameter)
+295	0		15th axis dimension type(0:radius;1:diameter)
+296	0		16th axis dimension type(0:radius;1:diameter)
+301	4		X axis dual feedback scaling factor
+302	4		Y axis dual feedback scaling factor
+303	4		Z axis dual feedback scaling factor
+304	4		4th axis dual feedback scaling factor
+305	4		5th axis dual feedback scaling factor
+306	4		6th axis dual feedback scaling factor
+307	4		7th axis dual feedback scaling factor
+308	4		8th axis dual feedback scaling factor
+309	4		9th axis dual feedback scaling factor
+310	4		10th axis dual feedback scaling factor
+311	4		11th axis dual feedback scaling factor
+312	4		12th axis dual feedback scaling factor
+313	4		13th axis dual feedback scaling factor
+314	4		14th axis dual feedback scaling factor
+315	4		15th axis dual feedback scaling factor
+316	4		16th axis dual feedback scaling factor
+321	100		*X axis axis name
+322	200		*Y axis axis name
+323	300		*Z axis axis name
+324	400		*4th axis axis name
+325	500		*5th axis axis name
+326	600		*6th axis axis name
+327	700		*7th axis axis name
+328	800		*8th axis axis name
+329	900		*9th axis axis name
+330	901		*10th axis axis name
+331	902		*11th axis axis name
+332	903		*12th axis axis name
+333	904		*13th axis axis name
+334	905		*14th axis axis name
+335	906		*15th axis axis name
+336	907		*16th axis axis name
+341	1		X axis command multiplier
+342	1		Y axis command multiplier
+343	1		Z axis command multiplier
+344	1		4th axis command multiplier
+345	1		5th axis command multiplier
+346	1		6th axis command multiplier
+347	1		7th axis command multiplier
+348	1		8th axis command multiplier
+349	1		9th axis command multiplier
+350	1		10th axis command multiplier
+351	1		11th axis command multiplier
+352	1		12th axis command multiplier
+353	1		13th axis command multiplier
+354	1		14th axis command multiplier
+355	1		15th axis command multiplier
+356	1		16th axis command multiplier
+361	1		X axis command divisor
+362	1		Y axis command divisor
+363	1		Z axis command divisor
+364	1		4th axis command divisor
+365	1		5th axis command divisor
+366	1		6th axis command divisor
+367	1		7th axis command divisor
+368	1		8th axis command divisor
+369	1		9th axis command divisor
+370	1		10th axis command divisor
+371	1		11th axis command divisor
+372	1		12th axis command divisor
+373	1		13th axis command divisor
+374	1		14th axis command divisor
+375	1		15th axis command divisor
+376	1		16th axis command divisor
+381	2		*X axis Position Servo Mode(0:CW;1:Volt;2:AB)
+382	2		*Y axis Position Servo Mode(0:CW;1:Volt;2:AB)
+383	2		*Z axis Position Servo Mode(0:CW;1:Volt;2:AB)
+384	2		*4th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+385	2		*5th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+386	2		*6th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+387	2		*7th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+388	2		*8th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+389	2		*9th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+390	2		*10th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+391	2		*11th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+392	2		*12th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+393	2		*13th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+394	2		*14th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+395	2		*15th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+396	2		*16th axis Position Servo Mode(0:CW;1:Volt;2:AB)
+401	800		Cutting acceleration time(ms)
+402	300		acceleration accelerated to 1G time(Jerk)(ms)
+404	100		Post acceleration bell-shaped time(ms)
+405	30000		Maximum cutting feedrate(mm/min)
+406	500		Maximum corner reference feedrate(mm/min)
+407	2		HPCC smoothing tolerance(um)
+408	2000		Arc cutting reference feedrate at raduis 5 mm(mm/min)
+409	300		Thread cutting acceleration time of 1 m/min(ms)
+410	200		MPG acceleration time(ms)
+411	0		Rapid Travel(G00) type(0:Linear;1:Independ)
+412	0		Tool Length Compensation Restoration Mode(0:unrestore;1:restore)
+413	0		G92 coordinate persist mode(0:No;1:Reset;2:PowerOff)
+414	0		Workpiece coor. persist mode(0:No;1:Reset;2:PowerOff)
+415	0		*Res. cur. tool len. after reset/off(0:No;1:Yes)
+416	1000		Rigid tapping coupling time(0.001 rev)
+417	0		Rigid tapping velocity gain
+418	0		Rigid tapping acceleration/deceleration gain
+419	1000		Rigid tapping spindle deceleration time(ms)
+420	0		Active Axis Group for tapping learning
+421	30		X axis cutting in-pos. window(BLU)
+422	30		Y axis cutting in-pos. window(BLU)
+423	30		Z axis cutting in-pos. window(BLU)
+424	1000		4th axis cutting in-pos. window(BLU)
+425	0		5th axis cutting in-pos. window(BLU)
+426	0		6th axis cutting in-pos. window(BLU)
+427	0		7th axis cutting in-pos. window(BLU)
+428	0		8th axis cutting in-pos. window(BLU)
+429	0		9th axis cutting in-pos. window(BLU)
+430	0		10th axis cutting in-pos. window(BLU)
+431	0		11th axis cutting in-pos. window(BLU)
+432	0		12th axis cutting in-pos. window(BLU)
+433	0		13th axis cutting in-pos. window(BLU)
+434	0		14th axis cutting in-pos. window(BLU)
+435	0		15th axis cutting in-pos. window(BLU)
+436	0		16th axis cutting in-pos. window(BLU)
+441	200		X axis rapid travel(G00) acc. time(ms)
+442	200		Y axis rapid travel(G00) acc. time(ms)
+443	200		Z axis rapid travel(G00) acc. time(ms)
+444	200		4th axis rapid travel(G00) acc. time(ms)
+445	200		5th axis rapid travel(G00) acc. time(ms)
+446	200		6th axis rapid travel(G00) acc. time(ms)
+447	200		7th axis rapid travel(G00) acc. time(ms)
+448	200		8th axis rapid travel(G00) acc. time(ms)
+449	200		9th axis rapid travel(G00) acc. time(ms)
+450	200		10th axis rapid travel(G00) acc. time(ms)
+451	200		11th axis rapid travel(G00) acc. time(ms)
+452	200		12th axis rapid travel(G00) acc. time(ms)
+453	200		13th axis rapid travel(G00) acc. time(ms)
+454	200		14th axis rapid travel(G00) acc. time(ms)
+455	200		15th axis rapid travel(G00) acc. time(ms)
+456	200		16th axis rapid travel(G00) acc. time(ms)
+461	50000		X axis max. rapid travel feedrate(mm/min)
+462	50000		Y axis max. rapid travel feedrate(mm/min)
+463	5000		Z axis max. rapid travel feedrate(mm/min)
+464	36000		4th axis max. rapid travel feedrate(deg/min)
+465	10000		5th axis max. rapid travel feedrate(deg/min)
+466	10000		6th axis max. rapid travel feedrate(deg/min)
+467	10000		7th axis max. rapid travel feedrate(deg/min)
+468	10000		8th axis max. rapid travel feedrate(deg/min)
+469	10000		9th axis max. rapid travel feedrate(deg/min)
+470	10000		10th axis max. rapid travel feedrate(deg/min)
+471	10000		11th axis max. rapid travel feedrate(deg/min)
+472	10000		12th axis max. rapid travel feedrate(deg/min)
+473	10000		13th axis max. rapid travel feedrate(deg/min)
+474	10000		14th axis max. rapid travel feedrate(deg/min)
+475	10000		15th axis max. rapid travel feedrate(deg/min)
+476	10000		16th axis max. rapid travel feedrate(deg/min)
+481	60		X axis rapid travel in-pos. window(BLU)
+482	60		Y axis rapid travel in-pos. window(BLU)
+483	60		Z axis rapid travel in-pos. window(BLU)
+484	2000		4th axis rapid travel in-pos. window(BLU)
+485	30		5th axis rapid travel in-pos. window(BLU)
+486	30		6th axis rapid travel in-pos. window(BLU)
+487	30		7th axis rapid travel in-pos. window(BLU)
+488	30		8th axis rapid travel in-pos. window(BLU)
+489	30		9th axis rapid travel in-pos. window(BLU)
+490	30		10th axis rapid travel in-pos. window(BLU)
+491	30		11th axis rapid travel in-pos. window(BLU)
+492	30		12th axis rapid travel in-pos. window(BLU)
+493	30		13th axis rapid travel in-pos. window(BLU)
+494	30		14th axis rapid travel in-pos. window(BLU)
+495	30		15th axis rapid travel in-pos. window(BLU)
+496	30		16th axis rapid travel in-pos. window(BLU)
+501	0		X axis rapid travel F0 feedrate(mm/min)
+502	0		Y axis rapid travel F0 feedrate(mm/min)
+503	0		Z axis rapid travel F0 feedrate(mm/min)
+504	0		4th axis rapid travel F0 feedrate(deg/min)
+505	0		5th axis rapid travel F0 feedrate(deg/min)
+506	0		6th axis rapid travel F0 feedrate(deg/min)
+507	0		7th axis rapid travel F0 feedrate(deg/min)
+508	0		8th axis rapid travel F0 feedrate(deg/min)
+509	0		9th axis rapid travel F0 feedrate(deg/min)
+510	0		10th axis rapid travel F0 feedrate(deg/min)
+511	0		11th axis rapid travel F0 feedrate(deg/min)
+512	0		12th axis rapid travel F0 feedrate(deg/min)
+513	0		13th axis rapid travel F0 feedrate(deg/min)
+514	0		14th axis rapid travel F0 feedrate(deg/min)
+515	0		15th axis rapid travel F0 feedrate(deg/min)
+516	0		16th axis rapid travel F0 feedrate(deg/min)
+521	8000		X axis JOG feedrate(mm/min)
+522	8000		Y axis JOG feedrate(mm/min)
+523	8000		Z axis JOG feedrate(mm/min)
+524	3600		4th axis JOG feedrate(deg/min)
+525	1000		5th axis JOG feedrate(deg/min)
+526	1000		6th axis JOG feedrate(deg/min)
+527	1000		7th axis JOG feedrate(deg/min)
+528	1000		8th axis JOG feedrate(deg/min)
+529	1000		9th axis JOG feedrate(deg/min)
+530	1000		10th axis JOG feedrate(deg/min)
+531	1000		11th axis JOG feedrate(deg/min)
+532	1000		12th axis JOG feedrate(deg/min)
+533	1000		13th axis JOG feedrate(deg/min)
+534	1000		14th axis JOG feedrate(deg/min)
+535	1000		15th axis JOG feedrate(deg/min)
+536	1000		16th axis JOG feedrate(deg/min)
+541	50		X axis cutting acceleration time(ms)
+542	50		Y axis cutting acceleration time(ms)
+543	50		Z axis cutting acceleration time(ms)
+544	50		4th axis cutting acceleration time(ms)
+545	50		5th axis cutting acceleration time(ms)
+546	50		6th axis cutting acceleration time(ms)
+547	50		7th axis cutting acceleration time(ms)
+548	50		8th axis cutting acceleration time(ms)
+549	50		9th axis cutting acceleration time(ms)
+550	50		10th axis cutting acceleration time(ms)
+551	50		11th axis cutting acceleration time(ms)
+552	50		12th axis cutting acceleration time(ms)
+553	50		13th axis cutting acceleration time(ms)
+554	50		14th axis cutting acceleration time(ms)
+555	50		15th axis cutting acceleration time(ms)
+556	50		16th axis cutting acceleration time(ms)
+561	100		X axis loss pulse check window(0.001 mm)
+562	100		Y axis loss pulse check window(0.001 mm)
+563	100		Z axis loss pulse check window(0.001 mm)
+564	1000		4th axis loss pulse check window(0.001 mm)
+565	100		5th axis loss pulse check window(0.001 mm)
+566	100		6th axis loss pulse check window(0.001 mm)
+567	100		7th axis loss pulse check window(0.001 mm)
+568	100		8th axis loss pulse check window(0.001 mm)
+569	100		9th axis loss pulse check window(0.001 mm)
+570	100		10th axis loss pulse check window(0.001 mm)
+571	100		11th axis loss pulse check window(0.001 mm)
+572	100		12th axis loss pulse check window(0.001 mm)
+573	100		13th axis loss pulse check window(0.001 mm)
+574	100		14th axis loss pulse check window(0.001 mm)
+575	100		15th axis loss pulse check window(0.001 mm)
+576	100		16th axis loss pulse check window(0.001 mm)
+581	0		X axis velocity feed forward percentage
+582	0		Y axis velocity feed forward percentage
+583	0		Z axis velocity feed forward percentage
+584	0		4th axis velocity feed forward percentage
+585	0		5th axis velocity feed forward percentage
+586	0		6th axis velocity feed forward percentage
+587	0		7th axis velocity feed forward percentage
+588	0		8th axis velocity feed forward percentage
+589	0		9th axis velocity feed forward percentage
+590	0		10th axis velocity feed forward percentage
+591	0		11th axis velocity feed forward percentage
+592	0		12th axis velocity feed forward percentage
+593	0		13th axis velocity feed forward percentage
+594	0		14th axis velocity feed forward percentage
+595	0		15th axis velocity feed forward percentage
+596	0		16th axis velocity feed forward percentage
+601	3600000		X axis max. corner reference feedrate(mm/min)
+602	3600000		Y axis max. corner reference feedrate(mm/min)
+603	3600000		Z axis max. corner reference feedrate(mm/min)
+604	3600000		4th axis max. corner reference feedrate(mm/min)
+605	3600000		5th axis max. corner reference feedrate(mm/min)
+606	3600000		6th axis max. corner reference feedrate(mm/min)
+607	3600000		7th axis max. corner reference feedrate(mm/min)
+608	3600000		8th axis max. corner reference feedrate(mm/min)
+609	3600000		9th axis max. corner reference feedrate(mm/min)
+610	3600000		10th axis max. corner reference feedrate(mm/min)
+611	3600000		11th axis max. corner reference feedrate(mm/min)
+612	3600000		12th axis max. corner reference feedrate(mm/min)
+613	3600000		13th axis max. corner reference feedrate(mm/min)
+614	3600000		14th axis max. corner reference feedrate(mm/min)
+615	3600000		15th axis max. corner reference feedrate(mm/min)
+616	3600000		16th axis max. corner reference feedrate(mm/min)
+621	35000		X axis maximum cutting feedrate(mm/min)
+622	35000		Y axis maximum cutting feedrate(mm/min)
+623	5000		Z axis maximum cutting feedrate(mm/min)
+624	20000		4th axis maximum cutting feedrate(mm/min)
+625	10000		5th axis maximum cutting feedrate(mm/min)
+626	10000		6th axis maximum cutting feedrate(mm/min)
+627	10000		7th axis maximum cutting feedrate(mm/min)
+628	10000		8th axis maximum cutting feedrate(mm/min)
+629	10000		9th axis maximum cutting feedrate(mm/min)
+630	10000		10th axis maximum cutting feedrate(mm/min)
+631	10000		11th axis maximum cutting feedrate(mm/min)
+632	10000		12th axis maximum cutting feedrate(mm/min)
+633	10000		13th axis maximum cutting feedrate(mm/min)
+634	10000		14th axis maximum cutting feedrate(mm/min)
+635	10000		15th axis maximum cutting feedrate(mm/min)
+636	10000		16th axis maximum cutting feedrate(mm/min)
+641	100		X axis Acc. accelerated to 1G time(Jerk)(ms)
+642	100		Y axis Acc. accelerated to 1G time(Jerk)(ms)
+643	100		Z axis Acc. accelerated to 1G time(Jerk)(ms)
+644	100		4th axis Acc. accelerated to 1G time(Jerk)(ms)
+645	50		5th axis Acc. accelerated to 1G time(Jerk)(ms)
+646	50		6th axis Acc. accelerated to 1G time(Jerk)(ms)
+647	50		7th axis Acc. accelerated to 1G time(Jerk)(ms)
+648	50		8th axis Acc. accelerated to 1G time(Jerk)(ms)
+649	50		9th axis Acc. accelerated to 1G time(Jerk)(ms)
+650	50		10th axis Acc. accelerated to 1G time(Jerk)(ms)
+651	50		11th axis Acc. accelerated to 1G time(Jerk)(ms)
+652	50		12th axis Acc. accelerated to 1G time(Jerk)(ms)
+653	50		13th axis Acc. accelerated to 1G time(Jerk)(ms)
+654	50		14th axis Acc. accelerated to 1G time(Jerk)(ms)
+655	50		15th axis Acc. accelerated to 1G time(Jerk)(ms)
+656	50		16th axis Acc. accelerated to 1G time(Jerk)(ms)
+661	0		X axis MPG feedrate(mm/min)
+662	0		Y axis MPG feedrate(mm/min)
+663	0		Z axis MPG feedrate(mm/min)
+664	0		4th axis MPG feedrate(deg/min)
+665	0		5th axis MPG feedrate(deg/min)
+666	0		6th axis MPG feedrate(deg/min)
+667	0		7th axis MPG feedrate(deg/min)
+668	0		8th axis MPG feedrate(deg/min)
+669	0		9th axis MPG feedrate(deg/min)
+670	0		10th axis MPG feedrate(deg/min)
+671	0		11th axis MPG feedrate(deg/min)
+672	0		12th axis MPG feedrate(deg/min)
+673	0		13th axis MPG feedrate(deg/min)
+674	0		14th axis MPG feedrate(deg/min)
+675	0		15th axis MPG feedrate(deg/min)
+676	0		16th axis MPG feedrate(deg/min)
+701	1		*X axis associated axis groups
+702	1		*Y axis associated axis groups
+703	1		*Z axis associated axis groups
+704	1		*4th axis associated axis groups
+705	1		*5th axis associated axis groups
+706	1		*6th axis associated axis groups
+707	1		*7th axis associated axis groups
+708	1		*8th axis associated axis groups
+709	1		*9th axis associated axis groups
+710	1		*10th axis associated axis groups
+711	1		*11th axis associated axis groups
+712	1		*12th axis associated axis groups
+713	1		*13th axis associated axis groups
+714	1		*14th axis associated axis groups
+715	1		*15th axis associated axis groups
+716	1		*16th axis associated axis groups
+721	1		*First axis group MST channel no.
+722	1		*Second axis group MST channel no.
+723	1		*Third axis group MST channel no.
+724	1		*Fourth axis group MST channel no.
+731	1		*The number of axis group in CNC.
+803	0		*Home Dog signal source(0:I/O; 1:Motion)
+821	1000		X axis homing feedrate(mm/min)
+822	1000		Y axis homing feedrate(mm/min)
+823	1000		Z axis homing feedrate(mm/min)
+824	1000		4th axis homing feedrate(deg/min)
+825	10000		5th axis homing feedrate(deg/min)
+826	10000		6th axis homing feedrate(deg/min)
+827	10000		7th axis homing feedrate(deg/min)
+828	10000		8th axis homing feedrate(deg/min)
+829	10000		9th axis homing feedrate(deg/min)
+830	10000		10th axis homing feedrate(deg/min)
+831	10000		11th axis homing feedrate(deg/min)
+832	10000		12th axis homing feedrate(deg/min)
+833	10000		13th axis homing feedrate(deg/min)
+834	10000		14th axis homing feedrate(deg/min)
+835	10000		15th axis homing feedrate(deg/min)
+836	10000		16th axis homing feedrate(deg/min)
+841	100		X axis homing 2nd travel feedrate(mm/min)
+842	100		Y axis homing 2nd travel feedrate(mm/min)
+843	100		Z axis homing 2nd travel feedrate(mm/min)
+844	100		4th axis homing 2nd travel feedrate(deg/min)
+845	2000		5th axis homing 2nd travel feedrate(deg/min)
+846	2000		6th axis homing 2nd travel feedrate(deg/min)
+847	2000		7th axis homing 2nd travel feedrate(deg/min)
+848	2000		8th axis homing 2nd travel feedrate(deg/min)
+849	2000		9th axis homing 2nd travel feedrate(deg/min)
+850	2000		10th axis homing 2nd travel feedrate(deg/min)
+851	2000		11th axis homing 2nd travel feedrate(deg/min)
+852	2000		12th axis homing 2nd travel feedrate(deg/min)
+853	2000		13th axis homing 2nd travel feedrate(deg/min)
+854	2000		14th axis homing 2nd travel feedrate(deg/min)
+855	2000		15th axis homing 2nd travel feedrate(deg/min)
+856	2000		16th axis homing 2nd travel feedrate(deg/min)
+861	1		X axis homing direction(0:pos;1:neg)
+862	1		Y axis homing direction(0:pos;1:neg)
+863	0		Z axis homing direction(0:pos;1:neg)
+864	0		4th axis homing direction(0:pos;1:neg)
+865	0		5th axis homing direction(0:pos;1:neg)
+866	0		6th axis homing direction(0:pos;1:neg)
+867	0		7th axis homing direction(0:pos;1:neg)
+868	0		8th axis homing direction(0:pos;1:neg)
+869	0		9th axis homing direction(0:pos;1:neg)
+870	0		10th axis homing direction(0:pos;1:neg)
+871	0		11th axis homing direction(0:pos;1:neg)
+872	0		12th axis homing direction(0:pos;1:neg)
+873	0		13th axis homing direction(0:pos;1:neg)
+874	0		14th axis homing direction(0:pos;1:neg)
+875	0		15th axis homing direction(0:pos;1:neg)
+876	0		16th axis homing direction(0:pos;1:neg)
+881	0		X axis home offset(BLU)
+882	0		Y axis home offset(BLU)
+883	0		Z axis home offset(BLU)
+884	0		4th axis home offset(BLU)
+885	0		5th axis home offset(BLU)
+886	0		6th axis home offset(BLU)
+887	0		7th axis home offset(BLU)
+888	0		8th axis home offset(BLU)
+889	0		9th axis home offset(BLU)
+890	0		10th axis home offset(BLU)
+891	0		11th axis home offset(BLU)
+892	0		12th axis home offset(BLU)
+893	0		13th axis home offset(BLU)
+894	0		14th axis home offset(BLU)
+895	0		15th axis home offset(BLU)
+896	0		16th axis home offset(BLU)
+901	3		X axis zero speed check window(count)
+902	3		Y axis zero speed check window(count)
+903	3		Z axis zero speed check window(count)
+904	3		4th axis zero speed check window(count)
+905	3		5th axis zero speed check window(count)
+906	3		6th axis zero speed check window(count)
+907	3		7th axis zero speed check window(count)
+908	3		8th axis zero speed check window(count)
+909	3		9th axis zero speed check window(count)
+910	3		10th axis zero speed check window(count)
+911	3		11th axis zero speed check window(count)
+912	3		12th axis zero speed check window(count)
+913	3		13th axis zero speed check window(count)
+914	3		14th axis zero speed check window(count)
+915	3		15th axis zero speed check window(count)
+916	3		16th axis zero speed check window(count)
+921	0		X axis home dog polarity(0:pos;1:neg)
+922	0		Y axis home dog polarity(0:pos;1:neg)
+923	0		Z axis home dog polarity(0:pos;1:neg)
+924	0		4th axis home dog polarity(0:pos;1:neg)
+925	0		5th axis home dog polarity(0:pos;1:neg)
+926	0		6th axis home dog polarity(0:pos;1:neg)
+927	0		7th axis home dog polarity(0:pos;1:neg)
+928	0		8th axis home dog polarity(0:pos;1:neg)
+929	0		9th axis home dog polarity(0:pos;1:neg)
+930	0		10th axis home dog polarity(0:pos;1:neg)
+931	0		11th axis home dog polarity(0:pos;1:neg)
+932	0		12th axis home dog polarity(0:pos;1:neg)
+933	0		13th axis home dog polarity(0:pos;1:neg)
+934	0		14th axis home dog polarity(0:pos;1:neg)
+935	0		15th axis home dog polarity(0:pos;1:neg)
+936	0		16th axis home dog polarity(0:pos;1:neg)
+941	0		Enable X axis home grid function(0:OFF;1:ON)
+942	0		Enable Y axis home grid function(0:OFF;1:ON)
+943	0		Enable Z axis home grid function(0:OFF;1:ON)
+944	0		Enable 4th axis home grid function(0:OFF;1:ON)
+945	0		Enable 5th axis home grid function(0:OFF;1:ON)
+946	0		Enable 6th axis home grid function(0:OFF;1:ON)
+947	0		Enable 7th axis home grid function(0:OFF;1:ON)
+948	0		Enable 8th axis home grid function(0:OFF;1:ON)
+949	0		Enable 9th axis home grid function(0:OFF;1:ON)
+950	0		Enable 10th axis home grid function(0:OFF;1:ON)
+951	0		Enable 11th axis home grid function(0:OFF;1:ON)
+952	0		Enable 12th axis home grid function(0:OFF;1:ON)
+953	0		Enable 13th axis home grid function(0:OFF;1:ON)
+954	0		Enable 14th axis home grid function(0:OFF;1:ON)
+955	0		Enable 15th axis home grid function(0:OFF;1:ON)
+956	0		Enable 16th axis home grid function(0:OFF;1:ON)
+961	0		X axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+962	0		Y axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+963	0		Z axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+964	1		4th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+965	1		5th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+966	1		6th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+967	1		7th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+968	1		8th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+969	1		9th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+970	1		10th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+971	1		11th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+972	1		12th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+973	1		13th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+974	1		14th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+975	1		15th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+976	1		16th axis home serach method(0:Dog;1:Index;2:Dog+Preset;3:DogWithoutIndex)
+981	5		X axis homing 2nd protect revolution(encoder type)
+982	5		Y axis homing 2nd protect revolution(encoder type)
+983	5		Z axis homing 2nd protect revolution(encoder type)
+984	5		4th axis homing 2nd protect revolution(encoder type)
+985	5		5th axis homing 2nd protect revolution(encoder type)
+986	5		6th axis homing 2nd protect revolution(encoder type)
+987	5		7th axis homing 2nd protect revolution(encoder type)
+988	5		8th axis homing 2nd protect revolution(encoder type)
+989	5		9th axis homing 2nd protect revolution(encoder type)
+990	5		10th axis homing 2nd protect revolution(encoder type)
+991	5		11th axis homing 2nd protect revolution(encoder type)
+992	5		12th axis homing 2nd protect revolution(encoder type)
+993	5		13th axis homing 2nd protect revolution(encoder type)
+994	5		14th axis homing 2nd protect revolution(encoder type)
+995	5		15th axis homing 2nd protect revolution(encoder type)
+996	5		16th axis homing 2nd protect revolution(encoder type)
+1001	0		*X axis fast return home(0:OFF;1:ON)
+1002	0		*Y axis fast return home(0:OFF;1:ON)
+1003	0		*Z axis fast return home(0:OFF;1:ON)
+1004	0		*4th axis fast return home(0:OFF;1:ON)
+1005	0		*5th axis fast return home(0:OFF;1:ON)
+1006	0		*6th axis fast return home(0:OFF;1:ON)
+1007	0		*7th axis fast return home(0:OFF;1:ON)
+1008	0		*8th axis fast return home(0:OFF;1:ON)
+1009	0		*9th axis fast return home(0:OFF;1:ON)
+1010	0		*10th axis fast return home(0:OFF;1:ON)
+1011	0		*11th axis fast return home(0:OFF;1:ON)
+1012	0		*12th axis fast return home(0:OFF;1:ON)
+1013	0		*13th axis fast return home(0:OFF;1:ON)
+1014	0		*14th axis fast return home(0:OFF;1:ON)
+1015	0		*15th axis fast return home(0:OFF;1:ON)
+1016	0		*16th axis fast return home(0:OFF;1:ON)
+1221	0		Enable X axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1222	0		Enable Y axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1223	0		Enable Z axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1224	0		Enable 4th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1225	0		Enable 5th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1226	0		Enable 6th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1227	0		Enable 7th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1228	0		Enable 8th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1229	0		Enable 9th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1230	0		Enable 10th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1231	0		Enable 11th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1232	0		Enable 12th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1233	0		Enable 13th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1234	0		Enable 14th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1235	0		Enable 15th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1236	0		Enable 16th axis backlash compensation(0:OFF;1:Linear Guideway ON;2:Box Guideway ON)
+1241	0		X axis G00 Backlash (BLU)
+1242	0		Y axis G00 Backlash (BLU)
+1243	0		Z axis G00 Backlash (BLU)
+1244	0		4th axis G00 Backlash (BLU)
+1245	0		5th axis G00 Backlash (BLU)
+1246	0		6th axis G00 Backlash (BLU)
+1247	0		7th axis G00 Backlash (BLU)
+1248	0		8th axis G00 Backlash (BLU)
+1249	0		9th axis G00 Backlash (BLU)
+1250	0		10th axis G00 Backlash (BLU)
+1251	0		11th axis G00 Backlash (BLU)
+1252	0		12th axis G00 Backlash (BLU)
+1253	0		13th axis G00 Backlash (BLU)
+1254	0		14th axis G00 Backlash (BLU)
+1255	0		15th axis G00 Backlash (BLU)
+1256	0		16th axis G00 Backlash (BLU)
+1261	0		X axis G01 Backlash (BLU)
+1262	0		Y axis G01 Backlash (BLU)
+1263	0		Z axis G01 Backlash (BLU)
+1264	0		4th axis G01 Backlash (BLU)
+1265	0		5th axis G01 Backlash (BLU)
+1266	0		6th axis G01 Backlash (BLU)
+1267	0		7th axis G01 Backlash (BLU)
+1268	0		8th axis G01 Backlash (BLU)
+1269	0		9th axis G01 Backlash (BLU)
+1270	0		10th axis G01 Backlash (BLU)
+1271	0		11th axis G01 Backlash (BLU)
+1272	0		12th axis G01 Backlash (BLU)
+1273	0		13th axis G01 Backlash (BLU)
+1274	0		14th axis G01 Backlash (BLU)
+1275	0		15th axis G01 Backlash (BLU)
+1276	0		16th axis G01 Backlash (BLU)
+1281	800		X axis backlash critical velocity (mm/min)
+1282	800		Y axis backlash critical velocity (mm/min)
+1283	800		Z axis backlash critical velocity (mm/min)
+1284	800		4th axis backlash critical velocity (mm/min)
+1285	0		5th axis backlash critical velocity (mm/min)
+1286	0		6th axis backlash critical velocity (mm/min)
+1287	0		7th axis backlash critical velocity (mm/min)
+1288	0		8th axis backlash critical velocity (mm/min)
+1289	0		9th axis backlash critical velocity (mm/min)
+1290	0		10th axis backlash critical velocity (mm/min)
+1291	0		11th axis backlash critical velocity (mm/min)
+1292	0		12th axis backlash critical velocity (mm/min)
+1293	0		13th axis backlash critical velocity (mm/min)
+1294	0		14th axis backlash critical velocity (mm/min)
+1295	0		15th axis backlash critical velocity (mm/min)
+1296	0		16th axis backlash critical velocity (mm/min)
+1301	0		X axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1302	0		Y axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1303	0		Z axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1304	0		4th axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1305	0		5th axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1306	0		6th axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1307	0		7th axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1308	0		8th axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1309	0		9th axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1310	0		10th axis pitch err. comp. type(0:No;1:Uni;2:Bi)
+1321	50000		X axis pitch error comp. interval(BLU)
+1322	50000		Y axis pitch error comp. interval(BLU)
+1323	50000		Z axis pitch error comp. interval(BLU)
+1324	50000		4th axis pitch error comp. interval(BLU)
+1325	50000		5th axis pitch error comp. interval(BLU)
+1326	50000		6th axis pitch error comp. interval(BLU)
+1327	50000		7th axis pitch error comp. interval(BLU)
+1328	50000		8th axis pitch error comp. interval(BLU)
+1329	50000		9th axis pitch error comp. interval(BLU)
+1330	50000		10th axis pitch error comp. interval(BLU)
+1341	50		X axis table index for reference(home)
+1342	50		Y axis table index for reference(home)
+1343	50		Z axis table index for reference(home)
+1344	50		4th axis table index for reference(home)
+1345	50		5th axis table index for reference(home)
+1346	50		6th axis table index for reference(home)
+1347	50		7th axis table index for reference(home)
+1348	50		8th axis table index for reference(home)
+1349	50		9th axis table index for reference(home)
+1350	50		10th axis table index for reference(home)
+1361	0		X axis pos. quad-peak error comp.(BLU)
+1362	0		Y axis pos. quad-peak error comp.(BLU)
+1363	0		Z axis pos. quad-peak error comp.(BLU)
+1364	0		4th axis pos. quad-peak error comp.(BLU)
+1365	0		5th axis pos. quad-peak error comp.(BLU)
+1366	0		6th axis pos. quad-peak error comp.(BLU)
+1367	0		7th axis pos. quad-peak error comp.(BLU)
+1368	0		8th axis pos. quad-peak error comp.(BLU)
+1369	0		9th axis pos. quad-peak error comp.(BLU)
+1370	0		10th axis pos. quad-peak error comp.(BLU)
+1371	0		11th axis pos. quad-peak error comp.(BLU)
+1372	0		12th axis pos. quad-peak error comp.(BLU)
+1373	0		13th axis pos. quad-peak error comp.(BLU)
+1374	0		14th axis pos. quad-peak error comp.(BLU)
+1375	0		15th axis pos. quad-peak error comp.(BLU)
+1376	0		16th axis pos. quad-peak error comp.(BLU)
+1381	10		X axis quad-peak error second hold time(ms)
+1382	10		Y axis quad-peak error second hold time(ms)
+1383	10		Z axis quad-peak error second hold time(ms)
+1384	10		4th axis quad-peak error second hold time(ms)
+1385	0		5th axis quad-peak error second hold time(ms)
+1386	0		6th axis quad-peak error second hold time(ms)
+1387	0		7th axis quad-peak error second hold time(ms)
+1388	0		8th axis quad-peak error second hold time(ms)
+1389	0		9th axis quad-peak error second hold time(ms)
+1390	0		10th axis quad-peak error second hold time(ms)
+1391	0		11th axis quad-peak error second hold time(ms)
+1392	0		12th axis quad-peak error second hold time(ms)
+1393	0		13th axis quad-peak error second hold time(ms)
+1394	0		14th axis quad-peak error second hold time(ms)
+1395	0		15th axis quad-peak error second hold time(ms)
+1396	0		16th axis quad-peak error second hold time(ms)
+1401	10		X axis mechanical comp. time constant(ms)
+1402	10		Y axis mechanical comp. time constant(ms)
+1403	10		Z axis mechanical comp. time constant(ms)
+1404	10		4th axis mechanical comp. time constant(ms)
+1405	0		5th axis mechanical comp. time constant(ms)
+1406	0		6th axis mechanical comp. time constant(ms)
+1407	0		7th axis mechanical comp. time constant(ms)
+1408	0		8th axis mechanical comp. time constant(ms)
+1409	0		9th axis mechanical comp. time constant(ms)
+1410	0		10th axis mechanical comp. time constant(ms)
+1411	0		11th axis mechanical comp. time constant(ms)
+1412	0		12th axis mechanical comp. time constant(ms)
+1413	0		13th axis mechanical comp. time constant(ms)
+1414	0		14th axis mechanical comp. time constant(ms)
+1415	0		15th axis mechanical comp. time constant(ms)
+1416	0		16th axis mechanical comp. time constant(ms)
+1421	1000		X aixs max. static dual error(BLU)
+1422	1000		Y aixs max. static dual error(BLU)
+1423	1000		Z aixs max. static dual error(BLU)
+1424	1000		4th aixs max. static dual error(BLU)
+1425	1000		5th aixs max. static dual error(BLU)
+1426	1000		6th aixs max. static dual error(BLU)
+1427	1000		7th aixs max. static dual error(BLU)
+1428	1000		8th aixs max. static dual error(BLU)
+1429	1000		9th aixs max. static dual error(BLU)
+1430	1000		10th aixs max. static dual error(BLU)
+1431	1000		11th aixs max. static dual error(BLU)
+1432	1000		12th aixs max. static dual error(BLU)
+1433	1000		13th aixs max. static dual error(BLU)
+1434	1000		14th aixs max. static dual error(BLU)
+1435	1000		15th aixs max. static dual error(BLU)
+1436	1000		16th aixs max. static dual error(BLU)
+1441	0		X axis neg. quad-peak error comp.(BLU)
+1442	0		Y axis neg. quad-peak error comp.(BLU)
+1443	0		Z axis neg. quad-peak error comp.(BLU)
+1444	0		4th axis neg. quad-peak error comp.(BLU)
+1445	0		5th axis neg. quad-peak error comp.(BLU)
+1446	0		6th axis neg. quad-peak error comp.(BLU)
+1447	0		7th axis neg. quad-peak error comp.(BLU)
+1448	0		8th axis neg. quad-peak error comp.(BLU)
+1449	0		9th axis neg. quad-peak error comp.(BLU)
+1450	0		10th axis neg. quad-peak error comp.(BLU)
+1451	0		11th axis neg. quad-peak error comp.(BLU)
+1452	0		12th axis neg. quad-peak error comp.(BLU)
+1453	0		13th axis neg. quad-peak error comp.(BLU)
+1454	0		14th axis neg. quad-peak error comp.(BLU)
+1455	0		15th axis neg. quad-peak error comp.(BLU)
+1456	0		16th axis neg. quad-peak error comp.(BLU)
+1461	10		X axis quad-peak error first hold time(ms)
+1462	10		Y axis quad-peak error first hold time(ms)
+1463	10		Z axis quad-peak error first hold time(ms)
+1464	10		4th axis quad-peak error first hold time(ms)
+1465	0		5th axis quad-peak error first hold time(ms)
+1466	0		6th axis quad-peak error first hold time(ms)
+1467	0		7th axis quad-peak error first hold time(ms)
+1468	0		8th axis quad-peak error first hold time(ms)
+1469	0		9th axis quad-peak error first hold time(ms)
+1470	0		10th axis quad-peak error first hold time(ms)
+1471	0		11th axis quad-peak error first hold time(ms)
+1472	0		12th axis quad-peak error first hold time(ms)
+1473	0		13th axis quad-peak error first hold time(ms)
+1474	0		14th axis quad-peak error first hold time(ms)
+1475	0		15th axis quad-peak error first hold time(ms)
+1476	0		16th axis quad-peak error first hold time(ms)
+1481	0		*1st straightness offset moving axis number
+1482	0		*1st straightness offset compensating axis number
+1483	0		*2nd straightness offset moving axis number
+1484	0		*2nd straightness offset compensating axis number
+1485	0		*3rd straightness offset moving axis number
+1486	0		*3rd straightness offset compensating axis number
+1487	0		*4th straightness offset moving axis number
+1488	0		*4th straightness offset compensating axis number
+1489	0		*5th straightness offset moving axis number
+1490	0		*5th straightness offset compensating axis number
+1621	4		*Axis ID or Port no. for 1st spindle
+1622	0		*Axis ID or Port no. for 2nd spindle
+1623	0		*Axis ID or Port no. for 3rd spindle
+1624	0		*Axis ID or Port no. for 4th spindle
+1625	0		*Axis ID or Port no. for 5th spindle
+1626	0		*Axis ID or Port no. for 6th spindle
+1631	0		1st spindle bias for zero speed(0.1 mV)
+1632	0		2nd spindle bias for zero speed(0.1 mV)
+1633	0		3rd spindle bias for zero speed(0.1 mV)
+1634	0		4th spindle bias for zero speed(0.1 mV)
+1635	0		5th spindle bias for zero speed(0.1 mV)
+1636	0		6th spindle bias for zero speed(0.1 mV)
+1641	0		1st spindle encoder polarity(0:Pos;1:Neg)
+1642	0		2nd spindle encoder polarity(0:Pos;1:Neg)
+1643	0		3rd spindle encoder polarity(0:Pos;1:Neg)
+1644	0		4th spindle encoder polarity(0:Pos;1:Neg)
+1645	0		5th spindle encoder polarity(0:Pos;1:Neg)
+1646	0		6th spindle encoder polarity(0:Pos;1:Neg)
+1651	1024		1st spindle encoder resolution(pulse/rev)
+1652	1000		2nd spindle encoder resolution(pulse/rev)
+1653	1000		3rd spindle encoder resolution(pulse/rev)
+1654	1000		4th spindle encoder resolution(pulse/rev)
+1655	1000		5th spindle encoder resolution(pulse/rev)
+1656	1000		6th spindle encoder resolution(pulse/rev)
+1661	4		1st spindle encoder scaling factor
+1662	4		2nd spindle encoder scaling factor
+1663	4		3rd spindle encoder scaling factor
+1664	4		4th spindle encoder scaling factor
+1665	4		5th spindle encoder scaling factor
+1666	4		6th spindle encoder scaling factor
+1671	200		1st spindle gain(RPM/V)
+1672	200		2nd spindle gain(RPM/V)
+1673	200		3rd spindle gain(RPM/V)
+1674	200		4th spindle gain(RPM/V)
+1675	200		5th spindle gain(RPM/V)
+1676	200		6th spindle gain(RPM/V)
+1681	1		1st spindle 1st gear number at screw side
+1682	1		1st spindle 1st gear number at motor side
+1683	1		2nd spindle 1st gear number at screw side
+1684	1		2nd spindle 1st gear number at motor side
+1685	1		3rd spindle 1st gear number at screw side
+1686	1		3rd spindle 1st gear number at motor side
+1687	1		4th spindle 1st gear number at screw side
+1688	1		4th spindle 1st gear number at motor side
+1689	1		5th spindle 1st gear number at screw side
+1690	1		5th spindle 1st gear number at motor side
+1691	1		6th spindle 1st gear number at screw side
+1692	1		6th spindle 1st gear number at motor side
+1711	0		*1st spindle pos. sensor exist?(0:No;1:Yes)
+1712	0		*2nd spindle pos. sensor exist?(0:No;1:Yes)
+1713	0		*3rd spindle pos. sensor exist?(0:No;1:Yes)
+1714	0		*4th spindle pos. sensor exist?(0:No;1:Yes)
+1715	0		*5th spindle pos. sensor exist?(0:No;1:Yes)
+1716	0		*6th spindle pos. sensor exist?(0:No;1:Yes)
+1721	10		1st spindle zero floating speed(RPM)
+1722	0		2nd spindle zero floating speed(RPM)
+1723	0		3rd spindle zero floating speed(RPM)
+1724	0		4th spindle zero floating speed(RPM)
+1725	0		5th spindle zero floating speed(RPM)
+1726	0		6th spindle zero floating speed(RPM)
+1731	100		1st spindle minimum speed(RPM)
+1732	0		2nd spindle minimum speed(RPM)
+1733	0		3rd spindle minimum speed(RPM)
+1734	0		4th spindle minimum speed(RPM)
+1735	0		5th spindle minimum speed(RPM)
+1736	0		6th spindle minimum speed(RPM)
+1741	50		1st spindle speed for orientation stop(RPM)
+1742	50		2nd spindle speed for orientation stop(RPM)
+1743	50		3rd spindle speed for orientation stop(RPM)
+1744	50		4th spindle speed for orientation stop(RPM)
+1745	50		5th spindle speed for orientation stop(RPM)
+1746	50		6th spindle speed for orientation stop(RPM)
+1751	0		1st spindle S.O.S. reference offset(0.001deg)
+1752	0		2nd spindle S.O.S. reference offset(0.001deg)
+1753	0		3rd spindle S.O.S. reference offset(0.001deg)
+1754	0		4th spindle S.O.S. reference offset(0.001deg)
+1755	0		5th spindle S.O.S. reference offset(0.001deg)
+1756	0		6th spindle S.O.S. reference offset(0.001deg)
+1761	1000		1st spindle orientation stop dec. time(ms)
+1762	1000		2nd spindle orientation stop dec. time(ms)
+1763	1000		3rd spindle orientation stop dec. time(ms)
+1764	1000		4th spindle orientation stop dec. time(ms)
+1765	1000		5th spindle orientation stop dec. time(ms)
+1766	1000		6th spindle orientation stop dec. time(ms)
+1771	0		1st spindle home reference offset(0.001deg)
+1772	0		2nd spindle home reference offset(0.001deg)
+1773	0		3rd spindle home reference offset(0.001deg)
+1774	0		4th spindle home reference offset(0.001deg)
+1775	0		5th spindle home reference offset(0.001deg)
+1776	0		6th spindle home reference offset(0.001deg)
+1781	0		1st min. speed for orientation stop(RPM)
+1782	0		2nd min. speed for orientation stop(RPM)
+1783	0		3rd min. speed for orientation stop(RPM)
+1784	0		4th min. speed for orientation stop(RPM)
+1785	0		5th min. speed for orientation stop(RPM)
+1786	0		6th min. speed for orientation stop(RPM)
+1791	0		*1st spindle motor type(0:Inv;1:PSpd;2:VSpd;3:Svo;4:SyntecSpd)
+1792	0		*2nd spindle motor type(0:Inv;1:PSpd;2:VSpd;3:Svo;4:SyntecSpd)
+1793	0		*3rd spindle motor type(0:Inv;1:PSpd;2:VSpd;3:Svo;4:SyntecSpd)
+1794	0		*4th spindle motor type(0:Inv;1:PSpd;2:VSpd;3:Svo;4:SyntecSpd)
+1795	0		*5th spindle motor type(0:Inv;1:PSpd;2:VSpd;3:Svo;4:SyntecSpd)
+1796	0		*6th spindle motor type(0:Inv;1:PSpd;2:VSpd;3:Svo;4:SyntecSpd)
+1801	24000		1st spindle maximum speed(RPM)
+1802	10000		2nd spindle maximum speed(RPM)
+1803	10000		3rd spindle maximum speed(RPM)
+1804	10000		4th spindle maximum speed(RPM)
+1805	10000		5th spindle maximum speed(RPM)
+1806	10000		6th spindle maximum speed(RPM)
+1811	0		1st spindle encoder mount location(0:Spd;1:Mot)
+1812	0		2nd spindle encoder mount location(0:Spd;1:Mot)
+1813	0		3rd spindle encoder mount location(0:Spd;1:Mot)
+1814	0		4th spindle encoder mount location(0:Spd;1:Mot)
+1815	0		5th spindle encoder mount location(0:Spd;1:Mot)
+1816	0		6th spindle encoder mount location(0:Spd;1:Mot)
+1821	30		1st spindle servo differential gain
+1822	0		2nd spindle servo differential gain
+1823	0		3rd spindle servo differential gain
+1824	0		4th spindle servo differential gain
+1825	0		5th spindle servo differential gain
+1826	0		6th spindle servo differential gain
+1831	4000		1st spindle motor acceleration time(ms)
+1832	2000		2nd spindle motor acceleration time(ms)
+1833	2000		3rd spindle motor acceleration time(ms)
+1834	2000		4th spindle motor acceleration time(ms)
+1835	2000		5th spindle motor acceleration time(ms)
+1836	2000		6th spindle motor acceleration time(ms)
+1841	1500		1st spindle motor fundamental frequency speed(RPM)
+1842	0		2nd spindle motor fundamental frequency speed(RPM)
+1843	0		3rd spindle motor fundamental frequency speed(RPM)
+1844	0		4th spindle motor fundamental frequency speed(RPM)
+1845	0		5th spindle motor fundamental frequency speed(RPM)
+1846	0		6th spindle motor fundamental frequency speed(RPM)
+1851	100		1st Spd. Acc. Acced. to 1000 RPM/s time(Jerk)(ms)
+1852	100		2nd Spd. Acc. Acced. to 1000 RPM/s time(Jerk)(ms)
+1853	100		3rd Spd. Acc. Acced. to 1000 RPM/s time(Jerk)(ms)
+1854	100		4th Spd. Acc. Acced. to 1000 RPM/s time(Jerk)(ms)
+1855	100		5th Spd. Acc. Acced. to 1000 RPM/s time(Jerk)(ms)
+1856	100		6th Spd. Acc. Acced. to 1000 RPM/s time(Jerk)(ms)
+1861	0		Spindle Sync., 1st spindle direction(0:CW Pos,CCW Neg;1:CCW Pos,CW Neg)
+1862	0		Spindle Sync., 2nd spindle direction(0:CW Pos,CCW Neg;1:CCW Pos,CW Neg)
+1863	0		Spindle Sync., 3rd spindle direction(0:CW Pos,CCW Neg;1:CCW Pos,CW Neg)
+1864	0		Spindle Sync., 4th spindle direction(0:CW Pos,CCW Neg;1:CCW Pos,CW Neg)
+1865	0		Spindle Sync., 5th spindle direction(0:CW Pos,CCW Neg;1:CCW Pos,CW Neg)
+1866	0		Spindle Sync., 6th spindle direction(0:CW Pos,CCW Neg;1:CCW Pos,CW Neg)
+1871	24000		*1st spindle initial speed(RPM)
+1872	1000		*2nd spindle initial speed(RPM)
+1873	1000		*3rd spindle initial speed(RPM)
+1874	1000		*4th spindle initial speed(RPM)
+1875	1000		*5th spindle initial speed(RPM)
+1876	1000		*6th spindle initial speed(RPM)
+1881	0		1st spindle speed control integral time(V type Spindle, ms)
+1882	0		2nd spindle speed control integral time(V type Spindle, ms)
+1883	0		3nd spindle speed control integral time(V type Spindle, ms)
+1884	0		4nd spindle speed control integral time(V type Spindle, ms)
+1885	0		5nd spindle speed control integral time(V type Spindle, ms)
+1886	0		6nd spindle speed control integral time(V type Spindle, ms)
+1901	1		1st spindle 2nd gear number at screw side
+1902	1		1st spindle 2nd gear number at motor side
+1903	1		2nd spindle 2nd gear number at screw side
+1904	1		2nd spindle 2nd gear number at motor side
+1905	1		3rd spindle 2nd gear number at screw side
+1906	1		3rd spindle 2nd gear number at motor side
+1907	1		4th spindle 2nd gear number at screw side
+1908	1		4th spindle 2nd gear number at motor side
+1909	1		5th spindle 2nd gear number at screw side
+1910	1		5th spindle 2nd gear number at motor side
+1911	1		6th spindle 2nd gear number at screw side
+1912	1		6th spindle 2nd gear number at motor side
+1921	1		1st spindle 3rd gear number at screw side
+1922	1		1st spindle 3rd gear number at motor side
+1923	1		2nd spindle 3rd gear number at screw side
+1924	1		2nd spindle 3rd gear number at motor side
+1925	1		3rd spindle 3rd gear number at screw side
+1926	1		3rd spindle 3rd gear number at motor side
+1927	1		4th spindle 3rd gear number at screw side
+1928	1		4th spindle 3rd gear number at motor side
+1929	1		5th spindle 3rd gear number at screw side
+1930	1		5th spindle 3rd gear number at motor side
+1931	1		6th spindle 3rd gear number at screw side
+1932	1		6th spindle 3rd gear number at motor side
+1941	1		1st spindle 4th gear number at screw side
+1942	1		1st spindle 4th gear number at motor side
+1943	1		2nd spindle 4th gear number at screw side
+1944	1		2nd spindle 4th gear number at motor side
+1945	1		3rd spindle 4th gear number at screw side
+1946	1		3rd spindle 4th gear number at motor side
+1947	1		4th spindle 4th gear number at screw side
+1948	1		4th spindle 4th gear number at motor side
+1949	1		5th spindle 4th gear number at screw side
+1950	1		5th spindle 4th gear number at motor side
+1951	1		6th spindle 4th gear number at screw side
+1952	1		6th spindle 4th gear number at motor side
+1964	0		§ð¤ú®É²Ä¤­¥D¶b»P²Ä´X¶b°t¹ï
+1965	0		§ð¤ú®É²Ä¤»¥D¶b»P²Ä´X¶b°t¹ï
+1971	0		when tapping 1st spindle acceleration time(ms)
+1972	200		when tapping 2nd spindle acceleration time(ms)
+1973	200		when tapping 3rd spindle acceleration time(ms)
+1974	200		when tapping 4th spindle acceleration time(ms)
+1975	200		when tapping 5th spindle acceleration time(ms)
+1976	200		when tapping 6th spindle acceleration time(ms)
+1981	0		when tapping 1st Spd. Acc. Acced. to 1000 RPM/s time(ms)
+1982	100		when tapping 2nd Spd. Acc. Acced. to 1000 RPM/s time(ms)
+1983	100		when tapping 3rd Spd. Acc. Acced. to 1000 RPM/s time(ms)
+1984	100		when tapping 4th Spd. Acc. Acced. to 1000 RPM/s time(ms)
+1985	100		when tapping 5th Spd. Acc. Acced. to 1000 RPM/s time(ms)
+1986	100		when tapping 6th Spd. Acc. Acced. to 1000 RPM/s time(ms)
+1991	0		check spindle speed arrival(0:Disable;1:Cutting;2:Threading;3:Cutting&Threading)
+1992	15		spindle cutting speed arrival range(%)
+1993	15		spindle threading speed arrival range(%)
+2001	100		MPG 4th scaling factor(Least Input Unit,LIU)
+2003	1		MPG program simulation handwheel No.
+2021	5		*Port no. or register no. for 1st MPG
+2022	0		*Port no. or register no. for 2nd MPG
+2023	0		*Port no. or register no. for 3rd MPG
+2031	0		1st MPG related to axis ID(0:MLC;1-16:axes)
+2032	0		2nd MPG related to axis ID(0:MLC;1-16:axes)
+2033	0		3rd MPG related to axis ID(0:MLC;1-16:axes)
+2041	100		1st MPG resolution(pulse/rev)
+2042	100		2nd MPG resolution(pulse/rev)
+2043	100		3rd MPG resolution(pulse/rev)
+2051	4		1st MPG scaling factor
+2052	4		2nd MPG scaling factor
+2053	4		3rd MPG scaling factor
+2061	1		1st MPG gear number at screw side
+2062	1		1st MPG gear number at motor side
+2063	1		2nd MPG gear number at screw side
+2064	1		2nd MPG gear number at motor side
+2065	1		3rd MPG gear number at screw side
+2066	1		3rd MPG gear number at motor side
+2401	1675000		X axis pos. coordinate of stroke limit 1(BLU)
+2402	0		X axis neg. coordinate of stroke limit 1(BLU)
+2403	2740000		Y axis pos. coordinate of stroke limit 1(BLU)
+2404	0		Y axis neg. coordinate of stroke limit 1(BLU)
+2405	0		Z axis pos. coordinate of stroke limit 1(BLU)
+2406	-303030		Z axis neg. coordinate of stroke limit 1(BLU)
+2407	999999999		4th axis pos. coordinate of stroke limit 1(BLU)
+2408	-999999999		4th axis neg. coordinate of stroke limit 1(BLU)
+2409	999999999		5th axis pos. coordinate of stroke limit 1(BLU)
+2410	-999999999		5th axis neg. coordinate of stroke limit 1(BLU)
+2411	999999999		6th axis pos. coordinate of stroke limit 1(BLU)
+2412	-999999999		6th axis neg. coordinate of stroke limit 1(BLU)
+2413	999999999		7th axis pos. coordinate of stroke limit 1(BLU)
+2414	-999999999		7th axis neg. coordinate of stroke limit 1(BLU)
+2415	999999999		8th axis pos. coordinate of stroke limit 1(BLU)
+2416	-999999999		8th axis neg. coordinate of stroke limit 1(BLU)
+2417	999999999		9th axis pos. coordinate of stroke limit 1(BLU)
+2418	-999999999		9th axis neg. coordinate of stroke limit 1(BLU)
+2419	999999999		10th axis pos. coordinate of stroke limit 1(BLU)
+2420	-999999999		10th axis neg. coordinate of stroke limit 1(BLU)
+2421	999999999		11th axis pos. coordinate of stroke limit 1(BLU)
+2422	-999999999		11th axis neg. coordinate of stroke limit 1(BLU)
+2423	999999999		12th axis pos. coordinate of stroke limit 1(BLU)
+2424	-999999999		12th axis neg. coordinate of stroke limit 1(BLU)
+2425	999999999		13th axis pos. coordinate of stroke limit 1(BLU)
+2426	-999999999		13th axis neg. coordinate of stroke limit 1(BLU)
+2427	999999999		14th axis pos. coordinate of stroke limit 1(BLU)
+2428	-999999999		14th axis neg. coordinate of stroke limit 1(BLU)
+2429	999999999		15th axis pos. coordinate of stroke limit 1(BLU)
+2430	-999999999		15th axis neg. coordinate of stroke limit 1(BLU)
+2431	999999999		16th axis pos. coordinate of stroke limit 1(BLU)
+2432	-999999999		16th axis neg. coordinate of stroke limit 1(BLU)
+2441	999999999		X axis pos. coordinate of stroke limit 3(BLU)
+2442	-999999999		X axis neg. coordinate of stroke limit 3(BLU)
+2443	999999999		Y axis pos. coordinate of stroke limit 3(BLU)
+2444	-999999999		Y axis neg. coordinate of stroke limit 3(BLU)
+2445	5000000		Z axis pos. coordinate of stroke limit 3(BLU)
+2446	-3000000		Z axis neg. coordinate of stroke limit 3(BLU)
+2447	999999999		4th axis pos. coordinate of stroke limit 3(BLU)
+2448	-999999999		4th axis neg. coordinate of stroke limit 3(BLU)
+2449	0		5th axis pos. coordinate of stroke limit 3(BLU)
+2450	0		5th axis neg. coordinate of stroke limit 3(BLU)
+2451	0		6th axis pos. coordinate of stroke limit 3(BLU)
+2452	0		6th axis neg. coordinate of stroke limit 3(BLU)
+2453	0		7th axis pos. coordinate of stroke limit 3(BLU)
+2454	0		7th axis neg. coordinate of stroke limit 3(BLU)
+2455	0		8th axis pos. coordinate of stroke limit 3(BLU)
+2456	0		8th axis neg. coordinate of stroke limit 3(BLU)
+2457	0		9th axis pos. coordinate of stroke limit 3(BLU)
+2458	0		9th axis neg. coordinate of stroke limit 3(BLU)
+2459	0		10th axis pos. coordinate of stroke limit 3(BLU)
+2460	0		10th axis neg. coordinate of stroke limit 3(BLU)
+2461	0		11th axis pos. coordinate of stroke limit 3(BLU)
+2462	0		11th axis neg. coordinate of stroke limit 3(BLU)
+2463	0		12th axis pos. coordinate of stroke limit 3(BLU)
+2464	0		12th axis neg. coordinate of stroke limit 3(BLU)
+2465	0		13th axis pos. coordinate of stroke limit 3(BLU)
+2466	0		13th axis neg. coordinate of stroke limit 3(BLU)
+2467	0		14th axis pos. coordinate of stroke limit 3(BLU)
+2468	0		14th axis neg. coordinate of stroke limit 3(BLU)
+2469	0		15th axis pos. coordinate of stroke limit 3(BLU)
+2470	0		15th axis neg. coordinate of stroke limit 3(BLU)
+2471	0		16th axis pos. coordinate of stroke limit 3(BLU)
+2472	0		16th axis neg. coordinate of stroke limit 3(BLU)
+2481	0		persistent of stroke limit 3(0:No;1:Reset;2:PowerOff)
+2482	1		Protect range of stroke limit 3(1:Outside; 2:Inside)
+2501	0		X axis pos. coordinate of stroke limit 2(BLU)
+2502	0		X axis neg. coordinate of stroke limit 2(BLU)
+2503	0		Y axis pos. coordinate of stroke limit 2(BLU)
+2504	0		Y axis neg. coordinate of stroke limit 2(BLU)
+2505	0		Z axis pos. coordinate of stroke limit 2(BLU)
+2506	0		Z axis neg. coordinate of stroke limit 2(BLU)
+2507	0		4th axis pos. coordinate of stroke limit 2(BLU)
+2508	0		4th axis neg. coordinate of stroke limit 2(BLU)
+2509	0		5th axis pos. coordinate of stroke limit 2(BLU)
+2510	0		5th axis neg. coordinate of stroke limit 2(BLU)
+2511	0		6th axis pos. coordinate of stroke limit 2(BLU)
+2512	0		6th axis neg. coordinate of stroke limit 2(BLU)
+2513	0		7th axis pos. coordinate of stroke limit 2(BLU)
+2514	0		7th axis neg. coordinate of stroke limit 2(BLU)
+2515	0		8th axis pos. coordinate of stroke limit 2(BLU)
+2516	0		8th axis neg. coordinate of stroke limit 2(BLU)
+2517	0		9th axis pos. coordinate of stroke limit 2(BLU)
+2518	0		9th axis neg. coordinate of stroke limit 2(BLU)
+2519	0		10th axis pos. coordinate of stroke limit 2(BLU)
+2520	0		10th axis neg. coordinate of stroke limit 2(BLU)
+2521	0		11th axis pos. coordinate of stroke limit 2(BLU)
+2522	0		11th axis neg. coordinate of stroke limit 2(BLU)
+2523	0		12th axis pos. coordinate of stroke limit 2(BLU)
+2524	0		12th axis neg. coordinate of stroke limit 2(BLU)
+2525	0		13th axis pos. coordinate of stroke limit 2(BLU)
+2526	0		13th axis neg. coordinate of stroke limit 2(BLU)
+2527	0		14th axis pos. coordinate of stroke limit 2(BLU)
+2528	0		14th axis neg. coordinate of stroke limit 2(BLU)
+2529	0		15th axis pos. coordinate of stroke limit 2(BLU)
+2530	0		15th axis neg. coordinate of stroke limit 2(BLU)
+2531	0		16th axis pos. coordinate of stroke limit 2(BLU)
+2532	0		16th axis neg. coordinate of stroke limit 2(BLU)
+2542	2		Protect range of stroke limit 2(1:Outside; 2:Inside)
+2801	0		X axis 2nd reference point(BLU)
+2802	2613000		Y axis 2nd reference point(BLU)
+2803	0		Z axis 2nd reference point(BLU)
+2804	0		4th axis 2nd reference point(BLU)
+2805	0		5th axis 2nd reference point(BLU)
+2806	0		6th axis 2nd reference point(BLU)
+2807	0		7th axis 2nd reference point(BLU)
+2808	0		8th axis 2nd reference point(BLU)
+2809	0		9th axis 2nd reference point(BLU)
+2810	0		10th axis 2nd reference point(BLU)
+2811	0		11th axis 2nd reference point(BLU)
+2812	0		12th axis 2nd reference point(BLU)
+2813	0		13th axis 2nd reference point(BLU)
+2814	0		14th axis 2nd reference point(BLU)
+2815	0		15th axis 2nd reference point(BLU)
+2816	0		16th axis 2nd reference point(BLU)
+2821	0		X axis 3rd reference point(BLU)
+2822	0		Y axis 3rd reference point(BLU)
+2823	0		Z axis 3rd reference point(BLU)
+2824	0		4th axis 3rd reference point(BLU)
+2825	0		5th axis 3rd reference point(BLU)
+2826	0		6th axis 3rd reference point(BLU)
+2827	0		7th axis 3rd reference point(BLU)
+2828	0		8th axis 3rd reference point(BLU)
+2829	0		9th axis 3rd reference point(BLU)
+2830	0		10th axis 3rd reference point(BLU)
+2831	0		11th axis 3rd reference point(BLU)
+2832	0		12th axis 3rd reference point(BLU)
+2833	0		13th axis 3rd reference point(BLU)
+2834	0		14th axis 3rd reference point(BLU)
+2835	0		15th axis 3rd reference point(BLU)
+2836	0		16th axis 3rd reference point(BLU)
+2841	0		X axis 4th reference point(BLU)
+2842	0		Y axis 4th reference point(BLU)
+2843	0		Z axis 4th reference point(BLU)
+2844	0		4th axis 4th reference point(BLU)
+2845	0		5th axis 4th reference point(BLU)
+2846	0		6th axis 4th reference point(BLU)
+2847	0		7th axis 4th reference point(BLU)
+2848	0		8th axis 4th reference point(BLU)
+2849	0		9th axis 4th reference point(BLU)
+2850	0		10th axis 4th reference point(BLU)
+2851	0		11th axis 4th reference point(BLU)
+2852	0		12th axis 4th reference point(BLU)
+2853	0		13th axis 4th reference point(BLU)
+2854	0		14th axis 4th reference point(BLU)
+2855	0		15th axis 4th reference point(BLU)
+2856	0		16th axis 4th reference point(BLU)
+2900	0		*Servo channel number of master axis of 1-st tension control couple axes
+2901	0		*Servo channel number of slave axis of 1-st tension control couple axes
+2902	0		Proportional loop gain of 1st tension control(Hz)
+2903	0		Integral loop gain of 1st tension control(0.001)
+2904	0		Tenshion reference of 1st tension control(%)
+3001	0		*Organization for five axis machine(0:not five axis machine;1:Spindle Type;2:Table Type;3:Mix Type)
+3002	0		Direction of Tool(0:Undefine;1:Positive x-Axis;2:Positive y-Axis;3:Positive z-Axis)
+3003	0		Incline Angle of direction of Tool(RA)
+3004	0		Incline Angle of direction of Tool(RB)
+3005	0		First rotation axis(0:Undefine;1:rotate around x-Axis;2:rotate around y-Axis;3:rotate around z-Axis)
+3006	0		Second rotation axis(0:Undefine;1:rotate around x-Axis;2:rotate around y-Axis;3:rotate around z-Axis)
+3007	0		Rotation direction of first rotation axis(0:Undefine;1:right hand side;2:left hand side)
+3008	0		Rotation direction of second rotation axis(0:Undefine;1:right hand side;2:left hand side)
+3009	0		starting point of rotation angle of first rotation axis
+3010	0		terminal point of rotation angle of first rotation axis
+3011	0		starting point of rotation angle of second rotation axis
+3012	0		terminal point of rotation angle of second rotation axis
+3013	0		Tool Holder Offset
+3014	0		feature coordinate persist mode(0:No;1:Reset;2:PowerOff)
+3015	0		A-component of Offset for first rotation axis
+3016	0		B-component of Offset for first rotation axis
+3017	0		C-component of Offset for first rotation axis
+3018	0		A-component of Offset for second rotation axis
+3019	0		B-component of Offset for second rotation axis
+3020	0		C-component of Offset for second rotation axis
+3021	0		x-component of Offset from tool holder to second rotation axis
+3022	0		y-component of Offset from tool holder to second rotation axis
+3023	0		z-component of Offset from tool holder to second rotation axis
+3024	0		x-component of Offset from second rotation axis to first rotation axis
+3025	0		y-component of Offset from second rotation axis to first rotation axis
+3026	0		z-component of Offset from second rotation axis to first rotation axis
+3031	0		x-component of Offset from first rotation axis to second rotation axis
+3032	0		y-component of Offset from first rotation axis to second rotation axis
+3033	0		z-component of Offset from first rotation axis to second rotation axis
+3034	0		x-component of Offset from machine to first rotation axis
+3035	0		y-component of Offset from machine to first rotation axis
+3036	0		z-component of Offset from machine to first rotation axis
+3041	0		x-component of Offset from tool holder to first rotation axis
+3042	0		y-component of Offset from tool holder to first rotation axis
+3043	0		z-component of Offset from tool holder to first rotation axis
+3044	0		x-component of Offset from machine to second rotation axis
+3045	0		y-component of Offset from machine to second rotation axis
+3046	0		z-component of Offset from machine to second rotation axis
+3051	0		enable smooth RTCP function(0:No;1:Yes)
+3052	0		first rotation axis smooth tolerance(0.001deg)
+3053	0		second rotation axis smooth tolerance(0.001deg)
+3054	0		RTCP interpolation mode(0:Five Axes Simultaneously; 1:Tool Vector)
+3201	0		*lathe convention(0:No;1:C;2:A;3:B)
+3202	5000		*I/O scan time(0.001 ms)
+3203	3000		*Interpolation time interval(0.001 ms)
+3204	10000		*PLC scan time(0.001 ms)
+3205	0		*Function key type(0:5 key;1:8 key;2:Touch)
+3207	2		*C/S interface version number(1:Percent;2:Level)
+3209	0		*Language-0:英文(ENG);1:繁中(CHT);2:LOCAL;3:簡中(CHS)
+3211	0		*Display type(0:Color;1:Mono)
+3213	3		*Floppy name(1:USBDisk;2:DiskA;3:NetWork;4:USBDisk2)
+3215	1		*Enable T code call mode(0:Normal;1:Sub;2:Macro)
+3217	13		*Control panel type
+3219	3		*System config.(0:DISKC2;1:DISKC2;2DISKC;3:DISKA)
+3221	0		Debug level(0:User;1:App;2:Sys)
+3223	1		Enable System Manager(0:Disable;1:Enable)
+3224	0		Spindle Position Display(0:Off;1:On)
+3225	5		*Screen saver time latency(min)
+3227	0		*Screen resolution(0:FullScreen,1:800x600,2:1024x768)
+3228	0		Enable tool manager(0:Disable;1:Enable)
+3229	0		Disable workpiece coordinate(0:Enable;1:Disable)
+3230	0		Disable lathe tool length screen(0:Enable;1:Disable)
+3231	0		*COM1 Remote Device(0:No;1:FX2;2:Vision;3:FX2-V2)
+3232	0		*COM2 Remote Device(0:No;1:FX2;2:Vision;3:FX2-V2)
+3234	0		*Open Modbus Slave(0:Close,1:COM1,2:COM2,3:COM3)
+3235	0		*Modbus Slave Station ID(0-255:Station ID)
+3236	0		*Netwrok Station ID(0:Disabled;1-31:Station ID)
+3237	1024		*Netwrok whiteboard R register start number
+3238	0		*Network whiteboard R register length
+3241	0		*decimal point type(0:standard;1:pocket)
+3243	0		*keyboard reset process by PLC(0:by MMI;1:PLC)
+3245	1000		Max inc. value of input for tool wear compen.(BLU)
+3247	0		Feedrate display method(0:mm/min;1:m/min)
+3251	0		*Touch Screen Type(0:No;1:PM9000(Com4);2:TouchKit;3:PM9000(Com1);4:PM6000;9:Mouse)
+3252	25		
+3253	996		
+3254	28		
+3255	1006		
+3401	-100000		Extension Parameter(R81)
+3402	0		Extension Parameter(R82)
+3403	0		Extension Parameter(R83)
+3404	0		Extension Parameter(R84)
+3405	0		Extension Parameter(R85)
+3406	0		Extension Parameter(R86)
+3407	0		Extension Parameter(R87)
+3408	0		Extension Parameter(R88)
+3409	6		Extension Parameter(R89)
+3410	30		Extension Parameter(R90)
+3411	30		Extension Parameter(R91)
+3412	0		Extension Parameter(R92)
+3413	13		Extension Parameter(R93)
+3414	0		Extension Parameter(R94)
+3415	89		Extension Parameter(R95)
+3416	0		Extension Parameter(R96)
+3417	0		Extension Parameter(R96)
+3418	0		Extension Parameter(R98)
+3419	0		Extension Parameter(R99)
+3420	0		Extension Parameter(R100)
+3421	0		Extension Parameter(R801)
+3422	0		Extension Parameter(R802)
+3423	0		Extension Parameter(R803)
+3424	0		Extension Parameter(R804)
+3425	0		Extension Parameter(R805)
+3426	0		Extension Parameter(R806)
+3427	0		Extension Parameter(R807)
+3428	0		Extension Parameter(R808)
+3429	0		Extension Parameter(R809)
+3430	0		Extension Parameter(R810)
+3431	0		Extension Parameter(R811)
+3432	0		Extension Parameter(R812)
+3433	0		Extension Parameter(R813)
+3434	0		Extension Parameter(R814)
+3435	0		Extension Parameter(R815)
+3436	0		Extension Parameter(R816)
+3437	0		Extension Parameter(R817)
+3438	0		Extension Parameter(R818)
+3439	0		Extension Parameter(R819)
+3440	0		Extension Parameter(R820)
+3441	0		Extension Parameter(R821)
+3442	0		Extension Parameter(R822)
+3443	0		Extension Parameter(R823)
+3444	0		Extension Parameter(R824)
+3445	0		Extension Parameter(R825)
+3446	0		Extension Parameter(R826)
+3447	0		Extension Parameter(R827)
+3448	0		Extension Parameter(R828)
+3449	0		Extension Parameter(R829)
+3450	0		Extension Parameter(R830)
+3451	0		Extension Parameter(R831)
+3452	0		Extension Parameter(R832)
+3453	0		Extension Parameter(R833)
+3454	0		Extension Parameter(R834)
+3455	0		Extension Parameter(R835)
+3601	0		*M code macro call registry No.1
+3602	0		*M code macro call registry No.2
+3603	0		*M code macro call registry No.3
+3604	0		*M code macro call registry No.4
+3605	0		*M code macro call registry No.5
+3606	0		*M code macro call registry No.6
+3607	0		*M code macro call registry No.7
+3608	0		*M code macro call registry No.8
+3609	0		*M code macro call registry No.9
+3610	0		*M code macro call registry No.10
+3701	0		*G code macro call registry No.1
+3702	0		*G code macro call registry No.2
+3703	0		*G code macro call registry No.3
+3704	0		*G code macro call registry No.4
+3705	0		*G code macro call registry No.5
+3706	0		*G code macro call registry No.6
+3707	0		*G code macro call registry No.7
+3708	0		*G code macro call registry No.8
+3709	0		*G code macro call registry No.9
+3710	0		*G code macro call registry No.10
+3721	0		*axis 1 of 1st axis exchange
+3722	0		*axis 2 of 1st axis exchange
+3723	0		*offset 1 of 1st axis exchange
+3724	0		*offset 2 of 1st axis exchange
+3725	0		*mirror of 1st axis exchange
+3726	0		*axis 1 of 2st axis exchange
+3727	0		*axis 2 of 2st axis exchange
+3728	0		*offset 1 of 2st axis exchange
+3729	0		*offset 2 of 2st axis exchange
+3730	0		*mirror of 2nd axis exchange
+3731	0		*axis 1 of 3rd axis exchange
+3732	0		*axis 2 of 3rd axis exchange
+3733	0		*offset 1 of 3rd axis exchange
+3734	0		*offset 2 of 3rd axis exchange
+3735	0		*mirror of 3rd axis exchange
+3736	0		*axis 1 of 4th axis exchange
+3737	0		*axis 2 of 4th axis exchange
+3738	0		*offset 1 of 4th axis exchange
+3739	0		*offset 2 of 4th axis exchange
+3740	0		*mirror of 4th axis exchange
+3801	0		feed tight couple with spindle position under G95
+3802	0		default feedrate control mode(0:G64; 1:G62; 2:HPCC)
+3803	0		°k²æ¥\¯à¼W¯q
+3804	99		Part count M code
+3805	1000		static dual feedback error timeout(ms)
+3806	0		second auxiliary code(0:disable；1:enable)
+3807	5		Destination not on arc check window(BLU)
+3808	0		Smooth Precision Advanced(0:disable;1:highest smoothness;5:highest precision)
+3809	0		*Are UVWH inc. command of XYZC axes(0:No;1:Yes)
+3810	0		*Paralleled executing multiple M code in one block(0:Off;1:On)
+3811	0		*Start address of persist working global variable
+3813	0		*Number of extended global varaibles
+3815	0		Tool radius compensation Mode(0:Type B;1:Preview;2:Type A)
+3816	2		Tool length compensation mode(0:Z;1:Single;2:Multi)
+3817	10000		Fatal dual feedback error(BLU)
+3818	0		Dual feedback self-detect error(pulse)
+3819	0		Overcut check mode(0:Off;1:Check;2:Fix)
+3820	2		minimal deceleration ratio for inner circular cutting(Unit:%)
+3821	0		*1st coupling master axis number
+3822	0		*1st coupling slave axis number
+3823	1		*1st coupling master axis ratio factor
+3824	0		*1st coupling slave axis ratio factor
+3825	0		*1st coupling type(0:No;1:Mach;2:PSyn;3:Super;4:MSyn;5:One->Several;6:Feedback)
+3826	0		1st coupling couple time(ms)
+3827	0		1st coupling decouple time(ms)
+3831	1000		*Discharge resolution(0.001us)
+3832	0		*Discharge ignition delay
+3835	0		system command delay output time(ms)
+3836	0		*Initial Feed Mode(0:default;1:per min.;2:per rev.)
+3837	0		*Initial Command Mode(0:default;1:G90;2:G91)
+3838	1		*Initial Mode of 2nd Stroke limit(1:G22, 2:G23)
+3841	0		Z+ contact surface position(BLU)
+3842	0		Z- contact surface position(BLU)
+3843	0		X+ contact surface position(BLU)
+3844	0		X- contact surface position(BLU)
+3851	0		tool break handler program no
+3852	0		*enable custom halted point return(0:No;1:Yes)
+3861	0		*2nd coupling master axis number
+3862	0		*2nd coupling slave axis number
+3863	1		*2nd coupling master axis ratio factor
+3864	0		*2nd coupling slave axis ratio factor
+3865	0		*2nd coupling type(0:No;1:Mach;2:PSyn;3:Super;4:MSyn;5:One->Several;6:Feedback)
+3866	0		2nd coupling couple time(ms)
+3867	0		2nd coupling decouple time(ms)
+3871	0		*3rd coupling master axis number
+3872	0		*3rd coupling slave axis number
+3873	1		*3rd coupling master axis ratio factor
+3874	0		*3rd coupling slave axis ratio factor
+3875	0		*3rd coupling type(0:No;1:Mach;2:PSyn;3:Super;4:MSyn;5:One->Several;6:Feedback)
+3876	0		3rd coupling couple time(ms)
+3877	0		3rd coupling decouple time(ms)
+3881	0		*4th coupling master axis number
+3882	0		*4th coupling slave axis number
+3883	1		*4th coupling master axis ratio factor
+3884	0		*4th coupling slave axis ratio factor
+3885	0		*4th coupling type(0:No;1:Mach;2:PSyn;3:Super;4:MSyn;5:One->Several;6:Feedback)
+3886	0		4th coupling couple time(ms)
+3887	0		4th coupling decouple time(ms)
+3901	0		DC protocol role(0:CNC;1:Device or PC)
+3903	1		File transfer port number(1:COM1;2:COM2)
+3905	1		Macro program port number(1:COM1;2:COM2)
+3921	3		COM1 baud(0:24;1:48;2:96;3:192;4:384;5:576;6:1152;7:2304;8:4608;9:9126)
+3922	8		COM1 data bit number
+3923	0		COM1 exchange code type(0:ASCII;1:EIA;2:ISO)
+3924	0		COM1 control code(0:No;1:DC2;2:DC4;3:DC2DC4)
+3925	0		COM1 end-of-block output code(0:EOB;1:CR+EOB)
+3926	0		COM1 DC3 control code parity(0:Off;1:On)
+3927	1		COM1 flow control(0:No;1:CtsRts;2:XOnOff;3:RS485)
+3928	0		COM1 parity check(0:No;1:Odd;2:Even)
+3929	1		COM1 stop bit number(1:1Bit;2:2Bit)
+3930	10		COM1 communicate error timeout(ms)
+3941	3		COM2 baud(0:24;1:48;2:96;3:192;4:384;5:576;6:1152;7:2304;8:4608;9:9126)
+3942	8		COM2 data bit number
+3943	0		COM2 exchange code type(0:ASCII;1:EIA;2:ISO)
+3944	0		COM2 control code(0:No;1:DC2;2:DC4;3:DC2DC4)
+3945	0		COM2 end-of-block output code(0:EOB;1:CR+EOB)
+3946	0		COM2 DC3 control code parity(0:Off;1:On)
+3947	1		COM2 flow control(0:No;1:CtsRts;2:XOnOff;3:RS485)
+3948	0		COM2 parity check(0:No;1:Odd;2:Even)
+3949	1		COM2 stop bit number(1:1Bit;2:2Bit)
+3950	10		COM2 communicate error timeout(ms)
+3951	0		Axis no. for chopping axis(1-16)
+3952	0		Chopping reference machine position (BLU)
+3953	0		Chopping upper dead machine position (BLU)
+3954	0		Chopping lower dead machine position (BLU)
+3955	0		Chopping feedrate (mm/min)
+3956	0		Chopping compensation factor (%)
+3957	0		G00 Overlapping Distance(BLU)
+3961	3		COM3 baud(0:24;1:48;2:96;3:192;4:384;5:576;6:1152;7:2304;8:4608;9:9126)
+3962	8		COM3 data bit number
+3963	0		COM3 exchange code type(0:ASCII;1:EIA;2:ISO)
+3964	0		COM3 control code(0:No;1:DC2;2:DC4;3:DC2DC4)
+3965	0		COM3 end-of-block output code(0:EOB;1:CR+EOB)
+3966	0		COM3 DC3 control code parity(0:Off;1:On)
+3967	1		COM3 flow control(0:No;1:CtsRts;2:XOnOff;3:RS485)
+3968	0		COM3 parity check(0:No;1:Odd;2:Even)
+3969	1		COM3 stop bit number(1:1Bit;2:2Bit)
+3970	10		COM3 communicate error timeout(ms)
+4001	0		Tapping mode(0:peck tapping,1:high-speed)
+4002	5000		Drilling cycle retrace amount(LIU)
+4004	0		Tapping cycle retrace amount(LIU)
+4006	100		Tapping cycle retrace speed(%)
+4007	0		Spindle oritiention stop before tapping for serial spindle(0:disabled;1:enable)
+4008	0		Drilling mode for G81(0:general,1:fast-drill)
+4010	50		Facing cycle X/Y plane milling stepover percent
+4020	0		OSS direction of boring cyle(0:X+,1:X-,2:Y+,3:Y-,4:Z+,5:Z-)
+4055	0		G code tool measurement distance R
+4056	0		G code tool measurement allowed distance D
+4057	0		G code tool measurement feedrate F
+4058	0		G code tool measurement reference point P
+4059	0		G37.1 measuring position in mechanical coordinate Z
+5001	0		¦Û©w¸q°Ñ¼Æ1
+5002	0		¦Û©w¸q°Ñ¼Æ2
+7001	0		*1st straightness offset moving axis a position
+7002	0		*1st straightness offset moving axis b position
+7003	0		*1st straightness offset moving axis c position
+7004	0		*1st straightness offset moving axis d position
+7005	0		*1st straightness offset moving axis e position
+7006	0		*2nd straightness offset moving axis a position
+7007	0		*2nd straightness offset moving axis b position
+7008	0		*2nd straightness offset moving axis c position
+7009	0		*2nd straightness offset moving axis d position
+7010	0		*2nd straightness offset moving axis e position
+7011	0		*3rd straightness offset moving axis a position
+7012	0		*3rd straightness offset moving axis b position
+7013	0		*3rd straightness offset moving axis c position
+7014	0		*3rd straightness offset moving axis d position
+7015	0		*3rd straightness offset moving axis e position
+7016	0		*4th straightness offset moving axis a position
+7017	0		*4th straightness offset moving axis b position
+7018	0		*4th straightness offset moving axis c position
+7019	0		*4th straightness offset moving axis d position
+7020	0		*4th straightness offset moving axis e position
+7021	0		*5th straightness offset moving axis a position
+7022	0		*5th straightness offset moving axis b position
+7023	0		*5th straightness offset moving axis c position
+7024	0		*5th straightness offset moving axis d position
+7025	0		*5th straightness offset moving axis e position
+7026	0		1st straightness offset moving axis a position compensation amount(BLU)
+7027	0		1st straightness offset moving axis b position compensation amount(BLU)
+7028	0		1st straightness offset moving axis c position compensation amount(BLU)
+7029	0		1st straightness offset moving axis d position compensation amount(BLU)
+7030	0		1st straightness offset moving axis e position compensation amount(BLU)
+7031	0		2nd straightness offset moving axis a position compensation amount(BLU)
+7032	0		2nd straightness offset moving axis b position compensation amount(BLU)
+7033	0		2nd straightness offset moving axis c position compensation amount(BLU)
+7034	0		2nd straightness offset moving axis d position compensation amount(BLU)
+7035	0		2nd straightness offset moving axis e position compensation amount(BLU)
+7036	0		3rd straightness offset moving axis a position compensation amount(BLU)
+7037	0		3rd straightness offset moving axis b position compensation amount(BLU)
+7038	0		3rd straightness offset moving axis c position compensation amount(BLU)
+7039	0		3rd straightness offset moving axis d position compensation amount(BLU)
+7040	0		3rd straightness offset moving axis e position compensation amount(BLU)
+7041	0		4th straightness offset moving axis a position compensation amount(BLU)
+7042	0		4th straightness offset moving axis b position compensation amount(BLU)
+7043	0		4th straightness offset moving axis c position compensation amount(BLU)
+7044	0		4th straightness offset moving axis d position compensation amount(BLU)
+7045	0		4th straightness offset moving axis e position compensation amount(BLU)
+7046	0		5th straightness offset moving axis a position compensation amount(BLU)
+7047	0		5th straightness offset moving axis b position compensation amount(BLU)
+7048	0		5th straightness offset moving axis c position compensation amount(BLU)
+7049	0		5th straightness offset moving axis d position compensation amount(BLU)
+7050	0		5th straightness offset moving axis e position compensation amount(BLU)
+8001	0		X pos. abs. comp. pitch err. table no.1
+8002	0		X pos. abs. comp. pitch err. table no.2
+8003	0		X pos. abs. comp. pitch err. table no.3
+8004	0		X pos. abs. comp. pitch err. table no.4
+8005	0		X pos. abs. comp. pitch err. table no.5
+8006	0		X pos. abs. comp. pitch err. table no.6
+8007	0		X pos. abs. comp. pitch err. table no.7
+8008	0		X pos. abs. comp. pitch err. table no.8
+8009	0		X pos. abs. comp. pitch err. table no.9
+8010	0		X pos. abs. comp. pitch err. table no.10
+8011	0		X pos. abs. comp. pitch err. table no.11
+8012	0		X pos. abs. comp. pitch err. table no.12
+8013	0		X pos. abs. comp. pitch err. table no.13
+8014	0		X pos. abs. comp. pitch err. table no.14
+8015	0		X pos. abs. comp. pitch err. table no.15
+8016	0		X pos. abs. comp. pitch err. table no.16
+8017	0		X pos. abs. comp. pitch err. table no.17
+8018	0		X pos. abs. comp. pitch err. table no.18
+8019	0		X pos. abs. comp. pitch err. table no.19
+8020	0		X pos. abs. comp. pitch err. table no.20
+8021	0		X pos. abs. comp. pitch err. table no.21
+8022	0		X pos. abs. comp. pitch err. table no.22
+8023	0		X pos. abs. comp. pitch err. table no.23
+8024	0		X pos. abs. comp. pitch err. table no.24
+8025	0		X pos. abs. comp. pitch err. table no.25
+8026	0		X pos. abs. comp. pitch err. table no.26
+8027	0		X pos. abs. comp. pitch err. table no.27
+8028	0		X pos. abs. comp. pitch err. table no.28
+8029	0		X pos. abs. comp. pitch err. table no.29
+8030	0		X pos. abs. comp. pitch err. table no.30
+8031	0		X pos. abs. comp. pitch err. table no.31
+8032	0		X pos. abs. comp. pitch err. table no.32
+8033	0		X pos. abs. comp. pitch err. table no.33
+8034	0		X pos. abs. comp. pitch err. table no.34
+8035	0		X pos. abs. comp. pitch err. table no.35
+8036	0		X pos. abs. comp. pitch err. table no.36
+8037	0		X pos. abs. comp. pitch err. table no.37
+8038	0		X pos. abs. comp. pitch err. table no.38
+8039	0		X pos. abs. comp. pitch err. table no.39
+8040	0		X pos. abs. comp. pitch err. table no.40
+8041	0		X pos. abs. comp. pitch err. table no.41
+8042	0		X pos. abs. comp. pitch err. table no.42
+8043	0		X pos. abs. comp. pitch err. table no.43
+8044	0		X pos. abs. comp. pitch err. table no.44
+8045	0		X pos. abs. comp. pitch err. table no.45
+8046	0		X pos. abs. comp. pitch err. table no.46
+8047	0		X pos. abs. comp. pitch err. table no.47
+8048	0		X pos. abs. comp. pitch err. table no.48
+8049	0		X pos. abs. comp. pitch err. table no.49
+8050	0		X pos. abs. comp. pitch err. table no.50
+8051	0		X pos. abs. comp. pitch err. table no.51
+8052	0		X pos. abs. comp. pitch err. table no.52
+8053	0		X pos. abs. comp. pitch err. table no.53
+8054	0		X pos. abs. comp. pitch err. table no.54
+8055	0		X pos. abs. comp. pitch err. table no.55
+8056	0		X pos. abs. comp. pitch err. table no.56
+8057	0		X pos. abs. comp. pitch err. table no.57
+8058	0		X pos. abs. comp. pitch err. table no.58
+8059	0		X pos. abs. comp. pitch err. table no.59
+8060	0		X pos. abs. comp. pitch err. table no.60
+8061	0		X pos. abs. comp. pitch err. table no.61
+8062	0		X pos. abs. comp. pitch err. table no.62
+8063	0		X pos. abs. comp. pitch err. table no.63
+8064	0		X pos. abs. comp. pitch err. table no.64
+8065	0		X pos. abs. comp. pitch err. table no.65
+8066	0		X pos. abs. comp. pitch err. table no.66
+8067	0		X pos. abs. comp. pitch err. table no.67
+8068	0		X pos. abs. comp. pitch err. table no.68
+8069	0		X pos. abs. comp. pitch err. table no.69
+8070	0		X pos. abs. comp. pitch err. table no.70
+8071	0		X pos. abs. comp. pitch err. table no.71
+8072	0		X pos. abs. comp. pitch err. table no.72
+8073	0		X pos. abs. comp. pitch err. table no.73
+8074	0		X pos. abs. comp. pitch err. table no.74
+8075	0		X pos. abs. comp. pitch err. table no.75
+8076	0		X pos. abs. comp. pitch err. table no.76
+8077	0		X pos. abs. comp. pitch err. table no.77
+8078	0		X pos. abs. comp. pitch err. table no.78
+8079	0		X pos. abs. comp. pitch err. table no.79
+8080	0		X pos. abs. comp. pitch err. table no.80
+8081	0		X pos. abs. comp. pitch err. table no.81
+8082	0		X pos. abs. comp. pitch err. table no.82
+8083	0		X pos. abs. comp. pitch err. table no.83
+8084	0		X pos. abs. comp. pitch err. table no.84
+8085	0		X pos. abs. comp. pitch err. table no.85
+8086	0		X pos. abs. comp. pitch err. table no.86
+8087	0		X pos. abs. comp. pitch err. table no.87
+8088	0		X pos. abs. comp. pitch err. table no.88
+8089	0		X pos. abs. comp. pitch err. table no.89
+8090	0		X pos. abs. comp. pitch err. table no.90
+8091	0		X pos. abs. comp. pitch err. table no.91
+8092	0		X pos. abs. comp. pitch err. table no.92
+8093	0		X pos. abs. comp. pitch err. table no.93
+8094	0		X pos. abs. comp. pitch err. table no.94
+8095	0		X pos. abs. comp. pitch err. table no.95
+8096	0		X pos. abs. comp. pitch err. table no.96
+8097	0		X pos. abs. comp. pitch err. table no.97
+8098	0		X pos. abs. comp. pitch err. table no.98
+8099	0		X pos. abs. comp. pitch err. table no.99
+8100	0		X pos. abs. comp. pitch err. table no.100
+8101	0		X neg. abs. comp. pitch err. table no.1
+8102	0		X neg. abs. comp. pitch err. table no.2
+8103	0		X neg. abs. comp. pitch err. table no.3
+8104	0		X neg. abs. comp. pitch err. table no.4
+8105	0		X neg. abs. comp. pitch err. table no.5
+8106	0		X neg. abs. comp. pitch err. table no.6
+8107	0		X neg. abs. comp. pitch err. table no.7
+8108	0		X neg. abs. comp. pitch err. table no.8
+8109	0		X neg. abs. comp. pitch err. table no.9
+8110	0		X neg. abs. comp. pitch err. table no.10
+8111	0		X neg. abs. comp. pitch err. table no.11
+8112	0		X neg. abs. comp. pitch err. table no.12
+8113	0		X neg. abs. comp. pitch err. table no.13
+8114	0		X neg. abs. comp. pitch err. table no.14
+8115	0		X neg. abs. comp. pitch err. table no.15
+8116	0		X neg. abs. comp. pitch err. table no.16
+8117	0		X neg. abs. comp. pitch err. table no.17
+8118	0		X neg. abs. comp. pitch err. table no.18
+8119	0		X neg. abs. comp. pitch err. table no.19
+8120	0		X neg. abs. comp. pitch err. table no.20
+8121	0		X neg. abs. comp. pitch err. table no.21
+8122	0		X neg. abs. comp. pitch err. table no.22
+8123	0		X neg. abs. comp. pitch err. table no.23
+8124	0		X neg. abs. comp. pitch err. table no.24
+8125	0		X neg. abs. comp. pitch err. table no.25
+8126	0		X neg. abs. comp. pitch err. table no.26
+8127	0		X neg. abs. comp. pitch err. table no.27
+8128	0		X neg. abs. comp. pitch err. table no.28
+8129	0		X neg. abs. comp. pitch err. table no.29
+8130	0		X neg. abs. comp. pitch err. table no.30
+8131	0		X neg. abs. comp. pitch err. table no.31
+8132	0		X neg. abs. comp. pitch err. table no.32
+8133	0		X neg. abs. comp. pitch err. table no.33
+8134	0		X neg. abs. comp. pitch err. table no.34
+8135	0		X neg. abs. comp. pitch err. table no.35
+8136	0		X neg. abs. comp. pitch err. table no.36
+8137	0		X neg. abs. comp. pitch err. table no.37
+8138	0		X neg. abs. comp. pitch err. table no.38
+8139	0		X neg. abs. comp. pitch err. table no.39
+8140	0		X neg. abs. comp. pitch err. table no.40
+8141	0		X neg. abs. comp. pitch err. table no.41
+8142	0		X neg. abs. comp. pitch err. table no.42
+8143	0		X neg. abs. comp. pitch err. table no.43
+8144	0		X neg. abs. comp. pitch err. table no.44
+8145	0		X neg. abs. comp. pitch err. table no.45
+8146	0		X neg. abs. comp. pitch err. table no.46
+8147	0		X neg. abs. comp. pitch err. table no.47
+8148	0		X neg. abs. comp. pitch err. table no.48
+8149	0		X neg. abs. comp. pitch err. table no.49
+8150	0		X neg. abs. comp. pitch err. table no.50
+8151	0		X neg. abs. comp. pitch err. table no.51
+8152	0		X neg. abs. comp. pitch err. table no.52
+8153	0		X neg. abs. comp. pitch err. table no.53
+8154	0		X neg. abs. comp. pitch err. table no.54
+8155	0		X neg. abs. comp. pitch err. table no.55
+8156	0		X neg. abs. comp. pitch err. table no.56
+8157	0		X neg. abs. comp. pitch err. table no.57
+8158	0		X neg. abs. comp. pitch err. table no.58
+8159	0		X neg. abs. comp. pitch err. table no.59
+8160	0		X neg. abs. comp. pitch err. table no.60
+8161	0		X neg. abs. comp. pitch err. table no.61
+8162	0		X neg. abs. comp. pitch err. table no.62
+8163	0		X neg. abs. comp. pitch err. table no.63
+8164	0		X neg. abs. comp. pitch err. table no.64
+8165	0		X neg. abs. comp. pitch err. table no.65
+8166	0		X neg. abs. comp. pitch err. table no.66
+8167	0		X neg. abs. comp. pitch err. table no.67
+8168	0		X neg. abs. comp. pitch err. table no.68
+8169	0		X neg. abs. comp. pitch err. table no.69
+8170	0		X neg. abs. comp. pitch err. table no.70
+8171	0		X neg. abs. comp. pitch err. table no.71
+8172	0		X neg. abs. comp. pitch err. table no.72
+8173	0		X neg. abs. comp. pitch err. table no.73
+8174	0		X neg. abs. comp. pitch err. table no.74
+8175	0		X neg. abs. comp. pitch err. table no.75
+8176	0		X neg. abs. comp. pitch err. table no.76
+8177	0		X neg. abs. comp. pitch err. table no.77
+8178	0		X neg. abs. comp. pitch err. table no.78
+8179	0		X neg. abs. comp. pitch err. table no.79
+8180	0		X neg. abs. comp. pitch err. table no.80
+8181	0		X neg. abs. comp. pitch err. table no.81
+8182	0		X neg. abs. comp. pitch err. table no.82
+8183	0		X neg. abs. comp. pitch err. table no.83
+8184	0		X neg. abs. comp. pitch err. table no.84
+8185	0		X neg. abs. comp. pitch err. table no.85
+8186	0		X neg. abs. comp. pitch err. table no.86
+8187	0		X neg. abs. comp. pitch err. table no.87
+8188	0		X neg. abs. comp. pitch err. table no.88
+8189	0		X neg. abs. comp. pitch err. table no.89
+8190	0		X neg. abs. comp. pitch err. table no.90
+8191	0		X neg. abs. comp. pitch err. table no.91
+8192	0		X neg. abs. comp. pitch err. table no.92
+8193	0		X neg. abs. comp. pitch err. table no.93
+8194	0		X neg. abs. comp. pitch err. table no.94
+8195	0		X neg. abs. comp. pitch err. table no.95
+8196	0		X neg. abs. comp. pitch err. table no.96
+8197	0		X neg. abs. comp. pitch err. table no.97
+8198	0		X neg. abs. comp. pitch err. table no.98
+8199	0		X neg. abs. comp. pitch err. table no.99
+8200	0		X neg. abs. comp. pitch err. table no.100
+8201	0		Y pos. abs. comp. pitch err. table no.1
+8202	0		Y pos. abs. comp. pitch err. table no.2
+8203	0		Y pos. abs. comp. pitch err. table no.3
+8204	0		Y pos. abs. comp. pitch err. table no.4
+8205	0		Y pos. abs. comp. pitch err. table no.5
+8206	0		Y pos. abs. comp. pitch err. table no.6
+8207	0		Y pos. abs. comp. pitch err. table no.7
+8208	0		Y pos. abs. comp. pitch err. table no.8
+8209	0		Y pos. abs. comp. pitch err. table no.9
+8210	0		Y pos. abs. comp. pitch err. table no.10
+8211	0		Y pos. abs. comp. pitch err. table no.11
+8212	0		Y pos. abs. comp. pitch err. table no.12
+8213	0		Y pos. abs. comp. pitch err. table no.13
+8214	0		Y pos. abs. comp. pitch err. table no.14
+8215	0		Y pos. abs. comp. pitch err. table no.15
+8216	0		Y pos. abs. comp. pitch err. table no.16
+8217	0		Y pos. abs. comp. pitch err. table no.17
+8218	0		Y pos. abs. comp. pitch err. table no.18
+8219	0		Y pos. abs. comp. pitch err. table no.19
+8220	0		Y pos. abs. comp. pitch err. table no.20
+8221	0		Y pos. abs. comp. pitch err. table no.21
+8222	0		Y pos. abs. comp. pitch err. table no.22
+8223	0		Y pos. abs. comp. pitch err. table no.23
+8224	0		Y pos. abs. comp. pitch err. table no.24
+8225	0		Y pos. abs. comp. pitch err. table no.25
+8226	0		Y pos. abs. comp. pitch err. table no.26
+8227	0		Y pos. abs. comp. pitch err. table no.27
+8228	0		Y pos. abs. comp. pitch err. table no.28
+8229	0		Y pos. abs. comp. pitch err. table no.29
+8230	0		Y pos. abs. comp. pitch err. table no.30
+8231	0		Y pos. abs. comp. pitch err. table no.31
+8232	0		Y pos. abs. comp. pitch err. table no.32
+8233	0		Y pos. abs. comp. pitch err. table no.33
+8234	0		Y pos. abs. comp. pitch err. table no.34
+8235	0		Y pos. abs. comp. pitch err. table no.35
+8236	0		Y pos. abs. comp. pitch err. table no.36
+8237	0		Y pos. abs. comp. pitch err. table no.37
+8238	0		Y pos. abs. comp. pitch err. table no.38
+8239	0		Y pos. abs. comp. pitch err. table no.39
+8240	0		Y pos. abs. comp. pitch err. table no.40
+8241	0		Y pos. abs. comp. pitch err. table no.41
+8242	0		Y pos. abs. comp. pitch err. table no.42
+8243	0		Y pos. abs. comp. pitch err. table no.43
+8244	0		Y pos. abs. comp. pitch err. table no.44
+8245	0		Y pos. abs. comp. pitch err. table no.45
+8246	0		Y pos. abs. comp. pitch err. table no.46
+8247	0		Y pos. abs. comp. pitch err. table no.47
+8248	0		Y pos. abs. comp. pitch err. table no.48
+8249	0		Y pos. abs. comp. pitch err. table no.49
+8250	0		Y pos. abs. comp. pitch err. table no.50
+8251	0		Y pos. abs. comp. pitch err. table no.51
+8252	0		Y pos. abs. comp. pitch err. table no.52
+8253	0		Y pos. abs. comp. pitch err. table no.53
+8254	0		Y pos. abs. comp. pitch err. table no.54
+8255	0		Y pos. abs. comp. pitch err. table no.55
+8256	0		Y pos. abs. comp. pitch err. table no.56
+8257	0		Y pos. abs. comp. pitch err. table no.57
+8258	0		Y pos. abs. comp. pitch err. table no.58
+8259	0		Y pos. abs. comp. pitch err. table no.59
+8260	0		Y pos. abs. comp. pitch err. table no.60
+8261	0		Y pos. abs. comp. pitch err. table no.61
+8262	0		Y pos. abs. comp. pitch err. table no.62
+8263	0		Y pos. abs. comp. pitch err. table no.63
+8264	0		Y pos. abs. comp. pitch err. table no.64
+8265	0		Y pos. abs. comp. pitch err. table no.65
+8266	0		Y pos. abs. comp. pitch err. table no.66
+8267	0		Y pos. abs. comp. pitch err. table no.67
+8268	0		Y pos. abs. comp. pitch err. table no.68
+8269	0		Y pos. abs. comp. pitch err. table no.69
+8270	0		Y pos. abs. comp. pitch err. table no.70
+8271	0		Y pos. abs. comp. pitch err. table no.71
+8272	0		Y pos. abs. comp. pitch err. table no.72
+8273	0		Y pos. abs. comp. pitch err. table no.73
+8274	0		Y pos. abs. comp. pitch err. table no.74
+8275	0		Y pos. abs. comp. pitch err. table no.75
+8276	0		Y pos. abs. comp. pitch err. table no.76
+8277	0		Y pos. abs. comp. pitch err. table no.77
+8278	0		Y pos. abs. comp. pitch err. table no.78
+8279	0		Y pos. abs. comp. pitch err. table no.79
+8280	0		Y pos. abs. comp. pitch err. table no.80
+8281	0		Y pos. abs. comp. pitch err. table no.81
+8282	0		Y pos. abs. comp. pitch err. table no.82
+8283	0		Y pos. abs. comp. pitch err. table no.83
+8284	0		Y pos. abs. comp. pitch err. table no.84
+8285	0		Y pos. abs. comp. pitch err. table no.85
+8286	0		Y pos. abs. comp. pitch err. table no.86
+8287	0		Y pos. abs. comp. pitch err. table no.87
+8288	0		Y pos. abs. comp. pitch err. table no.88
+8289	0		Y pos. abs. comp. pitch err. table no.89
+8290	0		Y pos. abs. comp. pitch err. table no.90
+8291	0		Y pos. abs. comp. pitch err. table no.91
+8292	0		Y pos. abs. comp. pitch err. table no.92
+8293	0		Y pos. abs. comp. pitch err. table no.93
+8294	0		Y pos. abs. comp. pitch err. table no.94
+8295	0		Y pos. abs. comp. pitch err. table no.95
+8296	0		Y pos. abs. comp. pitch err. table no.96
+8297	0		Y pos. abs. comp. pitch err. table no.97
+8298	0		Y pos. abs. comp. pitch err. table no.98
+8299	0		Y pos. abs. comp. pitch err. table no.99
+8300	0		Y pos. abs. comp. pitch err. table no.100
+8301	0		Y neg. abs. comp. pitch err. table no.1
+8302	0		Y neg. abs. comp. pitch err. table no.2
+8303	0		Y neg. abs. comp. pitch err. table no.3
+8304	0		Y neg. abs. comp. pitch err. table no.4
+8305	0		Y neg. abs. comp. pitch err. table no.5
+8306	0		Y neg. abs. comp. pitch err. table no.6
+8307	0		Y neg. abs. comp. pitch err. table no.7
+8308	0		Y neg. abs. comp. pitch err. table no.8
+8309	0		Y neg. abs. comp. pitch err. table no.9
+8310	0		Y neg. abs. comp. pitch err. table no.10
+8311	0		Y neg. abs. comp. pitch err. table no.11
+8312	0		Y neg. abs. comp. pitch err. table no.12
+8313	0		Y neg. abs. comp. pitch err. table no.13
+8314	0		Y neg. abs. comp. pitch err. table no.14
+8315	0		Y neg. abs. comp. pitch err. table no.15
+8316	0		Y neg. abs. comp. pitch err. table no.16
+8317	0		Y neg. abs. comp. pitch err. table no.17
+8318	0		Y neg. abs. comp. pitch err. table no.18
+8319	0		Y neg. abs. comp. pitch err. table no.19
+8320	0		Y neg. abs. comp. pitch err. table no.20
+8321	0		Y neg. abs. comp. pitch err. table no.21
+8322	0		Y neg. abs. comp. pitch err. table no.22
+8323	0		Y neg. abs. comp. pitch err. table no.23
+8324	0		Y neg. abs. comp. pitch err. table no.24
+8325	0		Y neg. abs. comp. pitch err. table no.25
+8326	0		Y neg. abs. comp. pitch err. table no.26
+8327	0		Y neg. abs. comp. pitch err. table no.27
+8328	0		Y neg. abs. comp. pitch err. table no.28
+8329	0		Y neg. abs. comp. pitch err. table no.29
+8330	0		Y neg. abs. comp. pitch err. table no.30
+8331	0		Y neg. abs. comp. pitch err. table no.31
+8332	0		Y neg. abs. comp. pitch err. table no.32
+8333	0		Y neg. abs. comp. pitch err. table no.33
+8334	0		Y neg. abs. comp. pitch err. table no.34
+8335	0		Y neg. abs. comp. pitch err. table no.35
+8336	0		Y neg. abs. comp. pitch err. table no.36
+8337	0		Y neg. abs. comp. pitch err. table no.37
+8338	0		Y neg. abs. comp. pitch err. table no.38
+8339	0		Y neg. abs. comp. pitch err. table no.39
+8340	0		Y neg. abs. comp. pitch err. table no.40
+8341	0		Y neg. abs. comp. pitch err. table no.41
+8342	0		Y neg. abs. comp. pitch err. table no.42
+8343	0		Y neg. abs. comp. pitch err. table no.43
+8344	0		Y neg. abs. comp. pitch err. table no.44
+8345	0		Y neg. abs. comp. pitch err. table no.45
+8346	0		Y neg. abs. comp. pitch err. table no.46
+8347	0		Y neg. abs. comp. pitch err. table no.47
+8348	0		Y neg. abs. comp. pitch err. table no.48
+8349	0		Y neg. abs. comp. pitch err. table no.49
+8350	0		Y neg. abs. comp. pitch err. table no.50
+8351	0		Y neg. abs. comp. pitch err. table no.51
+8352	0		Y neg. abs. comp. pitch err. table no.52
+8353	0		Y neg. abs. comp. pitch err. table no.53
+8354	0		Y neg. abs. comp. pitch err. table no.54
+8355	0		Y neg. abs. comp. pitch err. table no.55
+8356	0		Y neg. abs. comp. pitch err. table no.56
+8357	0		Y neg. abs. comp. pitch err. table no.57
+8358	0		Y neg. abs. comp. pitch err. table no.58
+8359	0		Y neg. abs. comp. pitch err. table no.59
+8360	0		Y neg. abs. comp. pitch err. table no.60
+8361	0		Y neg. abs. comp. pitch err. table no.61
+8362	0		Y neg. abs. comp. pitch err. table no.62
+8363	0		Y neg. abs. comp. pitch err. table no.63
+8364	0		Y neg. abs. comp. pitch err. table no.64
+8365	0		Y neg. abs. comp. pitch err. table no.65
+8366	0		Y neg. abs. comp. pitch err. table no.66
+8367	0		Y neg. abs. comp. pitch err. table no.67
+8368	0		Y neg. abs. comp. pitch err. table no.68
+8369	0		Y neg. abs. comp. pitch err. table no.69
+8370	0		Y neg. abs. comp. pitch err. table no.70
+8371	0		Y neg. abs. comp. pitch err. table no.71
+8372	0		Y neg. abs. comp. pitch err. table no.72
+8373	0		Y neg. abs. comp. pitch err. table no.73
+8374	0		Y neg. abs. comp. pitch err. table no.74
+8375	0		Y neg. abs. comp. pitch err. table no.75
+8376	0		Y neg. abs. comp. pitch err. table no.76
+8377	0		Y neg. abs. comp. pitch err. table no.77
+8378	0		Y neg. abs. comp. pitch err. table no.78
+8379	0		Y neg. abs. comp. pitch err. table no.79
+8380	0		Y neg. abs. comp. pitch err. table no.80
+8381	0		Y neg. abs. comp. pitch err. table no.81
+8382	0		Y neg. abs. comp. pitch err. table no.82
+8383	0		Y neg. abs. comp. pitch err. table no.83
+8384	0		Y neg. abs. comp. pitch err. table no.84
+8385	0		Y neg. abs. comp. pitch err. table no.85
+8386	0		Y neg. abs. comp. pitch err. table no.86
+8387	0		Y neg. abs. comp. pitch err. table no.87
+8388	0		Y neg. abs. comp. pitch err. table no.88
+8389	0		Y neg. abs. comp. pitch err. table no.89
+8390	0		Y neg. abs. comp. pitch err. table no.90
+8391	0		Y neg. abs. comp. pitch err. table no.91
+8392	0		Y neg. abs. comp. pitch err. table no.92
+8393	0		Y neg. abs. comp. pitch err. table no.93
+8394	0		Y neg. abs. comp. pitch err. table no.94
+8395	0		Y neg. abs. comp. pitch err. table no.95
+8396	0		Y neg. abs. comp. pitch err. table no.96
+8397	0		Y neg. abs. comp. pitch err. table no.97
+8398	0		Y neg. abs. comp. pitch err. table no.98
+8399	0		Y neg. abs. comp. pitch err. table no.99
+8400	0		Y neg. abs. comp. pitch err. table no.100
+8401	0		Z pos. abs. comp. pitch err. table no.1
+8402	0		Z pos. abs. comp. pitch err. table no.2
+8403	0		Z pos. abs. comp. pitch err. table no.3
+8404	0		Z pos. abs. comp. pitch err. table no.4
+8405	0		Z pos. abs. comp. pitch err. table no.5
+8406	0		Z pos. abs. comp. pitch err. table no.6
+8407	0		Z pos. abs. comp. pitch err. table no.7
+8408	0		Z pos. abs. comp. pitch err. table no.8
+8409	0		Z pos. abs. comp. pitch err. table no.9
+8410	0		Z pos. abs. comp. pitch err. table no.10
+8411	0		Z pos. abs. comp. pitch err. table no.11
+8412	0		Z pos. abs. comp. pitch err. table no.12
+8413	0		Z pos. abs. comp. pitch err. table no.13
+8414	0		Z pos. abs. comp. pitch err. table no.14
+8415	0		Z pos. abs. comp. pitch err. table no.15
+8416	0		Z pos. abs. comp. pitch err. table no.16
+8417	0		Z pos. abs. comp. pitch err. table no.17
+8418	0		Z pos. abs. comp. pitch err. table no.18
+8419	0		Z pos. abs. comp. pitch err. table no.19
+8420	0		Z pos. abs. comp. pitch err. table no.20
+8421	0		Z pos. abs. comp. pitch err. table no.21
+8422	0		Z pos. abs. comp. pitch err. table no.22
+8423	0		Z pos. abs. comp. pitch err. table no.23
+8424	0		Z pos. abs. comp. pitch err. table no.24
+8425	0		Z pos. abs. comp. pitch err. table no.25
+8426	0		Z pos. abs. comp. pitch err. table no.26
+8427	0		Z pos. abs. comp. pitch err. table no.27
+8428	0		Z pos. abs. comp. pitch err. table no.28
+8429	0		Z pos. abs. comp. pitch err. table no.29
+8430	0		Z pos. abs. comp. pitch err. table no.30
+8431	0		Z pos. abs. comp. pitch err. table no.31
+8432	0		Z pos. abs. comp. pitch err. table no.32
+8433	0		Z pos. abs. comp. pitch err. table no.33
+8434	0		Z pos. abs. comp. pitch err. table no.34
+8435	0		Z pos. abs. comp. pitch err. table no.35
+8436	0		Z pos. abs. comp. pitch err. table no.36
+8437	0		Z pos. abs. comp. pitch err. table no.37
+8438	0		Z pos. abs. comp. pitch err. table no.38
+8439	0		Z pos. abs. comp. pitch err. table no.39
+8440	0		Z pos. abs. comp. pitch err. table no.40
+8441	0		Z pos. abs. comp. pitch err. table no.41
+8442	0		Z pos. abs. comp. pitch err. table no.42
+8443	0		Z pos. abs. comp. pitch err. table no.43
+8444	0		Z pos. abs. comp. pitch err. table no.44
+8445	0		Z pos. abs. comp. pitch err. table no.45
+8446	0		Z pos. abs. comp. pitch err. table no.46
+8447	0		Z pos. abs. comp. pitch err. table no.47
+8448	0		Z pos. abs. comp. pitch err. table no.48
+8449	0		Z pos. abs. comp. pitch err. table no.49
+8450	0		Z pos. abs. comp. pitch err. table no.50
+8451	0		Z pos. abs. comp. pitch err. table no.51
+8452	0		Z pos. abs. comp. pitch err. table no.52
+8453	0		Z pos. abs. comp. pitch err. table no.53
+8454	0		Z pos. abs. comp. pitch err. table no.54
+8455	0		Z pos. abs. comp. pitch err. table no.55
+8456	0		Z pos. abs. comp. pitch err. table no.56
+8457	0		Z pos. abs. comp. pitch err. table no.57
+8458	0		Z pos. abs. comp. pitch err. table no.58
+8459	0		Z pos. abs. comp. pitch err. table no.59
+8460	0		Z pos. abs. comp. pitch err. table no.60
+8461	0		Z pos. abs. comp. pitch err. table no.61
+8462	0		Z pos. abs. comp. pitch err. table no.62
+8463	0		Z pos. abs. comp. pitch err. table no.63
+8464	0		Z pos. abs. comp. pitch err. table no.64
+8465	0		Z pos. abs. comp. pitch err. table no.65
+8466	0		Z pos. abs. comp. pitch err. table no.66
+8467	0		Z pos. abs. comp. pitch err. table no.67
+8468	0		Z pos. abs. comp. pitch err. table no.68
+8469	0		Z pos. abs. comp. pitch err. table no.69
+8470	0		Z pos. abs. comp. pitch err. table no.70
+8471	0		Z pos. abs. comp. pitch err. table no.71
+8472	0		Z pos. abs. comp. pitch err. table no.72
+8473	0		Z pos. abs. comp. pitch err. table no.73
+8474	0		Z pos. abs. comp. pitch err. table no.74
+8475	0		Z pos. abs. comp. pitch err. table no.75
+8476	0		Z pos. abs. comp. pitch err. table no.76
+8477	0		Z pos. abs. comp. pitch err. table no.77
+8478	0		Z pos. abs. comp. pitch err. table no.78
+8479	0		Z pos. abs. comp. pitch err. table no.79
+8480	0		Z pos. abs. comp. pitch err. table no.80
+8481	0		Z pos. abs. comp. pitch err. table no.81
+8482	0		Z pos. abs. comp. pitch err. table no.82
+8483	0		Z pos. abs. comp. pitch err. table no.83
+8484	0		Z pos. abs. comp. pitch err. table no.84
+8485	0		Z pos. abs. comp. pitch err. table no.85
+8486	0		Z pos. abs. comp. pitch err. table no.86
+8487	0		Z pos. abs. comp. pitch err. table no.87
+8488	0		Z pos. abs. comp. pitch err. table no.88
+8489	0		Z pos. abs. comp. pitch err. table no.89
+8490	0		Z pos. abs. comp. pitch err. table no.90
+8491	0		Z pos. abs. comp. pitch err. table no.91
+8492	0		Z pos. abs. comp. pitch err. table no.92
+8493	0		Z pos. abs. comp. pitch err. table no.93
+8494	0		Z pos. abs. comp. pitch err. table no.94
+8495	0		Z pos. abs. comp. pitch err. table no.95
+8496	0		Z pos. abs. comp. pitch err. table no.96
+8497	0		Z pos. abs. comp. pitch err. table no.97
+8498	0		Z pos. abs. comp. pitch err. table no.98
+8499	0		Z pos. abs. comp. pitch err. table no.99
+8500	0		Z pos. abs. comp. pitch err. table no.100
+8501	0		Z neg. abs. comp. pitch err. table no.1
+8502	0		Z neg. abs. comp. pitch err. table no.2
+8503	0		Z neg. abs. comp. pitch err. table no.3
+8504	0		Z neg. abs. comp. pitch err. table no.4
+8505	0		Z neg. abs. comp. pitch err. table no.5
+8506	0		Z neg. abs. comp. pitch err. table no.6
+8507	0		Z neg. abs. comp. pitch err. table no.7
+8508	0		Z neg. abs. comp. pitch err. table no.8
+8509	0		Z neg. abs. comp. pitch err. table no.9
+8510	0		Z neg. abs. comp. pitch err. table no.10
+8511	0		Z neg. abs. comp. pitch err. table no.11
+8512	0		Z neg. abs. comp. pitch err. table no.12
+8513	0		Z neg. abs. comp. pitch err. table no.13
+8514	0		Z neg. abs. comp. pitch err. table no.14
+8515	0		Z neg. abs. comp. pitch err. table no.15
+8516	0		Z neg. abs. comp. pitch err. table no.16
+8517	0		Z neg. abs. comp. pitch err. table no.17
+8518	0		Z neg. abs. comp. pitch err. table no.18
+8519	0		Z neg. abs. comp. pitch err. table no.19
+8520	0		Z neg. abs. comp. pitch err. table no.20
+8521	0		Z neg. abs. comp. pitch err. table no.21
+8522	0		Z neg. abs. comp. pitch err. table no.22
+8523	0		Z neg. abs. comp. pitch err. table no.23
+8524	0		Z neg. abs. comp. pitch err. table no.24
+8525	0		Z neg. abs. comp. pitch err. table no.25
+8526	0		Z neg. abs. comp. pitch err. table no.26
+8527	0		Z neg. abs. comp. pitch err. table no.27
+8528	0		Z neg. abs. comp. pitch err. table no.28
+8529	0		Z neg. abs. comp. pitch err. table no.29
+8530	0		Z neg. abs. comp. pitch err. table no.30
+8531	0		Z neg. abs. comp. pitch err. table no.31
+8532	0		Z neg. abs. comp. pitch err. table no.32
+8533	0		Z neg. abs. comp. pitch err. table no.33
+8534	0		Z neg. abs. comp. pitch err. table no.34
+8535	0		Z neg. abs. comp. pitch err. table no.35
+8536	0		Z neg. abs. comp. pitch err. table no.36
+8537	0		Z neg. abs. comp. pitch err. table no.37
+8538	0		Z neg. abs. comp. pitch err. table no.38
+8539	0		Z neg. abs. comp. pitch err. table no.39
+8540	0		Z neg. abs. comp. pitch err. table no.40
+8541	0		Z neg. abs. comp. pitch err. table no.41
+8542	0		Z neg. abs. comp. pitch err. table no.42
+8543	0		Z neg. abs. comp. pitch err. table no.43
+8544	0		Z neg. abs. comp. pitch err. table no.44
+8545	0		Z neg. abs. comp. pitch err. table no.45
+8546	0		Z neg. abs. comp. pitch err. table no.46
+8547	0		Z neg. abs. comp. pitch err. table no.47
+8548	0		Z neg. abs. comp. pitch err. table no.48
+8549	0		Z neg. abs. comp. pitch err. table no.49
+8550	0		Z neg. abs. comp. pitch err. table no.50
+8551	0		Z neg. abs. comp. pitch err. table no.51
+8552	0		Z neg. abs. comp. pitch err. table no.52
+8553	0		Z neg. abs. comp. pitch err. table no.53
+8554	0		Z neg. abs. comp. pitch err. table no.54
+8555	0		Z neg. abs. comp. pitch err. table no.55
+8556	0		Z neg. abs. comp. pitch err. table no.56
+8557	0		Z neg. abs. comp. pitch err. table no.57
+8558	0		Z neg. abs. comp. pitch err. table no.58
+8559	0		Z neg. abs. comp. pitch err. table no.59
+8560	0		Z neg. abs. comp. pitch err. table no.60
+8561	0		Z neg. abs. comp. pitch err. table no.61
+8562	0		Z neg. abs. comp. pitch err. table no.62
+8563	0		Z neg. abs. comp. pitch err. table no.63
+8564	0		Z neg. abs. comp. pitch err. table no.64
+8565	0		Z neg. abs. comp. pitch err. table no.65
+8566	0		Z neg. abs. comp. pitch err. table no.66
+8567	0		Z neg. abs. comp. pitch err. table no.67
+8568	0		Z neg. abs. comp. pitch err. table no.68
+8569	0		Z neg. abs. comp. pitch err. table no.69
+8570	0		Z neg. abs. comp. pitch err. table no.70
+8571	0		Z neg. abs. comp. pitch err. table no.71
+8572	0		Z neg. abs. comp. pitch err. table no.72
+8573	0		Z neg. abs. comp. pitch err. table no.73
+8574	0		Z neg. abs. comp. pitch err. table no.74
+8575	0		Z neg. abs. comp. pitch err. table no.75
+8576	0		Z neg. abs. comp. pitch err. table no.76
+8577	0		Z neg. abs. comp. pitch err. table no.77
+8578	0		Z neg. abs. comp. pitch err. table no.78
+8579	0		Z neg. abs. comp. pitch err. table no.79
+8580	0		Z neg. abs. comp. pitch err. table no.80
+8581	0		Z neg. abs. comp. pitch err. table no.81
+8582	0		Z neg. abs. comp. pitch err. table no.82
+8583	0		Z neg. abs. comp. pitch err. table no.83
+8584	0		Z neg. abs. comp. pitch err. table no.84
+8585	0		Z neg. abs. comp. pitch err. table no.85
+8586	0		Z neg. abs. comp. pitch err. table no.86
+8587	0		Z neg. abs. comp. pitch err. table no.87
+8588	0		Z neg. abs. comp. pitch err. table no.88
+8589	0		Z neg. abs. comp. pitch err. table no.89
+8590	0		Z neg. abs. comp. pitch err. table no.90
+8591	0		Z neg. abs. comp. pitch err. table no.91
+8592	0		Z neg. abs. comp. pitch err. table no.92
+8593	0		Z neg. abs. comp. pitch err. table no.93
+8594	0		Z neg. abs. comp. pitch err. table no.94
+8595	0		Z neg. abs. comp. pitch err. table no.95
+8596	0		Z neg. abs. comp. pitch err. table no.96
+8597	0		Z neg. abs. comp. pitch err. table no.97
+8598	0		Z neg. abs. comp. pitch err. table no.98
+8599	0		Z neg. abs. comp. pitch err. table no.99
+8600	0		Z neg. abs. comp. pitch err. table no.100
+8601	0		4th pos. abs. comp. pitch err. table no.1
+8602	0		4th pos. abs. comp. pitch err. table no.2
+8603	0		4th pos. abs. comp. pitch err. table no.3
+8604	0		4th pos. abs. comp. pitch err. table no.4
+8605	0		4th pos. abs. comp. pitch err. table no.5
+8606	0		4th pos. abs. comp. pitch err. table no.6
+8607	0		4th pos. abs. comp. pitch err. table no.7
+8608	0		4th pos. abs. comp. pitch err. table no.8
+8609	0		4th pos. abs. comp. pitch err. table no.9
+8610	0		4th pos. abs. comp. pitch err. table no.10
+8611	0		4th pos. abs. comp. pitch err. table no.11
+8612	0		4th pos. abs. comp. pitch err. table no.12
+8613	0		4th pos. abs. comp. pitch err. table no.13
+8614	0		4th pos. abs. comp. pitch err. table no.14
+8615	0		4th pos. abs. comp. pitch err. table no.15
+8616	0		4th pos. abs. comp. pitch err. table no.16
+8617	0		4th pos. abs. comp. pitch err. table no.17
+8618	0		4th pos. abs. comp. pitch err. table no.18
+8619	0		4th pos. abs. comp. pitch err. table no.19
+8620	0		4th pos. abs. comp. pitch err. table no.20
+8621	0		4th pos. abs. comp. pitch err. table no.21
+8622	0		4th pos. abs. comp. pitch err. table no.22
+8623	0		4th pos. abs. comp. pitch err. table no.23
+8624	0		4th pos. abs. comp. pitch err. table no.24
+8625	0		4th pos. abs. comp. pitch err. table no.25
+8626	0		4th pos. abs. comp. pitch err. table no.26
+8627	0		4th pos. abs. comp. pitch err. table no.27
+8628	0		4th pos. abs. comp. pitch err. table no.28
+8629	0		4th pos. abs. comp. pitch err. table no.29
+8630	0		4th pos. abs. comp. pitch err. table no.30
+8631	0		4th pos. abs. comp. pitch err. table no.31
+8632	0		4th pos. abs. comp. pitch err. table no.32
+8633	0		4th pos. abs. comp. pitch err. table no.33
+8634	0		4th pos. abs. comp. pitch err. table no.34
+8635	0		4th pos. abs. comp. pitch err. table no.35
+8636	0		4th pos. abs. comp. pitch err. table no.36
+8637	0		4th pos. abs. comp. pitch err. table no.37
+8638	0		4th pos. abs. comp. pitch err. table no.38
+8639	0		4th pos. abs. comp. pitch err. table no.39
+8640	0		4th pos. abs. comp. pitch err. table no.40
+8641	0		4th pos. abs. comp. pitch err. table no.41
+8642	0		4th pos. abs. comp. pitch err. table no.42
+8643	0		4th pos. abs. comp. pitch err. table no.43
+8644	0		4th pos. abs. comp. pitch err. table no.44
+8645	0		4th pos. abs. comp. pitch err. table no.45
+8646	0		4th pos. abs. comp. pitch err. table no.46
+8647	0		4th pos. abs. comp. pitch err. table no.47
+8648	0		4th pos. abs. comp. pitch err. table no.48
+8649	0		4th pos. abs. comp. pitch err. table no.49
+8650	0		4th pos. abs. comp. pitch err. table no.50
+8651	0		4th pos. abs. comp. pitch err. table no.51
+8652	0		4th pos. abs. comp. pitch err. table no.52
+8653	0		4th pos. abs. comp. pitch err. table no.53
+8654	0		4th pos. abs. comp. pitch err. table no.54
+8655	0		4th pos. abs. comp. pitch err. table no.55
+8656	0		4th pos. abs. comp. pitch err. table no.56
+8657	0		4th pos. abs. comp. pitch err. table no.57
+8658	0		4th pos. abs. comp. pitch err. table no.58
+8659	0		4th pos. abs. comp. pitch err. table no.59
+8660	0		4th pos. abs. comp. pitch err. table no.60
+8661	0		4th pos. abs. comp. pitch err. table no.61
+8662	0		4th pos. abs. comp. pitch err. table no.62
+8663	0		4th pos. abs. comp. pitch err. table no.63
+8664	0		4th pos. abs. comp. pitch err. table no.64
+8665	0		4th pos. abs. comp. pitch err. table no.65
+8666	0		4th pos. abs. comp. pitch err. table no.66
+8667	0		4th pos. abs. comp. pitch err. table no.67
+8668	0		4th pos. abs. comp. pitch err. table no.68
+8669	0		4th pos. abs. comp. pitch err. table no.69
+8670	0		4th pos. abs. comp. pitch err. table no.70
+8671	0		4th pos. abs. comp. pitch err. table no.71
+8672	0		4th pos. abs. comp. pitch err. table no.72
+8673	0		4th pos. abs. comp. pitch err. table no.73
+8674	0		4th pos. abs. comp. pitch err. table no.74
+8675	0		4th pos. abs. comp. pitch err. table no.75
+8676	0		4th pos. abs. comp. pitch err. table no.76
+8677	0		4th pos. abs. comp. pitch err. table no.77
+8678	0		4th pos. abs. comp. pitch err. table no.78
+8679	0		4th pos. abs. comp. pitch err. table no.79
+8680	0		4th pos. abs. comp. pitch err. table no.80
+8681	0		4th pos. abs. comp. pitch err. table no.81
+8682	0		4th pos. abs. comp. pitch err. table no.82
+8683	0		4th pos. abs. comp. pitch err. table no.83
+8684	0		4th pos. abs. comp. pitch err. table no.84
+8685	0		4th pos. abs. comp. pitch err. table no.85
+8686	0		4th pos. abs. comp. pitch err. table no.86
+8687	0		4th pos. abs. comp. pitch err. table no.87
+8688	0		4th pos. abs. comp. pitch err. table no.88
+8689	0		4th pos. abs. comp. pitch err. table no.89
+8690	0		4th pos. abs. comp. pitch err. table no.90
+8691	0		4th pos. abs. comp. pitch err. table no.91
+8692	0		4th pos. abs. comp. pitch err. table no.92
+8693	0		4th pos. abs. comp. pitch err. table no.93
+8694	0		4th pos. abs. comp. pitch err. table no.94
+8695	0		4th pos. abs. comp. pitch err. table no.95
+8696	0		4th pos. abs. comp. pitch err. table no.96
+8697	0		4th pos. abs. comp. pitch err. table no.97
+8698	0		4th pos. abs. comp. pitch err. table no.98
+8699	0		4th pos. abs. comp. pitch err. table no.99
+8700	0		4th pos. abs. comp. pitch err. table no.100
+8701	0		4th neg. abs. comp. pitch err. table no.1
+8702	0		4th neg. abs. comp. pitch err. table no.2
+8703	0		4th neg. abs. comp. pitch err. table no.3
+8704	0		4th neg. abs. comp. pitch err. table no.4
+8705	0		4th neg. abs. comp. pitch err. table no.5
+8706	0		4th neg. abs. comp. pitch err. table no.6
+8707	0		4th neg. abs. comp. pitch err. table no.7
+8708	0		4th neg. abs. comp. pitch err. table no.8
+8709	0		4th neg. abs. comp. pitch err. table no.9
+8710	0		4th neg. abs. comp. pitch err. table no.10
+8711	0		4th neg. abs. comp. pitch err. table no.11
+8712	0		4th neg. abs. comp. pitch err. table no.12
+8713	0		4th neg. abs. comp. pitch err. table no.13
+8714	0		4th neg. abs. comp. pitch err. table no.14
+8715	0		4th neg. abs. comp. pitch err. table no.15
+8716	0		4th neg. abs. comp. pitch err. table no.16
+8717	0		4th neg. abs. comp. pitch err. table no.17
+8718	0		4th neg. abs. comp. pitch err. table no.18
+8719	0		4th neg. abs. comp. pitch err. table no.19
+8720	0		4th neg. abs. comp. pitch err. table no.20
+8721	0		4th neg. abs. comp. pitch err. table no.21
+8722	0		4th neg. abs. comp. pitch err. table no.22
+8723	0		4th neg. abs. comp. pitch err. table no.23
+8724	0		4th neg. abs. comp. pitch err. table no.24
+8725	0		4th neg. abs. comp. pitch err. table no.25
+8726	0		4th neg. abs. comp. pitch err. table no.26
+8727	0		4th neg. abs. comp. pitch err. table no.27
+8728	0		4th neg. abs. comp. pitch err. table no.28
+8729	0		4th neg. abs. comp. pitch err. table no.29
+8730	0		4th neg. abs. comp. pitch err. table no.30
+8731	0		4th neg. abs. comp. pitch err. table no.31
+8732	0		4th neg. abs. comp. pitch err. table no.32
+8733	0		4th neg. abs. comp. pitch err. table no.33
+8734	0		4th neg. abs. comp. pitch err. table no.34
+8735	0		4th neg. abs. comp. pitch err. table no.35
+8736	0		4th neg. abs. comp. pitch err. table no.36
+8737	0		4th neg. abs. comp. pitch err. table no.37
+8738	0		4th neg. abs. comp. pitch err. table no.38
+8739	0		4th neg. abs. comp. pitch err. table no.39
+8740	0		4th neg. abs. comp. pitch err. table no.40
+8741	0		4th neg. abs. comp. pitch err. table no.41
+8742	0		4th neg. abs. comp. pitch err. table no.42
+8743	0		4th neg. abs. comp. pitch err. table no.43
+8744	0		4th neg. abs. comp. pitch err. table no.44
+8745	0		4th neg. abs. comp. pitch err. table no.45
+8746	0		4th neg. abs. comp. pitch err. table no.46
+8747	0		4th neg. abs. comp. pitch err. table no.47
+8748	0		4th neg. abs. comp. pitch err. table no.48
+8749	0		4th neg. abs. comp. pitch err. table no.49
+8750	0		4th neg. abs. comp. pitch err. table no.50
+8751	0		4th neg. abs. comp. pitch err. table no.51
+8752	0		4th neg. abs. comp. pitch err. table no.52
+8753	0		4th neg. abs. comp. pitch err. table no.53
+8754	0		4th neg. abs. comp. pitch err. table no.54
+8755	0		4th neg. abs. comp. pitch err. table no.55
+8756	0		4th neg. abs. comp. pitch err. table no.56
+8757	0		4th neg. abs. comp. pitch err. table no.57
+8758	0		4th neg. abs. comp. pitch err. table no.58
+8759	0		4th neg. abs. comp. pitch err. table no.59
+8760	0		4th neg. abs. comp. pitch err. table no.60
+8761	0		4th neg. abs. comp. pitch err. table no.61
+8762	0		4th neg. abs. comp. pitch err. table no.62
+8763	0		4th neg. abs. comp. pitch err. table no.63
+8764	0		4th neg. abs. comp. pitch err. table no.64
+8765	0		4th neg. abs. comp. pitch err. table no.65
+8766	0		4th neg. abs. comp. pitch err. table no.66
+8767	0		4th neg. abs. comp. pitch err. table no.67
+8768	0		4th neg. abs. comp. pitch err. table no.68
+8769	0		4th neg. abs. comp. pitch err. table no.69
+8770	0		4th neg. abs. comp. pitch err. table no.70
+8771	0		4th neg. abs. comp. pitch err. table no.71
+8772	0		4th neg. abs. comp. pitch err. table no.72
+8773	0		4th neg. abs. comp. pitch err. table no.73
+8774	0		4th neg. abs. comp. pitch err. table no.74
+8775	0		4th neg. abs. comp. pitch err. table no.75
+8776	0		4th neg. abs. comp. pitch err. table no.76
+8777	0		4th neg. abs. comp. pitch err. table no.77
+8778	0		4th neg. abs. comp. pitch err. table no.78
+8779	0		4th neg. abs. comp. pitch err. table no.79
+8780	0		4th neg. abs. comp. pitch err. table no.80
+8781	0		4th neg. abs. comp. pitch err. table no.81
+8782	0		4th neg. abs. comp. pitch err. table no.82
+8783	0		4th neg. abs. comp. pitch err. table no.83
+8784	0		4th neg. abs. comp. pitch err. table no.84
+8785	0		4th neg. abs. comp. pitch err. table no.85
+8786	0		4th neg. abs. comp. pitch err. table no.86
+8787	0		4th neg. abs. comp. pitch err. table no.87
+8788	0		4th neg. abs. comp. pitch err. table no.88
+8789	0		4th neg. abs. comp. pitch err. table no.89
+8790	0		4th neg. abs. comp. pitch err. table no.90
+8791	0		4th neg. abs. comp. pitch err. table no.91
+8792	0		4th neg. abs. comp. pitch err. table no.92
+8793	0		4th neg. abs. comp. pitch err. table no.93
+8794	0		4th neg. abs. comp. pitch err. table no.94
+8795	0		4th neg. abs. comp. pitch err. table no.95
+8796	0		4th neg. abs. comp. pitch err. table no.96
+8797	0		4th neg. abs. comp. pitch err. table no.97
+8798	0		4th neg. abs. comp. pitch err. table no.98
+8799	0		4th neg. abs. comp. pitch err. table no.99
+8800	0		4th neg. abs. comp. pitch err. table no.100
+8801	0		5th pos. abs. comp. pitch err. table no.1
+8802	0		5th pos. abs. comp. pitch err. table no.2
+8803	0		5th pos. abs. comp. pitch err. table no.3
+8804	0		5th pos. abs. comp. pitch err. table no.4
+8805	0		5th pos. abs. comp. pitch err. table no.5
+8806	0		5th pos. abs. comp. pitch err. table no.6
+8807	0		5th pos. abs. comp. pitch err. table no.7
+8808	0		5th pos. abs. comp. pitch err. table no.8
+8809	0		5th pos. abs. comp. pitch err. table no.9
+8810	0		5th pos. abs. comp. pitch err. table no.10
+8811	0		5th pos. abs. comp. pitch err. table no.11
+8812	0		5th pos. abs. comp. pitch err. table no.12
+8813	0		5th pos. abs. comp. pitch err. table no.13
+8814	0		5th pos. abs. comp. pitch err. table no.14
+8815	0		5th pos. abs. comp. pitch err. table no.15
+8816	0		5th pos. abs. comp. pitch err. table no.16
+8817	0		5th pos. abs. comp. pitch err. table no.17
+8818	0		5th pos. abs. comp. pitch err. table no.18
+8819	0		5th pos. abs. comp. pitch err. table no.19
+8820	0		5th pos. abs. comp. pitch err. table no.20
+8821	0		5th pos. abs. comp. pitch err. table no.21
+8822	0		5th pos. abs. comp. pitch err. table no.22
+8823	0		5th pos. abs. comp. pitch err. table no.23
+8824	0		5th pos. abs. comp. pitch err. table no.24
+8825	0		5th pos. abs. comp. pitch err. table no.25
+8826	0		5th pos. abs. comp. pitch err. table no.26
+8827	0		5th pos. abs. comp. pitch err. table no.27
+8828	0		5th pos. abs. comp. pitch err. table no.28
+8829	0		5th pos. abs. comp. pitch err. table no.29
+8830	0		5th pos. abs. comp. pitch err. table no.30
+8831	0		5th pos. abs. comp. pitch err. table no.31
+8832	0		5th pos. abs. comp. pitch err. table no.32
+8833	0		5th pos. abs. comp. pitch err. table no.33
+8834	0		5th pos. abs. comp. pitch err. table no.34
+8835	0		5th pos. abs. comp. pitch err. table no.35
+8836	0		5th pos. abs. comp. pitch err. table no.36
+8837	0		5th pos. abs. comp. pitch err. table no.37
+8838	0		5th pos. abs. comp. pitch err. table no.38
+8839	0		5th pos. abs. comp. pitch err. table no.39
+8840	0		5th pos. abs. comp. pitch err. table no.40
+8841	0		5th pos. abs. comp. pitch err. table no.41
+8842	0		5th pos. abs. comp. pitch err. table no.42
+8843	0		5th pos. abs. comp. pitch err. table no.43
+8844	0		5th pos. abs. comp. pitch err. table no.44
+8845	0		5th pos. abs. comp. pitch err. table no.45
+8846	0		5th pos. abs. comp. pitch err. table no.46
+8847	0		5th pos. abs. comp. pitch err. table no.47
+8848	0		5th pos. abs. comp. pitch err. table no.48
+8849	0		5th pos. abs. comp. pitch err. table no.49
+8850	0		5th pos. abs. comp. pitch err. table no.50
+8851	0		5th pos. abs. comp. pitch err. table no.51
+8852	0		5th pos. abs. comp. pitch err. table no.52
+8853	0		5th pos. abs. comp. pitch err. table no.53
+8854	0		5th pos. abs. comp. pitch err. table no.54
+8855	0		5th pos. abs. comp. pitch err. table no.55
+8856	0		5th pos. abs. comp. pitch err. table no.56
+8857	0		5th pos. abs. comp. pitch err. table no.57
+8858	0		5th pos. abs. comp. pitch err. table no.58
+8859	0		5th pos. abs. comp. pitch err. table no.59
+8860	0		5th pos. abs. comp. pitch err. table no.60
+8861	0		5th pos. abs. comp. pitch err. table no.61
+8862	0		5th pos. abs. comp. pitch err. table no.62
+8863	0		5th pos. abs. comp. pitch err. table no.63
+8864	0		5th pos. abs. comp. pitch err. table no.64
+8865	0		5th pos. abs. comp. pitch err. table no.65
+8866	0		5th pos. abs. comp. pitch err. table no.66
+8867	0		5th pos. abs. comp. pitch err. table no.67
+8868	0		5th pos. abs. comp. pitch err. table no.68
+8869	0		5th pos. abs. comp. pitch err. table no.69
+8870	0		5th pos. abs. comp. pitch err. table no.70
+8871	0		5th pos. abs. comp. pitch err. table no.71
+8872	0		5th pos. abs. comp. pitch err. table no.72
+8873	0		5th pos. abs. comp. pitch err. table no.73
+8874	0		5th pos. abs. comp. pitch err. table no.74
+8875	0		5th pos. abs. comp. pitch err. table no.75
+8876	0		5th pos. abs. comp. pitch err. table no.76
+8877	0		5th pos. abs. comp. pitch err. table no.77
+8878	0		5th pos. abs. comp. pitch err. table no.78
+8879	0		5th pos. abs. comp. pitch err. table no.79
+8880	0		5th pos. abs. comp. pitch err. table no.80
+8881	0		5th pos. abs. comp. pitch err. table no.81
+8882	0		5th pos. abs. comp. pitch err. table no.82
+8883	0		5th pos. abs. comp. pitch err. table no.83
+8884	0		5th pos. abs. comp. pitch err. table no.84
+8885	0		5th pos. abs. comp. pitch err. table no.85
+8886	0		5th pos. abs. comp. pitch err. table no.86
+8887	0		5th pos. abs. comp. pitch err. table no.87
+8888	0		5th pos. abs. comp. pitch err. table no.88
+8889	0		5th pos. abs. comp. pitch err. table no.89
+8890	0		5th pos. abs. comp. pitch err. table no.90
+8891	0		5th pos. abs. comp. pitch err. table no.91
+8892	0		5th pos. abs. comp. pitch err. table no.92
+8893	0		5th pos. abs. comp. pitch err. table no.93
+8894	0		5th pos. abs. comp. pitch err. table no.94
+8895	0		5th pos. abs. comp. pitch err. table no.95
+8896	0		5th pos. abs. comp. pitch err. table no.96
+8897	0		5th pos. abs. comp. pitch err. table no.97
+8898	0		5th pos. abs. comp. pitch err. table no.98
+8899	0		5th pos. abs. comp. pitch err. table no.99
+8900	0		5th pos. abs. comp. pitch err. table no.100
+8901	0		5th neg. abs. comp. pitch err. table no.1
+8902	0		5th neg. abs. comp. pitch err. table no.2
+8903	0		5th neg. abs. comp. pitch err. table no.3
+8904	0		5th neg. abs. comp. pitch err. table no.4
+8905	0		5th neg. abs. comp. pitch err. table no.5
+8906	0		5th neg. abs. comp. pitch err. table no.6
+8907	0		5th neg. abs. comp. pitch err. table no.7
+8908	0		5th neg. abs. comp. pitch err. table no.8
+8909	0		5th neg. abs. comp. pitch err. table no.9
+8910	0		5th neg. abs. comp. pitch err. table no.10
+8911	0		5th neg. abs. comp. pitch err. table no.11
+8912	0		5th neg. abs. comp. pitch err. table no.12
+8913	0		5th neg. abs. comp. pitch err. table no.13
+8914	0		5th neg. abs. comp. pitch err. table no.14
+8915	0		5th neg. abs. comp. pitch err. table no.15
+8916	0		5th neg. abs. comp. pitch err. table no.16
+8917	0		5th neg. abs. comp. pitch err. table no.17
+8918	0		5th neg. abs. comp. pitch err. table no.18
+8919	0		5th neg. abs. comp. pitch err. table no.19
+8920	0		5th neg. abs. comp. pitch err. table no.20
+8921	0		5th neg. abs. comp. pitch err. table no.21
+8922	0		5th neg. abs. comp. pitch err. table no.22
+8923	0		5th neg. abs. comp. pitch err. table no.23
+8924	0		5th neg. abs. comp. pitch err. table no.24
+8925	0		5th neg. abs. comp. pitch err. table no.25
+8926	0		5th neg. abs. comp. pitch err. table no.26
+8927	0		5th neg. abs. comp. pitch err. table no.27
+8928	0		5th neg. abs. comp. pitch err. table no.28
+8929	0		5th neg. abs. comp. pitch err. table no.29
+8930	0		5th neg. abs. comp. pitch err. table no.30
+8931	0		5th neg. abs. comp. pitch err. table no.31
+8932	0		5th neg. abs. comp. pitch err. table no.32
+8933	0		5th neg. abs. comp. pitch err. table no.33
+8934	0		5th neg. abs. comp. pitch err. table no.34
+8935	0		5th neg. abs. comp. pitch err. table no.35
+8936	0		5th neg. abs. comp. pitch err. table no.36
+8937	0		5th neg. abs. comp. pitch err. table no.37
+8938	0		5th neg. abs. comp. pitch err. table no.38
+8939	0		5th neg. abs. comp. pitch err. table no.39
+8940	0		5th neg. abs. comp. pitch err. table no.40
+8941	0		5th neg. abs. comp. pitch err. table no.41
+8942	0		5th neg. abs. comp. pitch err. table no.42
+8943	0		5th neg. abs. comp. pitch err. table no.43
+8944	0		5th neg. abs. comp. pitch err. table no.44
+8945	0		5th neg. abs. comp. pitch err. table no.45
+8946	0		5th neg. abs. comp. pitch err. table no.46
+8947	0		5th neg. abs. comp. pitch err. table no.47
+8948	0		5th neg. abs. comp. pitch err. table no.48
+8949	0		5th neg. abs. comp. pitch err. table no.49
+8950	0		5th neg. abs. comp. pitch err. table no.50
+8951	0		5th neg. abs. comp. pitch err. table no.51
+8952	0		5th neg. abs. comp. pitch err. table no.52
+8953	0		5th neg. abs. comp. pitch err. table no.53
+8954	0		5th neg. abs. comp. pitch err. table no.54
+8955	0		5th neg. abs. comp. pitch err. table no.55
+8956	0		5th neg. abs. comp. pitch err. table no.56
+8957	0		5th neg. abs. comp. pitch err. table no.57
+8958	0		5th neg. abs. comp. pitch err. table no.58
+8959	0		5th neg. abs. comp. pitch err. table no.59
+8960	0		5th neg. abs. comp. pitch err. table no.60
+8961	0		5th neg. abs. comp. pitch err. table no.61
+8962	0		5th neg. abs. comp. pitch err. table no.62
+8963	0		5th neg. abs. comp. pitch err. table no.63
+8964	0		5th neg. abs. comp. pitch err. table no.64
+8965	0		5th neg. abs. comp. pitch err. table no.65
+8966	0		5th neg. abs. comp. pitch err. table no.66
+8967	0		5th neg. abs. comp. pitch err. table no.67
+8968	0		5th neg. abs. comp. pitch err. table no.68
+8969	0		5th neg. abs. comp. pitch err. table no.69
+8970	0		5th neg. abs. comp. pitch err. table no.70
+8971	0		5th neg. abs. comp. pitch err. table no.71
+8972	0		5th neg. abs. comp. pitch err. table no.72
+8973	0		5th neg. abs. comp. pitch err. table no.73
+8974	0		5th neg. abs. comp. pitch err. table no.74
+8975	0		5th neg. abs. comp. pitch err. table no.75
+8976	0		5th neg. abs. comp. pitch err. table no.76
+8977	0		5th neg. abs. comp. pitch err. table no.77
+8978	0		5th neg. abs. comp. pitch err. table no.78
+8979	0		5th neg. abs. comp. pitch err. table no.79
+8980	0		5th neg. abs. comp. pitch err. table no.80
+8981	0		5th neg. abs. comp. pitch err. table no.81
+8982	0		5th neg. abs. comp. pitch err. table no.82
+8983	0		5th neg. abs. comp. pitch err. table no.83
+8984	0		5th neg. abs. comp. pitch err. table no.84
+8985	0		5th neg. abs. comp. pitch err. table no.85
+8986	0		5th neg. abs. comp. pitch err. table no.86
+8987	0		5th neg. abs. comp. pitch err. table no.87
+8988	0		5th neg. abs. comp. pitch err. table no.88
+8989	0		5th neg. abs. comp. pitch err. table no.89
+8990	0		5th neg. abs. comp. pitch err. table no.90
+8991	0		5th neg. abs. comp. pitch err. table no.91
+8992	0		5th neg. abs. comp. pitch err. table no.92
+8993	0		5th neg. abs. comp. pitch err. table no.93
+8994	0		5th neg. abs. comp. pitch err. table no.94
+8995	0		5th neg. abs. comp. pitch err. table no.95
+8996	0		5th neg. abs. comp. pitch err. table no.96
+8997	0		5th neg. abs. comp. pitch err. table no.97
+8998	0		5th neg. abs. comp. pitch err. table no.98
+8999	0		5th neg. abs. comp. pitch err. table no.99
+9000	0		5th neg. abs. comp. pitch err. table no.100
+9001	0		6th pos. abs. comp. pitch err. table no.1
+9002	0		6th pos. abs. comp. pitch err. table no.2
+9003	0		6th pos. abs. comp. pitch err. table no.3
+9004	0		6th pos. abs. comp. pitch err. table no.4
+9005	0		6th pos. abs. comp. pitch err. table no.5
+9006	0		6th pos. abs. comp. pitch err. table no.6
+9007	0		6th pos. abs. comp. pitch err. table no.7
+9008	0		6th pos. abs. comp. pitch err. table no.8
+9009	0		6th pos. abs. comp. pitch err. table no.9
+9010	0		6th pos. abs. comp. pitch err. table no.10
+9011	0		6th pos. abs. comp. pitch err. table no.11
+9012	0		6th pos. abs. comp. pitch err. table no.12
+9013	0		6th pos. abs. comp. pitch err. table no.13
+9014	0		6th pos. abs. comp. pitch err. table no.14
+9015	0		6th pos. abs. comp. pitch err. table no.15
+9016	0		6th pos. abs. comp. pitch err. table no.16
+9017	0		6th pos. abs. comp. pitch err. table no.17
+9018	0		6th pos. abs. comp. pitch err. table no.18
+9019	0		6th pos. abs. comp. pitch err. table no.19
+9020	0		6th pos. abs. comp. pitch err. table no.20
+9021	0		6th pos. abs. comp. pitch err. table no.21
+9022	0		6th pos. abs. comp. pitch err. table no.22
+9023	0		6th pos. abs. comp. pitch err. table no.23
+9024	0		6th pos. abs. comp. pitch err. table no.24
+9025	0		6th pos. abs. comp. pitch err. table no.25
+9026	0		6th pos. abs. comp. pitch err. table no.26
+9027	0		6th pos. abs. comp. pitch err. table no.27
+9028	0		6th pos. abs. comp. pitch err. table no.28
+9029	0		6th pos. abs. comp. pitch err. table no.29
+9030	0		6th pos. abs. comp. pitch err. table no.30
+9031	0		6th pos. abs. comp. pitch err. table no.31
+9032	0		6th pos. abs. comp. pitch err. table no.32
+9033	0		6th pos. abs. comp. pitch err. table no.33
+9034	0		6th pos. abs. comp. pitch err. table no.34
+9035	0		6th pos. abs. comp. pitch err. table no.35
+9036	0		6th pos. abs. comp. pitch err. table no.36
+9037	0		6th pos. abs. comp. pitch err. table no.37
+9038	0		6th pos. abs. comp. pitch err. table no.38
+9039	0		6th pos. abs. comp. pitch err. table no.39
+9040	0		6th pos. abs. comp. pitch err. table no.40
+9041	0		6th pos. abs. comp. pitch err. table no.41
+9042	0		6th pos. abs. comp. pitch err. table no.42
+9043	0		6th pos. abs. comp. pitch err. table no.43
+9044	0		6th pos. abs. comp. pitch err. table no.44
+9045	0		6th pos. abs. comp. pitch err. table no.45
+9046	0		6th pos. abs. comp. pitch err. table no.46
+9047	0		6th pos. abs. comp. pitch err. table no.47
+9048	0		6th pos. abs. comp. pitch err. table no.48
+9049	0		6th pos. abs. comp. pitch err. table no.49
+9050	0		6th pos. abs. comp. pitch err. table no.50
+9051	0		6th pos. abs. comp. pitch err. table no.51
+9052	0		6th pos. abs. comp. pitch err. table no.52
+9053	0		6th pos. abs. comp. pitch err. table no.53
+9054	0		6th pos. abs. comp. pitch err. table no.54
+9055	0		6th pos. abs. comp. pitch err. table no.55
+9056	0		6th pos. abs. comp. pitch err. table no.56
+9057	0		6th pos. abs. comp. pitch err. table no.57
+9058	0		6th pos. abs. comp. pitch err. table no.58
+9059	0		6th pos. abs. comp. pitch err. table no.59
+9060	0		6th pos. abs. comp. pitch err. table no.60
+9061	0		6th pos. abs. comp. pitch err. table no.61
+9062	0		6th pos. abs. comp. pitch err. table no.62
+9063	0		6th pos. abs. comp. pitch err. table no.63
+9064	0		6th pos. abs. comp. pitch err. table no.64
+9065	0		6th pos. abs. comp. pitch err. table no.65
+9066	0		6th pos. abs. comp. pitch err. table no.66
+9067	0		6th pos. abs. comp. pitch err. table no.67
+9068	0		6th pos. abs. comp. pitch err. table no.68
+9069	0		6th pos. abs. comp. pitch err. table no.69
+9070	0		6th pos. abs. comp. pitch err. table no.70
+9071	0		6th pos. abs. comp. pitch err. table no.71
+9072	0		6th pos. abs. comp. pitch err. table no.72
+9073	0		6th pos. abs. comp. pitch err. table no.73
+9074	0		6th pos. abs. comp. pitch err. table no.74
+9075	0		6th pos. abs. comp. pitch err. table no.75
+9076	0		6th pos. abs. comp. pitch err. table no.76
+9077	0		6th pos. abs. comp. pitch err. table no.77
+9078	0		6th pos. abs. comp. pitch err. table no.78
+9079	0		6th pos. abs. comp. pitch err. table no.79
+9080	0		6th pos. abs. comp. pitch err. table no.80
+9081	0		6th pos. abs. comp. pitch err. table no.81
+9082	0		6th pos. abs. comp. pitch err. table no.82
+9083	0		6th pos. abs. comp. pitch err. table no.83
+9084	0		6th pos. abs. comp. pitch err. table no.84
+9085	0		6th pos. abs. comp. pitch err. table no.85
+9086	0		6th pos. abs. comp. pitch err. table no.86
+9087	0		6th pos. abs. comp. pitch err. table no.87
+9088	0		6th pos. abs. comp. pitch err. table no.88
+9089	0		6th pos. abs. comp. pitch err. table no.89
+9090	0		6th pos. abs. comp. pitch err. table no.90
+9091	0		6th pos. abs. comp. pitch err. table no.91
+9092	0		6th pos. abs. comp. pitch err. table no.92
+9093	0		6th pos. abs. comp. pitch err. table no.93
+9094	0		6th pos. abs. comp. pitch err. table no.94
+9095	0		6th pos. abs. comp. pitch err. table no.95
+9096	0		6th pos. abs. comp. pitch err. table no.96
+9097	0		6th pos. abs. comp. pitch err. table no.97
+9098	0		6th pos. abs. comp. pitch err. table no.98
+9099	0		6th pos. abs. comp. pitch err. table no.99
+9100	0		6th pos. abs. comp. pitch err. table no.100
+9101	0		6th neg. abs. comp. pitch err. table no.1
+9102	0		6th neg. abs. comp. pitch err. table no.2
+9103	0		6th neg. abs. comp. pitch err. table no.3
+9104	0		6th neg. abs. comp. pitch err. table no.4
+9105	0		6th neg. abs. comp. pitch err. table no.5
+9106	0		6th neg. abs. comp. pitch err. table no.6
+9107	0		6th neg. abs. comp. pitch err. table no.7
+9108	0		6th neg. abs. comp. pitch err. table no.8
+9109	0		6th neg. abs. comp. pitch err. table no.9
+9110	0		6th neg. abs. comp. pitch err. table no.10
+9111	0		6th neg. abs. comp. pitch err. table no.11
+9112	0		6th neg. abs. comp. pitch err. table no.12
+9113	0		6th neg. abs. comp. pitch err. table no.13
+9114	0		6th neg. abs. comp. pitch err. table no.14
+9115	0		6th neg. abs. comp. pitch err. table no.15
+9116	0		6th neg. abs. comp. pitch err. table no.16
+9117	0		6th neg. abs. comp. pitch err. table no.17
+9118	0		6th neg. abs. comp. pitch err. table no.18
+9119	0		6th neg. abs. comp. pitch err. table no.19
+9120	0		6th neg. abs. comp. pitch err. table no.20
+9121	0		6th neg. abs. comp. pitch err. table no.21
+9122	0		6th neg. abs. comp. pitch err. table no.22
+9123	0		6th neg. abs. comp. pitch err. table no.23
+9124	0		6th neg. abs. comp. pitch err. table no.24
+9125	0		6th neg. abs. comp. pitch err. table no.25
+9126	0		6th neg. abs. comp. pitch err. table no.26
+9127	0		6th neg. abs. comp. pitch err. table no.27
+9128	0		6th neg. abs. comp. pitch err. table no.28
+9129	0		6th neg. abs. comp. pitch err. table no.29
+9130	0		6th neg. abs. comp. pitch err. table no.30
+9131	0		6th neg. abs. comp. pitch err. table no.31
+9132	0		6th neg. abs. comp. pitch err. table no.32
+9133	0		6th neg. abs. comp. pitch err. table no.33
+9134	0		6th neg. abs. comp. pitch err. table no.34
+9135	0		6th neg. abs. comp. pitch err. table no.35
+9136	0		6th neg. abs. comp. pitch err. table no.36
+9137	0		6th neg. abs. comp. pitch err. table no.37
+9138	0		6th neg. abs. comp. pitch err. table no.38
+9139	0		6th neg. abs. comp. pitch err. table no.39
+9140	0		6th neg. abs. comp. pitch err. table no.40
+9141	0		6th neg. abs. comp. pitch err. table no.41
+9142	0		6th neg. abs. comp. pitch err. table no.42
+9143	0		6th neg. abs. comp. pitch err. table no.43
+9144	0		6th neg. abs. comp. pitch err. table no.44
+9145	0		6th neg. abs. comp. pitch err. table no.45
+9146	0		6th neg. abs. comp. pitch err. table no.46
+9147	0		6th neg. abs. comp. pitch err. table no.47
+9148	0		6th neg. abs. comp. pitch err. table no.48
+9149	0		6th neg. abs. comp. pitch err. table no.49
+9150	0		6th neg. abs. comp. pitch err. table no.50
+9151	0		6th neg. abs. comp. pitch err. table no.51
+9152	0		6th neg. abs. comp. pitch err. table no.52
+9153	0		6th neg. abs. comp. pitch err. table no.53
+9154	0		6th neg. abs. comp. pitch err. table no.54
+9155	0		6th neg. abs. comp. pitch err. table no.55
+9156	0		6th neg. abs. comp. pitch err. table no.56
+9157	0		6th neg. abs. comp. pitch err. table no.57
+9158	0		6th neg. abs. comp. pitch err. table no.58
+9159	0		6th neg. abs. comp. pitch err. table no.59
+9160	0		6th neg. abs. comp. pitch err. table no.60
+9161	0		6th neg. abs. comp. pitch err. table no.61
+9162	0		6th neg. abs. comp. pitch err. table no.62
+9163	0		6th neg. abs. comp. pitch err. table no.63
+9164	0		6th neg. abs. comp. pitch err. table no.64
+9165	0		6th neg. abs. comp. pitch err. table no.65
+9166	0		6th neg. abs. comp. pitch err. table no.66
+9167	0		6th neg. abs. comp. pitch err. table no.67
+9168	0		6th neg. abs. comp. pitch err. table no.68
+9169	0		6th neg. abs. comp. pitch err. table no.69
+9170	0		6th neg. abs. comp. pitch err. table no.70
+9171	0		6th neg. abs. comp. pitch err. table no.71
+9172	0		6th neg. abs. comp. pitch err. table no.72
+9173	0		6th neg. abs. comp. pitch err. table no.73
+9174	0		6th neg. abs. comp. pitch err. table no.74
+9175	0		6th neg. abs. comp. pitch err. table no.75
+9176	0		6th neg. abs. comp. pitch err. table no.76
+9177	0		6th neg. abs. comp. pitch err. table no.77
+9178	0		6th neg. abs. comp. pitch err. table no.78
+9179	0		6th neg. abs. comp. pitch err. table no.79
+9180	0		6th neg. abs. comp. pitch err. table no.80
+9181	0		6th neg. abs. comp. pitch err. table no.81
+9182	0		6th neg. abs. comp. pitch err. table no.82
+9183	0		6th neg. abs. comp. pitch err. table no.83
+9184	0		6th neg. abs. comp. pitch err. table no.84
+9185	0		6th neg. abs. comp. pitch err. table no.85
+9186	0		6th neg. abs. comp. pitch err. table no.86
+9187	0		6th neg. abs. comp. pitch err. table no.87
+9188	0		6th neg. abs. comp. pitch err. table no.88
+9189	0		6th neg. abs. comp. pitch err. table no.89
+9190	0		6th neg. abs. comp. pitch err. table no.90
+9191	0		6th neg. abs. comp. pitch err. table no.91
+9192	0		6th neg. abs. comp. pitch err. table no.92
+9193	0		6th neg. abs. comp. pitch err. table no.93
+9194	0		6th neg. abs. comp. pitch err. table no.94
+9195	0		6th neg. abs. comp. pitch err. table no.95
+9196	0		6th neg. abs. comp. pitch err. table no.96
+9197	0		6th neg. abs. comp. pitch err. table no.97
+9198	0		6th neg. abs. comp. pitch err. table no.98
+9199	0		6th neg. abs. comp. pitch err. table no.99
+9200	0		6th neg. abs. comp. pitch err. table no.100

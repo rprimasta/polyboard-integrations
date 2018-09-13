@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResMap>
+	<!-- ==========================Macro========================== -->
+	<Message ID="AlarmMsg::Macro::ID=10001" Content="(10001) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10002" Content="(10002) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10003" Content="(10003) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10004" Content="(10004) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10005" Content="(10005) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10006" Content="(10006) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10007" Content="(10007) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10008" Content="(10008) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10009" Content="(10009) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10010" Content="(10010) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10011" Content="(10011) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10012" Content="(10012) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10013" Content="(10013) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10014" Content="(10014) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10015" Content="(10015) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10016" Content="(10016) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10017" Content="(10017) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10018" Content="(10018) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10019" Content="(10019) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10020" Content="(10020) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10021" Content="(10021) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10022" Content="(10022) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10023" Content="(10023) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10024" Content="(10024) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10025" Content="(10025) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10026" Content="(10026) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10027" Content="(10027) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10028" Content="(10028) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10029" Content="(10029) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10030" Content="(10030) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10031" Content="(10031) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10032" Content="(10032) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10033" Content="(10033) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10034" Content="(10034) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10035" Content="(10035) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10036" Content="(10036) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10037" Content="(10037) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10038" Content="(10038) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10039" Content="(10039) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10040" Content="(10040) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10041" Content="(10041) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10042" Content="(10042) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10043" Content="(10043) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10044" Content="(10044) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10045" Content="(10045) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10046" Content="(10046) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10047" Content="(10047) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10048" Content="(10048) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10049" Content="(10049) Macro Alarm" />
+	<Message ID="AlarmMsg::Macro::ID=10050" Content="(10050) Macro Alarm" />
+</ResMap>

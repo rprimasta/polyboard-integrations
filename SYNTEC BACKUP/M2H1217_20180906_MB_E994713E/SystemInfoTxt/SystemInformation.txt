@@ -1,0 +1,10 @@
+Cnc资讯(Cnc Info.)
+	控制器序号(Serial No.):		M2H1217
+	机型代码(Machine Model):	6A
+	机床属性(Machine Type):		Mill
+	软件版本(CNC Version):		10.116.16V
+	主机板型号(CPU Board):		AM35x
+	印象档版本(Image Version):	7.21
+	软件功能选项(CNC Option):	N/A
+	使用期限(Use Until):		No Limit
+	机械厂代码(Maker ID):		N/A

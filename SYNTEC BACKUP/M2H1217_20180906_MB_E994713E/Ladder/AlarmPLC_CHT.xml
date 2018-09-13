@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResMap>
+	<!-- =========================R44 Alarm========================= -->
+	<Message ID="AlarmMsg::MLC::ID=65"	Content="(R44.0)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=66"	Content="(R44.1)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=67"	Content="(R44.2)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=68"	Content="目前手动超程解除中R44.3提示" />
+	<Message ID="AlarmMsg::MLC::ID=69"	Content="(R44.4)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=70" 	Content="主轴未停止，禁止松刀动作R44.5警报" />
+	<Message ID="AlarmMsg::MLC::ID=71" 	Content="主轴松夹刀信号异常R44.6警告" />
+	<Message ID="AlarmMsg::MLC::ID=72" 	Content="(R44.7)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=73" 	Content="(R44.8)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=74" 	Content="松刀失败R44.9警告" />
+	<Message ID="AlarmMsg::MLC::ID=75" 	Content="夹刀失败R44.10警告" />
+	<Message ID="AlarmMsg::MLC::ID=76" 	Content="刀库推出失败R44.11警告" />
+	<Message ID="AlarmMsg::MLC::ID=77" 	Content="刀库退回失败R44.12警告" />
+	<Message ID="AlarmMsg::MLC::ID=78" 	Content="M码执行超时请查R1内容，R44.13警告" />
+	<Message ID="AlarmMsg::MLC::ID=79" 	Content="气压不足R44.14警告" />
+	<Message ID="AlarmMsg::MLC::ID=80" 	Content="R44.15紧急停止" />
+	<!-- ========================R44 Warning======================== -->	
+	<Message ID="AlarmMsg::MLC::ID=315" Content="(R44.16)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=316"	Content="(R44.17)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=317"	Content="(R44.18)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=318"	Content="(R44.19)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=319"	Content="(R44.20)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=320"	Content="(R44.21)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=321"	Content="(R44.22)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=322"	Content="(R44.23)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=323"	Content="(R44.24)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=324"	Content="(R44.25)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=325"	Content="(R44.26)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=326"	Content="(R44.27)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=327"	Content="(R44.28)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=328"	Content="(R44.29)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=329"	Content="(R44.30)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=330"	Content="(R44.31)PLC 警告" />
+
+	<!-- =======================R45 Alarm======================= -->
+	<Message ID="AlarmMsg::MLC::ID=81"	Content="(R45.0)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=82"	Content="(R45.1)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=83"	Content="R45.2刀库位置信号检测异常警告" />
+	<Message ID="AlarmMsg::MLC::ID=84"	Content="(R45.3)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=85"	Content="(R45.4)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=86"	Content="R45.5毛刷动作未到位警告" />
+	<Message ID="AlarmMsg::MLC::ID=87"	Content="(R45.6)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=88"	Content="(R45.7)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=89"	Content="(R45.8)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=90"	Content="(R45.9)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=91"	Content="(R45.10)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=92"	Content="(R45.11)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=93"	Content="(R45.12)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=94"	Content="R45.13 双驱回零人为中断，请重新回原点" />
+	<Message ID="AlarmMsg::MLC::ID=95"	Content="R45.14误差过大警报: 请重新寻原点校正" />
+	<Message ID="AlarmMsg::MLC::ID=96"	Content="R45.15超出自校正值，请人工校正横梁垂直警告" />
+	<!-- ======================R45 Warning====================== -->
+	<Message ID="AlarmMsg::MLC::ID=331" Content="(R45.16)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=332"	Content="(R45.17)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=333"	Content="(R45.18)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=334"	Content="(R45.19)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=335"	Content="(R45.20)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=336"	Content="(R45.21)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=337"	Content="(R45.22)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=338"	Content="(R45.23)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=339"	Content="(R45.24)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=340"	Content="(R45.25)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=341"	Content="(R45.26)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=342"	Content="(R45.27)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=343"	Content="(R45.28)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=344"	Content="(R45.29)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=345"	Content="(R45.30)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=346"	Content="(R45.31)PLC 警告" />
+
+	<!-- =======================R46 Alarm======================= -->
+	<Message ID="AlarmMsg::MLC::ID=97" 	Content="(R46.0)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=98"	Content="(R46.1)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=99"	Content="(R46.2)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=100"	Content="(R46.3)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=101"	Content="(R46.4)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=102"	Content="(R46.5)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=103"	Content="(R46.6)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=104"	Content="(R46.7)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=105"	Content="(R46.8)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=106"	Content="(R46.9)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=107"	Content="(R46.10)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=108"	Content="(R46.11)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=109"	Content="(R46.12)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=110"	Content="(R46.13)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=111"	Content="(R46.14)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=112"	Content="(R46.15)PLC 警报" />
+	<!-- ======================R46 Warning====================== -->
+	<Message ID="AlarmMsg::MLC::ID=347" Content="(R46.16)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=348"	Content="(R46.17)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=349"	Content="(R46.18)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=350"	Content="(R46.19)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=351"	Content="(R46.20)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=352"	Content="(R46.21)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=353"	Content="(R46.22)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=354"	Content="(R46.23)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=355"	Content="(R46.24)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=356"	Content="(R46.25)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=357"	Content="(R46.26)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=358"	Content="(R46.27)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=359"	Content="(R46.28)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=360"	Content="(R46.29)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=361"	Content="(R46.30)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=362"	Content="(R46.31)PLC 警告" />
+	
+	<!-- =======================R47 Alarm======================= -->	
+	<Message ID="AlarmMsg::MLC::ID=113" Content="(R47.0)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=114"	Content="(R47.1)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=115"	Content="(R47.2)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=116"	Content="(R47.3)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=117"	Content="(R47.4)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=118"	Content="(R47.5)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=119"	Content="(R47.6)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=120"	Content="(R47.7)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=121"	Content="(R47.8)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=122"	Content="(R47.9)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=123"	Content="(R47.10)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=124"	Content="(R47.11)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=125"	Content="(R47.12)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=126"	Content="(R47.13)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=127"	Content="(R47.14)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=128"	Content="(R47.15)PLC 警报" />
+	<!-- ======================R47 Warning====================== -->
+	<Message ID="AlarmMsg::MLC::ID=363" Content="(R47.16)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=364"	Content="(R47.17)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=365"	Content="(R47.18)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=366"	Content="(R47.19)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=367"	Content="(R47.20)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=368"	Content="(R47.21)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=369"	Content="(R47.22)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=370"	Content="(R47.23)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=371"	Content="(R47.24)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=372"	Content="(R47.25)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=373"	Content="(R47.26)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=374"	Content="(R47.27)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=375"	Content="(R47.28)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=376"	Content="(R47.29)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=377"	Content="(R47.30)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=378"	Content="(R47.31)PLC 警告" />
+
+	<!-- =======================R48 Alarm======================= -->
+	<Message ID="AlarmMsg::MLC::ID=129" Content="(R48.0)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=130"	Content="(R48.1)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=131"	Content="(R48.2)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=132"	Content="(R48.3)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=133"	Content="(R48.4)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=134"	Content="(R48.5)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=135"	Content="(R48.6)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=136"	Content="(R48.7)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=137"	Content="(R48.8)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=138"	Content="(R48.9)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=139"	Content="(R48.10)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=140"	Content="(R48.11)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=141"	Content="(R48.12)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=142"	Content="(R48.13)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=143"	Content="(R48.14)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=144"	Content="(R48.15)PLC 警报" />
+	<!-- ======================R48 Warning====================== -->
+	<Message ID="AlarmMsg::MLC::ID=379" Content="(R48.16)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=380"	Content="(R48.17)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=381"	Content="(R48.18)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=382"	Content="(R48.19)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=383"	Content="(R48.20)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=384"	Content="(R48.21)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=385"	Content="(R48.22)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=386"	Content="(R48.23)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=387"	Content="(R48.24)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=388"	Content="(R48.25)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=389"	Content="(R48.26)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=390"	Content="(R48.27)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=391"	Content="(R48.28)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=392"	Content="(R48.29)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=393"	Content="(R48.30)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=394"	Content="(R48.31)PLC 警告" />
+
+	<!-- =======================R49 Alarm======================= -->
+	<Message ID="AlarmMsg::MLC::ID=145" Content="(R49.0)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=146"	Content="(R49.1)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=147"	Content="(R49.2)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=148"	Content="(R49.3)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=149"	Content="(R49.4)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=150"	Content="(R49.5)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=151"	Content="(R49.6)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=152"	Content="(R49.7)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=153"	Content="(R49.8)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=154"	Content="(R49.9)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=155"	Content="(R49.10)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=156"	Content="(R49.11)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=157"	Content="(R49.12)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=158"	Content="(R49.13)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=159"	Content="(R49.14)PLC 警报" />
+	<Message ID="AlarmMsg::MLC::ID=160"	Content="(R49.15)PLC 警报" />
+	<!-- ======================R49 Warning====================== -->
+	<Message ID="AlarmMsg::MLC::ID=395"	Content="(R49.16)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=396"	Content="(R49.17)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=397"	Content="(R49.18)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=398"	Content="(R49.19)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=399"	Content="(R49.20)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=400"	Content="(R49.21)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=401"	Content="(R49.22)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=402"	Content="(R49.23)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=403"	Content="(R49.24)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=404"	Content="(R49.25)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=405"	Content="(R49.26)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=406"	Content="(R49.27)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=407"	Content="(R49.28)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=408"	Content="(R49.29)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=409"	Content="(R49.30)PLC 警告" />
+	<Message ID="AlarmMsg::MLC::ID=410"	Content="(R49.31)PLC 警告" />
+	
+	<!-- =======================R590 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=1"	 Content="(R590.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=2"	 Content="(R590.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=3"	 Content="(R590.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=4"	 Content="(R590.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=5"	 Content="(R590.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=6"	 Content="(R590.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=7"	 Content="(R590.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=8"	 Content="(R590.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=9"	 Content="(R590.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=10"	 Content="(R590.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=11"	 Content="(R590.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=12"	 Content="(R590.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=13"	 Content="(R590.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=14"	 Content="(R590.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=15"	 Content="(R590.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=16"	 Content="(R590.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=17"	 Content="(R590.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=18"	 Content="(R590.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=19"	 Content="(R590.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=20"	 Content="(R590.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=21"	 Content="(R590.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=22"	 Content="(R590.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=23"	 Content="(R590.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=24"	 Content="(R590.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=25"	 Content="(R590.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=26"	 Content="(R590.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=27"	 Content="(R590.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=28"	 Content="(R590.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=29"	 Content="(R590.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=30"	 Content="(R590.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=31"	 Content="(R590.31)PLC 提示" />
+	
+	
+	<!-- =======================R591 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=32"	 Content="(R591.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=33"	 Content="(R591.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=34"	 Content="(R591.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=35"	 Content="(R591.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=36"	 Content="(R591.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=37"	 Content="(R591.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=38"	 Content="(R591.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=39"	 Content="(R591.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=40"	 Content="(R591.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=41"	 Content="(R591.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=42"	 Content="(R591.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=43"	 Content="(R591.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=44"	 Content="(R591.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=45"	 Content="(R591.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=46"	 Content="(R591.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=47"	 Content="(R591.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=48"	 Content="(R591.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=49"	 Content="(R591.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=50"	 Content="(R591.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=51"	 Content="(R591.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=52"	 Content="(R591.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=53"	 Content="(R591.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=54"	 Content="(R591.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=55"	 Content="(R591.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=56"	 Content="(R591.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=57"	 Content="(R591.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=58"	 Content="(R591.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=59"	 Content="(R591.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=60"	 Content="(R591.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=61"	 Content="(R591.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=62"	 Content="(R591.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=63"	 Content="(R591.31)PLC 提示" />
+	
+	<!-- =======================R592 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=64"	 Content="(R592.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=65"	 Content="(R592.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=66"	 Content="(R592.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=67"	 Content="(R592.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=68"	 Content="(R592.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=69"	 Content="(R592.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=70"	 Content="(R592.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=71"	 Content="(R592.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=72"	 Content="(R592.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=73"	 Content="(R592.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=74"	 Content="(R592.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=75"	 Content="(R592.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=76"	 Content="(R592.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=77"	 Content="(R592.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=78"	 Content="(R592.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=79"	 Content="(R592.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=80"	 Content="(R592.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=81"	 Content="(R592.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=82"	 Content="(R592.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=83"	 Content="(R592.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=84"	 Content="(R592.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=85"	 Content="(R592.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=86"	 Content="(R592.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=87"	 Content="(R592.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=88"	 Content="(R592.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=89"	 Content="(R592.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=90"	 Content="(R592.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=91"	 Content="(R592.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=92"	 Content="(R592.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=93"	 Content="(R592.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=94"	 Content="(R592.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=95"	 Content="(R592.31)PLC 提示" />
+	
+	<!-- =======================R593 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=96"	 Content="(R593.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=97"	 Content="(R593.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=98"	 Content="(R593.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=99"	 Content="(R593.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=100"	 Content="(R593.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=101"	 Content="(R593.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=102"	 Content="(R593.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=103"	 Content="(R593.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=104"	 Content="(R593.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=105"	 Content="(R593.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=106"	 Content="(R593.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=107"	 Content="(R593.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=108"	 Content="(R593.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=109"	 Content="(R593.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=110"	 Content="(R593.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=111"	 Content="(R593.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=112"	 Content="(R593.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=113"	 Content="(R593.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=114"	 Content="(R593.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=115"	 Content="(R593.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=116"	 Content="(R593.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=117"	 Content="(R593.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=118"	 Content="(R593.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=119"	 Content="(R593.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=120"	 Content="(R593.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=121"	 Content="(R593.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=122"	 Content="(R593.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=123"	 Content="(R593.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=124"	 Content="(R593.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=125"	 Content="(R593.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=126"	 Content="(R593.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=127"	 Content="(R593.31)PLC 提示" />
+	
+	<!-- =======================R594 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=128"	 Content="(R594.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=129"	 Content="(R594.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=130"	 Content="(R594.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=131"	 Content="(R594.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=132"	 Content="(R594.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=133"	 Content="(R594.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=134"	 Content="(R594.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=135"	 Content="(R594.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=136"	 Content="(R594.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=137"	 Content="(R594.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=138"	 Content="(R594.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=139"	 Content="(R594.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=140"	 Content="(R594.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=141"	 Content="(R594.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=142"	 Content="(R594.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=143"	 Content="(R594.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=144"	 Content="(R594.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=145"	 Content="(R594.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=146"	 Content="(R594.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=147"	 Content="(R594.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=148"	 Content="(R594.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=149"	 Content="(R594.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=150"	 Content="(R594.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=151"	 Content="(R594.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=152"	 Content="(R594.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=153"	 Content="(R594.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=154"	 Content="(R594.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=155"	 Content="(R594.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=156"	 Content="(R594.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=157"	 Content="(R594.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=158"	 Content="(R594.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=159"	 Content="(R594.31)PLC 提示" />
+	
+	<!-- =======================R595 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=160"	 Content="(R595.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=161"	 Content="(R595.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=162"	 Content="(R595.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=163"	 Content="(R595.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=164"	 Content="(R595.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=165"	 Content="(R595.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=166"	 Content="(R595.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=167"	 Content="(R595.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=168"	 Content="(R595.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=169"	 Content="(R595.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=170"	 Content="(R595.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=171"	 Content="(R595.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=172"	 Content="(R595.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=173"	 Content="(R595.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=174"	 Content="(R595.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=175"	 Content="(R595.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=176"	 Content="(R595.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=177"	 Content="(R595.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=178"	 Content="(R595.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=179"	 Content="(R595.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=180"	 Content="(R595.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=181"	 Content="(R595.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=182"	 Content="(R595.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=183"	 Content="(R595.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=184"	 Content="(R595.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=185"	 Content="(R595.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=186"	 Content="(R595.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=187"	 Content="(R595.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=188"	 Content="(R595.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=189"	 Content="(R595.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=190"	 Content="(R595.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=191"	 Content="(R595.31)PLC 提示" />	
+	
+	<!-- =======================R596 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=192"	 Content="(R596.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=193"	 Content="(R596.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=194"	 Content="(R596.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=195"	 Content="(R596.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=196"	 Content="(R596.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=197"	 Content="(R596.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=198"	 Content="(R596.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=199"	 Content="(R596.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=200"	 Content="(R596.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=201"	 Content="(R596.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=202"	 Content="(R596.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=203"	 Content="(R596.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=204"	 Content="(R596.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=205"	 Content="(R596.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=206"	 Content="(R596.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=207"	 Content="(R596.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=208"	 Content="(R596.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=209"	 Content="(R596.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=210"	 Content="(R596.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=211"	 Content="(R596.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=212"	 Content="(R596.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=213"	 Content="(R596.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=214"	 Content="(R596.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=215"	 Content="(R596.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=216"	 Content="(R596.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=217"	 Content="(R596.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=218"	 Content="(R596.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=219"	 Content="(R596.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=220"	 Content="(R596.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=221"	 Content="(R596.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=222"	 Content="(R596.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=223"	 Content="(R596.31)PLC 提示" />
+	
+	<!-- =======================R597 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=224"	 Content="(R597.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=225"	 Content="(R597.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=226"	 Content="(R597.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=227"	 Content="(R597.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=228"	 Content="(R597.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=229"	 Content="(R597.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=230"	 Content="(R597.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=231"	 Content="(R597.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=232"	 Content="(R597.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=233"	 Content="(R597.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=234"	 Content="(R597.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=235"	 Content="(R597.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=236"	 Content="(R597.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=237"	 Content="(R597.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=238"	 Content="(R597.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=239"	 Content="(R597.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=240"	 Content="(R597.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=241"	 Content="(R597.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=242"	 Content="(R597.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=243"	 Content="(R597.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=244"	 Content="(R597.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=245"	 Content="(R597.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=246"	 Content="(R597.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=247"	 Content="(R597.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=248"	 Content="(R597.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=249"	 Content="(R597.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=250"	 Content="(R597.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=251"	 Content="(R597.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=252"	 Content="(R597.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=253"	 Content="(R597.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=254"	 Content="(R597.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=255"	 Content="(R597.31)PLC 提示" />
+	
+	<!-- =======================R598 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=256"	 Content="(R598.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=257"	 Content="(R598.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=258"	 Content="(R598.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=259"	 Content="(R598.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=260"	 Content="(R598.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=261"	 Content="(R598.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=262"	 Content="(R598.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=263"	 Content="(R598.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=264"	 Content="(R598.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=265"	 Content="(R598.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=266"	 Content="(R598.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=267"	 Content="(R598.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=268"	 Content="(R598.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=269"	 Content="(R598.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=270"	 Content="(R598.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=271"	 Content="(R598.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=272"	 Content="(R598.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=273"	 Content="(R598.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=274"	 Content="(R598.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=275"	 Content="(R598.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=276"	 Content="(R598.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=277"	 Content="(R598.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=278"	 Content="(R598.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=279"	 Content="(R598.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=280"	 Content="(R598.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=281"	 Content="(R598.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=282"	 Content="(R598.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=283"	 Content="(R598.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=284"	 Content="(R598.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=285"	 Content="(R598.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=286"	 Content="(R598.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=287"	 Content="(R598.31)PLC 提示" />
+	
+	<!-- =======================R599 Hint======================= -->
+	<Message ID="AlarmMsg::MLCHint::ID=288"	 Content="(R599.0)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=289"	 Content="(R599.1)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=290"	 Content="(R599.2)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=291"	 Content="(R599.3)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=292"	 Content="(R599.4)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=293"	 Content="(R599.5)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=294"	 Content="(R599.6)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=295"	 Content="(R599.7)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=296"	 Content="(R599.8)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=297"	 Content="(R599.9)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=298"	 Content="(R599.10)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=299"	 Content="(R599.11)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=300"	 Content="(R599.12)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=301"	 Content="(R599.13)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=302"	 Content="(R599.14)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=303"	 Content="(R599.15)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=304"	 Content="(R599.16)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=305"	 Content="(R599.17)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=306"	 Content="(R599.18)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=307"	 Content="(R599.19)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=308"	 Content="(R599.20)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=309"	 Content="(R599.21)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=310"	 Content="(R599.22)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=311"	 Content="(R599.23)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=312"	 Content="(R599.24)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=313"	 Content="(R599.25)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=314"	 Content="(R599.26)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=315"	 Content="(R599.27)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=316"	 Content="(R599.28)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=317"	 Content="(R599.29)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=318"	 Content="(R599.30)PLC 提示" />
+	<Message ID="AlarmMsg::MLCHint::ID=319"	 Content="(R599.31)PLC 提示" />
+</ResMap>
